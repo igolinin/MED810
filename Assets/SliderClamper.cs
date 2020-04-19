@@ -8,8 +8,8 @@ public class SliderClamper : MonoBehaviour
 
     [SerializeField] private Slider slider;
     
-    [SerializeField] private float minClamp;
-    [SerializeField] private float maxClamp;
+    [SerializeField] private float minClamp=0;
+    [SerializeField] private float maxClamp=1;
 
     private void Start()
     {
