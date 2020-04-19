@@ -19,18 +19,27 @@ public class hoverbox : MonoBehaviour
     }
     void OnMouseEnter()
     {
-        Debug.Log("hello");
         StartCoroutine("FadeIn");
     }
 
     void OnMouseExit()
     {
-        Debug.Log("bye");
+        StartCoroutine("FadeOut");
     }
 
     IEnumerator FadeIn()
     {
-        for (float f=0.05f; f<= 0.4f; f += 0.05f)
+        for (float f=0.05f; f<= 0.4f; f += 0.10f)
+        {
+            c.a = f;
+            rend.material.color = c;
+            yield return new WaitForSeconds(0.05f);
+        }
+    }
+
+    IEnumerator FadeOut()
+    {
+        for (float f = 0.4f; f > 0.0f; f -= 0.10f)
         {
             c.a = f;
             rend.material.color = c;
