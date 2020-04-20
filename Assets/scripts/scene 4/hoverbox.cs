@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HoverBox : MonoBehaviour
+public class hoverbox : MonoBehaviour
 {
     SpriteRenderer rend;
     Color c;
