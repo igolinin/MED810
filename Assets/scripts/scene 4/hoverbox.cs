@@ -8,6 +8,8 @@ public class hoverbox : MonoBehaviour
 {
     SpriteRenderer rend;
     Color c;
+    public int planetNum;
+    public ScreenControl Control;
 
     void Start()
     {
@@ -25,6 +27,11 @@ public class hoverbox : MonoBehaviour
     void OnMouseExit()
     {
         StartCoroutine("FadeOut");
+    }
+
+    private void OnMouseDown()
+    {
+        Control.NextButton();
     }
 
     IEnumerator FadeIn()

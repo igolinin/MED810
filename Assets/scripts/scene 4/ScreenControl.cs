@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ScreenControl : MonoBehaviour
 {
 
-    private int CurrentScreen = 1;
+    private int CurrentScreen = 0;
     private int CurrentDot = 1;
     public GameObject NextPosition;
     public GameObject CurDot;
