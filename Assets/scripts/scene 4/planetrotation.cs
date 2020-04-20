@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetRotation : MonoBehaviour
+public class planetrotation : MonoBehaviour
 {
     float speed = 50.0f;
     // Start is called before the first frame update
