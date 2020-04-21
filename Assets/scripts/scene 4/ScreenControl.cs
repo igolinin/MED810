@@ -12,6 +12,7 @@ public class ScreenControl : MonoBehaviour
     public GameObject NextPosition;
     public GameObject CurDot;
     private bool OnMove = false;
+    private bool OnPath = true;
     public Color C1;
     public Color C2;
    
@@ -47,6 +48,15 @@ public class ScreenControl : MonoBehaviour
     void SetTarget()
     {
         string NextScreenName = "CheckPoint" + CurrentScreen.ToString();
+        if (OnPath)
+        {
+            NextScreenName = "CheckPoint" + CurrentScreen.ToString();
+        }
+        else
+        {
+            NextScreenName = "CheckPoint" + CurrentScreen.ToString() + "f";
+        }
+
         NextPosition = GameObject.Find(NextScreenName);
         OnMove = true;
     }
