@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ScreenControl : MonoBehaviour
 {
 
-    private int CurrentScreen = 1;
+    private int CurrentScreen = 0;
     private int CurrentDot = 1;
     public GameObject NextPosition;
     public GameObject CurDot;
@@ -68,6 +68,15 @@ public class ScreenControl : MonoBehaviour
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
         CurDot.GetComponent<Image>().color = C2;
+    }
+
+    public void BackDot()
+    {
+        CurDot.GetComponent<Image>().color = C2;
+        CurrentDot -= 1;
+        string DotName = "Dot" + CurrentDot.ToString();
+        CurDot = GameObject.Find(DotName);
+        CurDot.GetComponent<Image>().color = C1;
     }
 
 
