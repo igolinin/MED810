@@ -9,7 +9,6 @@ public class ClothesSlider : MonoBehaviour
     public float Current;
     public Slider slider;
     public int max;
-    public string[] ClothesType;
 
     // Start is called before the first frame update
 
