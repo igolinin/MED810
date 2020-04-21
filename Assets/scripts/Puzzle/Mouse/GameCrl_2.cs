@@ -19,6 +19,8 @@ public class GameCrl_2 : MonoBehaviour
     public GameObject secondaryInfo;
     public GameObject lensInfo;
 
+    public GameObject NextButton;
+
 
 
     // Start is called before the first frame update
@@ -112,7 +114,7 @@ public class GameCrl_2 : MonoBehaviour
     void fadeText()
     {
         winTextFade.DOFade(0, 2);
-
+        NextButton.SetActive(true);
 
     }
 }
