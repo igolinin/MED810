@@ -21,15 +21,16 @@ public class sceneManager : MonoBehaviour
 
     public void OpenScene3()
     {
-        SceneManager.LoadScene("PuzzleTelescope3", LoadSceneMode.Single);
+        SceneManager.LoadScene("Scene 4", LoadSceneMode.Single);
 
     }
 
-    public void MainMenu()
+    public void OpenScene4()
     {
-        
-        SceneManager.LoadScene("TelescopeMainMenu", LoadSceneMode.Single);
+        SceneManager.LoadScene("Scene 4", LoadSceneMode.Single);
 
     }
+
+
 
 }
