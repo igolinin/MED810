@@ -9,6 +9,10 @@ public class ClothesSlider : MonoBehaviour
     public float Current;
     public Slider slider;
     public int max;
+    public GameObject planet;
+    public bool correct;
+    public int temp;
+    public GameObject next;
 
     // Start is called before the first frame update
 
@@ -25,6 +29,26 @@ public class ClothesSlider : MonoBehaviour
             else
             {
                 Characters[i].SetActive(false);
+            }
+        }
+    }
+
+    private void Start()
+    {
+        temp = planet.GetComponent<ChoosenPlanet>().Temprature;
+        
+    }
+    private void Update()
+    {
+        if (temp>60)
+        {
+            if (Current==4)
+            {
+                next.SetActive(true);
+            }
+            else
+            {
+                next.SetActive(false);
             }
         }
     }

@@ -11,6 +11,7 @@ public class hoverbox : MonoBehaviour
     public int planetNum;
     public ScreenControl Control;
     public bool Found;
+    public GameObject Planet;
 
     void Start()
     {
@@ -43,6 +44,7 @@ public class hoverbox : MonoBehaviour
         if (Found)
         {
             Control.NextButton();
+            Planet.GetComponent<ChoosenPlanet>().choosen = true;
         }
         
     }
