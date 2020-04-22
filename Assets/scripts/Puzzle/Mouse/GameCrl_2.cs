@@ -7,14 +7,14 @@ using DG.Tweening;
 public class GameCrl_2 : MonoBehaviour
 {
     [SerializeField]
-    public GameObject winText;
+
     public TextMeshPro winTextFade;
 
     public static bool info1Close;
     public static bool info2Close;
     public static bool info3Close;
 
-    public GameObject intro;
+
     public GameObject primaryInfo;
     public GameObject secondaryInfo;
     public GameObject lensInfo;
@@ -22,6 +22,12 @@ public class GameCrl_2 : MonoBehaviour
     public GameObject NextButton;
 
 
+    [SerializeField]
+    public GameObject[] DeactivateObjects;
+
+    public GameObject NextButton;
+    public GameObject endText1;
+    public GameObject endText2;
 
     // Start is called before the first frame update
     void Start()
@@ -58,9 +64,16 @@ public class GameCrl_2 : MonoBehaviour
         }
         else if (Obj1_MouseMove.locked && Obj2_MouseMove.locked && Obj3_MouseMove.locked)
         {
-            winText.SetActive(true);
+            endText1.SetActive(true);
+            endText2.SetActive(true);
+            NextButton.SetActive(true);
 
             Invoke("fadeText", 1);
+            for (int i = 0; i < DeactivateObjects.Length; i++)
+            {
+                DeactivateObjects[i].SetActive(false);
+
+            }
 
         }
 

@@ -14,6 +14,7 @@ public class ScreenControl : MonoBehaviour
     private bool OnMove = false;
     public Color C1;
     public Color C2;
+    public GameObject Wrong;
    
     // Start is called before the first frame update
     void Start()
@@ -44,7 +45,7 @@ public class ScreenControl : MonoBehaviour
         SetTarget();
     }
 
-    void SetTarget()
+    public void SetTarget()
     {
         string NextScreenName = "CheckPoint" + CurrentScreen.ToString();
         NextPosition = GameObject.Find(NextScreenName);
@@ -78,6 +79,13 @@ public class ScreenControl : MonoBehaviour
         CurDot = GameObject.Find(DotName);
         CurDot.GetComponent<Image>().color = C1;
     }
+
+    public void wrong()
+    {
+        NextPosition = Wrong;
+        OnMove = true;
+    }
+
 
 
 }

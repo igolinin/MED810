@@ -51,7 +51,7 @@ public class Obj1_MouseMove : MonoBehaviour
             //This is a bugfix will fix later, there some interferancce with the collides i dont understand
 
             Lens.GetComponent<BoxCollider2D>().enabled = true;
-
+            Debug.Log("HEJ");
             
             if ("PuzzleTelescope1"  != SceneManager.GetActiveScene().name)
             {
