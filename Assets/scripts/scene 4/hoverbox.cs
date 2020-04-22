@@ -10,6 +10,7 @@ public class hoverbox : MonoBehaviour
     Color c;
     public int planetNum;
     public ScreenControl Control;
+    public bool Found;
 
     void Start()
     {
@@ -21,17 +22,29 @@ public class hoverbox : MonoBehaviour
     }
     void OnMouseEnter()
     {
-        StartCoroutine("FadeIn");
+        if (Found)
+        {
+            StartCoroutine("FadeIn");
+        }
+        
     }
 
     void OnMouseExit()
     {
-        StartCoroutine("FadeOut");
+        if (Found)
+        {
+            StartCoroutine("FadeOut");
+        }
+        
     }
 
     private void OnMouseDown()
     {
-        Control.NextButton();
+        if (Found)
+        {
+            Control.NextButton();
+        }
+        
     }
 
     IEnumerator FadeIn()

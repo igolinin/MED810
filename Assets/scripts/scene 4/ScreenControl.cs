@@ -53,7 +53,7 @@ public class ScreenControl : MonoBehaviour
 
     void MoveCamera()
     {
-        Vector3 SmoothedPosition = Vector3.Lerp(transform.position, NextPosition.transform.position, 0.2f);
+        Vector3 SmoothedPosition = Vector3.Lerp(transform.position, NextPosition.transform.position, 0.1f);
         transform.position = SmoothedPosition;
         if (transform.position==NextPosition.transform.position)
         {
