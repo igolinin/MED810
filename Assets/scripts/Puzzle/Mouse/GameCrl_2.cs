@@ -19,6 +19,8 @@ public class GameCrl_2 : MonoBehaviour
     public GameObject secondaryInfo;
     public GameObject lensInfo;
 
+    public GameObject NextButton;
+
 
     [SerializeField]
     public GameObject[] DeactivateObjects;
