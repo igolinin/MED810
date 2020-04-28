@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -349,19 +349,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7dd7043905d084d81bdb3a78fa40c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Characters:
-  - {fileID: 1045483851}
-  - {fileID: 826065307}
-  - {fileID: 595000821}
-  - {fileID: 1177665845}
-  - {fileID: 1820090653}
-  Current: 1
-  slider: {fileID: 731213176}
-  max: 5
-  planet: {fileID: 1342005236}
+  Characters: []
+  Current: 0
+  slider: {fileID: 0}
+  max: 0
+  planet: {fileID: 0}
   correct: 0
   temp: 0
-  next: {fileID: 1868293027}
+  next: {fileID: 0}
 --- !u!1 &45092031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,7 +1399,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '% Life'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
     type: 2}
   m_fontSharedMaterials: []
@@ -2858,24 +2853,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: Gas Giant
-  Size: Very big
-  Water: 0
-  Light: 0-20
-  Life: Non Habitable
-  Atmosphere: 20
-  Temprature: (-10) - 40
-  Gravity: None
-  Surface: Gas
-  N: {fileID: 1723032219}
-  Sz: {fileID: 1717706135}
-  W: {fileID: 1929592487}
-  Lg: {fileID: 195462220}
-  Lf: {fileID: 2134572507}
-  A: {fileID: 825907816}
-  T: {fileID: 149820116}
-  G: {fileID: 1460879797}
-  Sf: {fileID: 1547523333}
+  TypeName: 
+  Size: 
+  Water: 
+  Light: 
+  Life: 
+  Atmosphere: 
+  Temprature: 
+  Gravity: 
+  Surface: 
+  N: {fileID: 0}
+  Sz: {fileID: 0}
+  W: {fileID: 0}
+  Lg: {fileID: 0}
+  Lf: {fileID: 0}
+  A: {fileID: 0}
+  T: {fileID: 0}
+  G: {fileID: 0}
+  Sf: {fileID: 0}
 --- !u!135 &209732698
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8018,7 +8013,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '% Light'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
     type: 2}
   m_fontSharedMaterials: []
@@ -11041,9 +11036,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "-50\xB0C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
-  m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11120,7 +11114,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 1
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
@@ -11276,9 +11270,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
-  m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11510,8 +11503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd7f261da62fe9498587a4a7942bb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetNum: 5
-  Control: {fileID: 963194230}
+  planetNum: 0
+  Control: {fileID: 0}
   Found: 0
   Planet: {fileID: 0}
 --- !u!1 &874877844
@@ -12741,7 +12734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -773.7, y: -93.1, z: -10}
+  m_LocalPosition: {x: -772.9, y: -93.1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 705507995}
@@ -12793,9 +12786,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextPosition: {fileID: 0}
   CurDot: {fileID: 0}
-  C1: {r: 0.80784315, g: 0.70980394, b: 1, a: 0.33333334}
-  C2: {r: 1, g: 1, b: 1, a: 1}
-  Wrong: {fileID: 497293539}
+  C1: {r: 0, g: 0, b: 0, a: 0}
+  C2: {r: 0, g: 0, b: 0, a: 0}
+  Wrong: {fileID: 0}
 --- !u!1 &964657752
 GameObject:
   m_ObjectHideFlags: 0
@@ -13020,10 +13013,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd7f261da62fe9498587a4a7942bb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetNum: 2
-  Control: {fileID: 963194230}
-  Found: 1
-  Planet: {fileID: 1342005236}
+  planetNum: 0
+  Control: {fileID: 0}
+  Found: 0
+  Planet: {fileID: 0}
 --- !u!1 &972881785
 GameObject:
   m_ObjectHideFlags: 0
@@ -14303,24 +14296,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: Earth - Like
-  Size: Small
-  Water: 70-100
-  Light: 20-40
-  Life: Habitable
-  Atmosphere: 40
-  Temprature: (-10) - 40
-  Gravity: Strong
-  Surface: Rocky
-  N: {fileID: 1723032219}
-  Sz: {fileID: 1717706135}
-  W: {fileID: 1929592487}
-  Lg: {fileID: 195462220}
-  Lf: {fileID: 2134572507}
-  A: {fileID: 825907816}
-  T: {fileID: 149820116}
-  G: {fileID: 1460879797}
-  Sf: {fileID: 1547523333}
+  TypeName: 
+  Size: 
+  Water: 
+  Light: 
+  Life: 
+  Atmosphere: 
+  Temprature: 
+  Gravity: 
+  Surface: 
+  N: {fileID: 0}
+  Sz: {fileID: 0}
+  W: {fileID: 0}
+  Lg: {fileID: 0}
+  Lf: {fileID: 0}
+  A: {fileID: 0}
+  T: {fileID: 0}
+  G: {fileID: 0}
+  Sf: {fileID: 0}
 --- !u!1 &1067125749
 GameObject:
   m_ObjectHideFlags: 0
@@ -15554,7 +15547,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '% Atmosp'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
     type: 2}
   m_fontSharedMaterials: []
@@ -16496,7 +16489,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gravity
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
     type: 2}
   m_fontSharedMaterials: []
@@ -16647,7 +16640,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Surface '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
     type: 2}
   m_fontSharedMaterials: []
@@ -17171,8 +17164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd7f261da62fe9498587a4a7942bb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetNum: 6
-  Control: {fileID: 963194230}
+  planetNum: 0
+  Control: {fileID: 0}
   Found: 0
   Planet: {fileID: 0}
 --- !u!61 &1279341596
@@ -17793,7 +17786,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342005236
 GameObject:
@@ -17903,38 +17896,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Gliese 591c
-  choosen: 1
-  description: In a galaxy far far away, a true gem has been found!
-  Size: big
-  Water: 0%
-  Light: 60%
-  Life: Not Habitable
-  Atmosphere: 10%
-  Gravity: Strong
-  Surface: Lava
-  Temprature: 70
-  type: 2
-  N: {fileID: 352759038}
-  D: {fileID: 687130622}
-  W: {fileID: 1752426823}
-  Lg: {fileID: 656491896}
-  Lf: {fileID: 114506058}
-  A: {fileID: 1151173470}
-  T: {fileID: 829640089}
-  G: {fileID: 1250885900}
-  Sf: {fileID: 1253871884}
-  Nx: {fileID: 386179477}
-  Sx: {fileID: 881164851}
-  Wx: {fileID: 694982006}
-  Lgx: {fileID: 642801887}
-  Lfx: {fileID: 542726443}
-  Ax: {fileID: 67299763}
-  Tx: {fileID: 1619859677}
-  Gx: {fileID: 1500296273}
-  Sfx: {fileID: 1851094076}
-  cata: {fileID: 2037021555}
-  Control: {fileID: 963194230}
+  Name: 
+  choosen: 0
+  description: 
+  Size: 
+  Water: 
+  Light: 
+  Life: 
+  Atmosphere: 
+  Gravity: 
+  Surface: 
+  Temprature: 0
+  type: 0
+  N: {fileID: 0}
+  D: {fileID: 0}
+  W: {fileID: 0}
+  Lg: {fileID: 0}
+  Lf: {fileID: 0}
+  A: {fileID: 0}
+  T: {fileID: 0}
+  G: {fileID: 0}
+  Sf: {fileID: 0}
+  Nx: {fileID: 0}
+  Sx: {fileID: 0}
+  Wx: {fileID: 0}
+  Lgx: {fileID: 0}
+  Lfx: {fileID: 0}
+  Ax: {fileID: 0}
+  Tx: {fileID: 0}
+  Gx: {fileID: 0}
+  Sfx: {fileID: 0}
+  cata: {fileID: 0}
+  Control: {fileID: 0}
 --- !u!1 &1343993785
 GameObject:
   m_ObjectHideFlags: 0
@@ -18663,8 +18656,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd7f261da62fe9498587a4a7942bb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetNum: 1
-  Control: {fileID: 963194230}
+  planetNum: 0
+  Control: {fileID: 0}
   Found: 0
   Planet: {fileID: 0}
 --- !u!1 &1388179980
@@ -20825,8 +20818,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd7f261da62fe9498587a4a7942bb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetNum: 4
-  Control: {fileID: 963194230}
+  planetNum: 0
+  Control: {fileID: 0}
   Found: 0
   Planet: {fileID: 0}
 --- !u!1 &1547523331
@@ -21101,8 +21094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd7f261da62fe9498587a4a7942bb13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetNum: 3
-  Control: {fileID: 963194230}
+  planetNum: 0
+  Control: {fileID: 0}
   Found: 0
   Planet: {fileID: 0}
 --- !u!1 &1557015872
@@ -21242,7 +21235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf6c4eb7c039ae94992dd5257e114def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 447062055}
+  data: {fileID: 0}
 --- !u!1 &1596644776
 GameObject:
   m_ObjectHideFlags: 0
@@ -22762,7 +22755,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '% Water'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
     type: 2}
   m_fontSharedMaterials: []
@@ -24225,24 +24218,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: lava
-  Size: Very big
-  Water: 0
-  Light: 20-40
-  Life: Habitable
-  Atmosphere: 40
-  Temprature: 200
-  Gravity: weak
-  Surface: Rocky
-  N: {fileID: 1723032219}
-  Sz: {fileID: 1717706135}
-  W: {fileID: 1929592487}
-  Lg: {fileID: 195462220}
-  Lf: {fileID: 2134572507}
-  A: {fileID: 825907816}
-  T: {fileID: 149820116}
-  G: {fileID: 1460879797}
-  Sf: {fileID: 1547523333}
+  TypeName: 
+  Size: 
+  Water: 
+  Light: 
+  Life: 
+  Atmosphere: 
+  Temprature: 
+  Gravity: 
+  Surface: 
+  N: {fileID: 0}
+  Sz: {fileID: 0}
+  W: {fileID: 0}
+  Lg: {fileID: 0}
+  Lf: {fileID: 0}
+  A: {fileID: 0}
+  T: {fileID: 0}
+  G: {fileID: 0}
+  Sf: {fileID: 0}
 --- !u!135 &1855683381
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25600,24 +25593,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: Ice giant
-  Size: Big
-  Water: 100
-  Light: 0
-  Life: Habitable
-  Atmosphere: 40
-  Temprature: -50
-  Gravity: Very Strong
-  Surface: Ice
-  N: {fileID: 1723032219}
-  Sz: {fileID: 1717706135}
-  W: {fileID: 1929592487}
-  Lg: {fileID: 195462220}
-  Lf: {fileID: 2134572507}
-  A: {fileID: 825907816}
-  T: {fileID: 149820116}
-  G: {fileID: 1460879797}
-  Sf: {fileID: 1547523333}
+  TypeName: 
+  Size: 
+  Water: 
+  Light: 
+  Life: 
+  Atmosphere: 
+  Temprature: 
+  Gravity: 
+  Surface: 
+  N: {fileID: 0}
+  Sz: {fileID: 0}
+  W: {fileID: 0}
+  Lg: {fileID: 0}
+  Lf: {fileID: 0}
+  A: {fileID: 0}
+  T: {fileID: 0}
+  G: {fileID: 0}
+  Sf: {fileID: 0}
 --- !u!135 &1950630907
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26119,9 +26112,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
-  m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26336,13 +26328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816fd9be637e50a46aba3357fa91b919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  types:
-  - {fileID: 1061813030}
-  - {fileID: 2125885555}
-  - {fileID: 1855683379}
-  - {fileID: 209732696}
-  - {fileID: 1950630905}
-  NumberOfObjects: 5
+  types: []
+  NumberOfObjects: 0
   ChoosenType: 0
 --- !u!1 &2038175768
 GameObject:
@@ -27060,7 +27047,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073093960
 GameObject:
@@ -27521,24 +27508,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: Super Earth
-  Size: Very big
-  Water: 70-100
-  Light: 20-40
-  Life: Habitable
-  Atmosphere: 40
-  Temprature: (-10) - 40
-  Gravity: Very Strong
-  Surface: Rocky
-  N: {fileID: 1723032219}
-  Sz: {fileID: 1717706135}
-  W: {fileID: 1929592487}
-  Lg: {fileID: 195462220}
-  Lf: {fileID: 2134572507}
-  A: {fileID: 825907816}
-  T: {fileID: 149820116}
-  G: {fileID: 1460879797}
-  Sf: {fileID: 1547523333}
+  TypeName: 
+  Size: 
+  Water: 
+  Light: 
+  Life: 
+  Atmosphere: 
+  Temprature: 
+  Gravity: 
+  Surface: 
+  N: {fileID: 0}
+  Sz: {fileID: 0}
+  W: {fileID: 0}
+  Lg: {fileID: 0}
+  Lf: {fileID: 0}
+  A: {fileID: 0}
+  T: {fileID: 0}
+  G: {fileID: 0}
+  Sf: {fileID: 0}
 --- !u!135 &2125885558
 SphereCollider:
   m_ObjectHideFlags: 0
