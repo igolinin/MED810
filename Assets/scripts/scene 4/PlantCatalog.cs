@@ -6,12 +6,11 @@ public class PlantCatalog : MonoBehaviour
 {
 
     public GameObject[] types;
-    public int NumberOfObjects;
     public int ChoosenType = 0;
 
     void ChangeChoice()
     {
-        for (int i=0; i<NumberOfObjects; i++)
+        for (int i=0; i<types.Length; i++)
         {
             if (ChoosenType == i)
             {
