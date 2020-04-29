@@ -11,8 +11,9 @@ public class Obj3_MouseMove : MonoBehaviour
     private float deltaX, deltaY;
 
     public static bool locked;
-
     private Vector2 mousePos;
+
+    bool isHolding;
 
 
     void Start()
@@ -31,10 +32,11 @@ public class Obj3_MouseMove : MonoBehaviour
     }
     void OnMouseDown()
     {
-        if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
+        if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos) && !locked)
         {
             deltaX = mousePos.x - transform.position.x;
             deltaY = mousePos.y - transform.position.y;
+            isHolding = true;
             Debug.Log("hello Touch");
         }
     }
@@ -43,7 +45,7 @@ public class Obj3_MouseMove : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
+        if (isHolding && !locked)
         {
             transform.position = new Vector2(mousePos.x - deltaX, mousePos.y - deltaY);
         }
@@ -53,7 +55,7 @@ public class Obj3_MouseMove : MonoBehaviour
     void OnMouseUp()
     {
         if (Mathf.Abs(transform.position.x - ObjectPlace.position.x) <= 1f &&
-            Mathf.Abs(transform.position.y - ObjectPlace.position.y) <= 1f)
+            Mathf.Abs(transform.position.y - ObjectPlace.position.y) <= 1f && Obj2_MouseMove.locked)
         {
             transform.DOMove(new Vector2(ObjectPlace.position.x, ObjectPlace.position.y), 0.7f);
             locked = true;
@@ -66,5 +68,7 @@ public class Obj3_MouseMove : MonoBehaviour
             transform.DOMove(new Vector2(initalPos.x, initalPos.y), 0.5f);
 
         }
+
+        isHolding = false;
     }
 }

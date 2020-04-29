@@ -15,7 +15,7 @@ public class sceneManager : MonoBehaviour
 
     public void OpenScene2()
     {
-        SceneManager.LoadScene("PuzzleTelescope2", LoadSceneMode.Single);
+        SceneManager.LoadScene("Puzzle", LoadSceneMode.Single);
 
     }
 

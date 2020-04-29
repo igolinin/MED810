@@ -21,10 +21,8 @@ public class Obj1_MouseMove : MonoBehaviour
     public GameObject Stage1Light;
     public GameObject Stage0Ligth;
     private Vector2 mosePos;
-    // Start is called before the first frame update
 
-    //This is a bugfix!!! Not good 
-    public GameObject Lens;
+    bool isHolding;
 
 
     void Start()
@@ -49,14 +47,8 @@ public class Obj1_MouseMove : MonoBehaviour
             deltaY = mosePos.y - transform.position.y;
 
             //This is a bugfix will fix later, there some interferancce with the collides i dont understand
+            isHolding = true;
 
-            Lens.GetComponent<BoxCollider2D>().enabled = true;
-            Debug.Log("HEJ");
-            
-            if ("PuzzleTelescope1"  != SceneManager.GetActiveScene().name)
-            {
-                transform.DOScale(new Vector3(0.1228481f, 0.1228481f, 0.1228481f), 0.5f);
-            }
 
 
         }
@@ -66,7 +58,7 @@ public class Obj1_MouseMove : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mosePos) && !locked)
+        if (isHolding && !locked)
         {
             transform.position = new Vector2(mosePos.x - deltaX, mosePos.y - deltaY);
         }
@@ -75,6 +67,8 @@ public class Obj1_MouseMove : MonoBehaviour
 
     void OnMouseUp()
     {
+        
+
         if (Mathf.Abs(transform.position.x - ObjectPlace.position.x) <= 1f &&
             Mathf.Abs(transform.position.y - ObjectPlace.position.y) <= 1f && !locked)
         {
@@ -102,5 +96,7 @@ public class Obj1_MouseMove : MonoBehaviour
 
 
         }
+
+        isHolding = false;
     }
 }

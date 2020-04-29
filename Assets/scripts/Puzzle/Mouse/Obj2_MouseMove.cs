@@ -15,7 +15,8 @@ public class Obj2_MouseMove : MonoBehaviour
     public GameObject Stage1Ligth;
     public GameObject Stage2Light;
     private Vector2 mosePos;
-    // Start is called before the first frame update
+
+    bool isHolding;
 
 
     void Start()
@@ -30,8 +31,6 @@ public class Obj2_MouseMove : MonoBehaviour
     {
         mosePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-
-
     }
     void OnMouseDown()
     {
@@ -39,7 +38,7 @@ public class Obj2_MouseMove : MonoBehaviour
         {
             deltaX = mosePos.x - transform.position.x;
             deltaY = mosePos.y - transform.position.y;
-            Debug.Log("hello Touch");
+            isHolding = true;
         }
     }
 
@@ -47,7 +46,7 @@ public class Obj2_MouseMove : MonoBehaviour
 
     void OnMouseDrag()
     {
-        if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mosePos) && !locked)
+        if (isHolding && !locked)
         {
             transform.position = new Vector2(mosePos.x - deltaX, mosePos.y - deltaY);
         }
@@ -57,7 +56,7 @@ public class Obj2_MouseMove : MonoBehaviour
     void OnMouseUp()
     {
         if (Mathf.Abs(transform.position.x - ObjectPlace.position.x) <= 1f &&
-            Mathf.Abs(transform.position.y - ObjectPlace.position.y) <= 1f && !locked)
+            Mathf.Abs(transform.position.y - ObjectPlace.position.y) <= 1f && Obj1_MouseMove.locked)
         {
             transform.DOMove(new Vector2(ObjectPlace.position.x, ObjectPlace.position.y), 0.7f);
             locked = true;

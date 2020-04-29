@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class GameCrl_2 : MonoBehaviour
 {
@@ -15,11 +16,15 @@ public class GameCrl_2 : MonoBehaviour
     public static bool info3Close;
 
 
-    public GameObject primaryInfo;
-    public GameObject secondaryInfo;
-    public GameObject lensInfo;
+    public TextMeshProUGUI primaryInfo;
+    public TextMeshProUGUI secondaryInfo;
+    public TextMeshProUGUI lensInfo;
 
-    public GameObject NextButton;
+    public Image primaryImage;
+    public Image secondaryImage;
+    public Image lensImage;
+
+
 
 
     [SerializeField]
@@ -29,12 +34,6 @@ public class GameCrl_2 : MonoBehaviour
     public GameObject endText1;
     public GameObject endText2;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -42,85 +41,33 @@ public class GameCrl_2 : MonoBehaviour
         //If the object is placed on the right spot
         if (Obj1_MouseMove.locked && info1Close == false)
         {
-            primaryInfo.SetActive(true);
-
-
+            primaryImage.DOFillAmount(1, 1);
+            Invoke("fadePrimaryText", 1);
             info1Close = true;
-            Debug.Log("First step");
 
         }
         else if (Obj2_MouseMove.locked && info2Close == false && info1Close == true)
         {
-            secondaryInfo.SetActive(true);
+            secondaryImage.DOFillAmount(1, 1);
+            primaryImage.DOFillAmount(0, 0.5f);
+            primaryInfo.DOFade(0, 0.2f);
+            Invoke("fadeSecondaryText", 1);
             info2Close = true;
-            Debug.Log("Second Step");
         }
         else if (Obj3_MouseMove.locked && info3Close == false && info2Close == true)
         {
-            lensInfo.SetActive(true);
+            lensImage.DOFillAmount(1, 1);
+            secondaryImage.DOFillAmount(0, 0.5f);
+            secondaryInfo.DOFade(0, 0.2f);
 
+            Invoke("fadeLensText", 1);
             info3Close = true;
-            Debug.Log("Third Step");
         }
         else if (Obj1_MouseMove.locked && Obj2_MouseMove.locked && Obj3_MouseMove.locked)
         {
-            endText1.SetActive(true);
-            endText2.SetActive(true);
-            NextButton.SetActive(true);
-
-            Invoke("fadeText", 1);
-            for (int i = 0; i < DeactivateObjects.Length; i++)
-            {
-                DeactivateObjects[i].SetActive(false);
-
-            }
+            Invoke("showEndingScreen", 7);
 
         }
-
-
-
-
-        //Open the info sign
-        if ((Input.touchCount > 0) && (Input.GetTouch(0).phase == TouchPhase.Began))
-        {
-            Vector2 worldPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero);
-
-
-            if (hit.collider != null && Obj_1_move.locked && Obj_2_move.locked && Obj_3_move.locked)
-            {
-                if (hit.collider.CompareTag("Object1") && Obj_1_move.locked)
-                {
-
-                    primaryInfo.SetActive(true);
-                    Debug.Log("circle");
-                }
-                else if (hit.collider.CompareTag("Object2") && Obj_2_move.locked)
-                {
-                    secondaryInfo.SetActive(true);
-                    Debug.Log("Box");
-
-                }
-                else if (hit.collider.CompareTag("Object3") && Obj_3_move.locked)
-                {
-                    lensInfo.SetActive(true);
-                    info3Close = false;
-                    Debug.Log("Sensor");
-                }
-                else
-                {
-                    primaryInfo.SetActive(false);
-                    secondaryInfo.SetActive(false);
-                    primaryInfo.SetActive(false);
-                }
-
-
-            }
-
-
-
-        }
-
 
     }
 
@@ -129,5 +76,44 @@ public class GameCrl_2 : MonoBehaviour
         winTextFade.DOFade(0, 2);
         NextButton.SetActive(true);
 
+    }
+
+    void fadePrimaryText()
+    {
+        primaryInfo.DOFade(1, 1);
+
+
+    }
+
+    void fadeSecondaryText()
+    {
+        secondaryInfo.DOFade(1, 1);
+        
+
+
+    }
+
+    void fadeLensText()
+    {
+        lensInfo.DOFade(1, 1);
+
+
+    }
+
+    void showEndingScreen()
+    {
+        lensImage.DOFillAmount(0, 0.5f);
+        lensInfo.DOFade(0, 0.2f);
+
+        endText1.SetActive(true);
+        endText2.SetActive(true);
+        NextButton.SetActive(true);
+
+        Invoke("fadeText", 1);
+        for (int i = 0; i < DeactivateObjects.Length; i++)
+        {
+            DeactivateObjects[i].SetActive(false);
+
+        }
     }
 }
