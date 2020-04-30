@@ -30,6 +30,7 @@ public class surveyUploader : MonoBehaviour
    }
    private string ActiveToggle(ToggleGroup group){
        Toggle toggle = group.ActiveToggles().FirstOrDefault(tg => tg.isOn == true);
+       Debug.Log(group.GetComponentInChildren<Text>().text+toggle.name);
        return toggle.name;
    }
 }

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -739,6 +739,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToggleGroup (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7280704220601326074, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Not Good
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280704220734138355, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Very Good
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97205712bff4e4f8299cb3afa328f7af, type: 3}
 --- !u!1 &1357310209
@@ -1095,6 +1105,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToggleGroup (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280704220601326074, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Not Good
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280704220734138355, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Very Good
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97205712bff4e4f8299cb3afa328f7af, type: 3}
@@ -1575,6 +1595,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToggleGroup (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7280704220601326074, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Not Good
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280704220734138355, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Very Good
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97205712bff4e4f8299cb3afa328f7af, type: 3}
 --- !u!1001 &7280704218838647915
@@ -1693,6 +1723,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToggleGroup
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280704220601326074, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Not Good
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280704220734138355, guid: 97205712bff4e4f8299cb3afa328f7af,
+        type: 3}
+      propertyPath: m_Name
+      value: Very Good
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97205712bff4e4f8299cb3afa328f7af, type: 3}
