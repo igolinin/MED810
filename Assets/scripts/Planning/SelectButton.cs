@@ -9,6 +9,6 @@ public void telescopeSelected()
     {
 
         Debug.Log("Telescope selected");
-        SceneManager.LoadScene("Puzzle", LoadSceneMode.Single);
+        SceneManager.LoadScene("AgainScene", LoadSceneMode.Single);
     }
 }

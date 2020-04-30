@@ -30,6 +30,11 @@ public class sceneManager : MonoBehaviour
         SceneManager.LoadScene("Scene 4", LoadSceneMode.Single);
 
     }
+    public void OpenAgain()
+    {
+        SceneManager.LoadScene("AgainScene", LoadSceneMode.Single);
+
+    }
 
 
 

@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Networking;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class groupManager : MonoBehaviour
 {
@@ -11,13 +13,15 @@ public class groupManager : MonoBehaviour
    private string answer;
    [SerializeField] 
    private string Url = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfC8tqQ1gVu66pzWqLbgCIKznq6QQRnUNtV-Qh5xYzdyR2h6g/formResponse";
+   public DataShare Data;
+  
 
-   IEnumerator Post(string answer){
-       WWWForm form =new WWWForm();
-       form.AddField("entry.953809921", answer);
-       byte[] rawData = form.data;
-       WWW WWW = new WWW (Url, rawData);
-       yield return WWW;
+   IEnumerator Post(string answer, int scene){
+       List<IMultipartFormSection> form = new List<IMultipartFormSection>();
+       form.Add(new MultipartFormDataSection("entry.953809921", answer));
+       form.Add(new MultipartFormDataSection("entry.636757715", scene.ToString()));
+       UnityWebRequest  WWW = UnityWebRequest.Post(Url, form);
+       yield return WWW.SendWebRequest();
    }
    public string activeToggle(){
        if(isYes.isOn){
@@ -31,9 +35,17 @@ public class groupManager : MonoBehaviour
 
    }
    public void onSubmit(){
-       Debug.Log(activeToggle());
+       Debug.Log("Active toggle"+ activeToggle());
+       Debug.Log("Latest scene global"+ DataShare.latestScene);
        answer = activeToggle();
-       StartCoroutine(Post(answer));
+       int nextScene = ++DataShare.latestScene;
+       StartCoroutine(Post(answer, nextScene));
+       if(nextScene <= 3){
+           SceneManager.LoadScene(nextScene);
+       }else{
+           SceneManager.LoadScene("IMI");
+       }
+        
 
    }
 
