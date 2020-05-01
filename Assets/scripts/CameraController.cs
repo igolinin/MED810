@@ -20,7 +20,9 @@ public class CameraController : MonoBehaviour
     public float camPosY;
     public calcSize size;
     public float halfOfFOV;
-    private bool starSelected;
+    private bool starSelected=false;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +40,45 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        controlWithKeys();
+        controlWithMouse();
+    }
+    void controlWithMouse(){
+        camPosX = rb.transform.position.x;
+        camPosY = rb.transform.position.y;
+        checkPos = new Vector3(camPosX, camPosY, transform.position.z);
+        checkStarPos = new Vector2(star.transform.position.x, star.transform.position.y);
+        
+        if (Input.GetMouseButton(0)){
+            movement = new Vector2(Input.GetAxis ("Mouse X"), Input.GetAxis ("Mouse Y"));
+
+            if ((camPosX < -((size.sizeX / 2) - halfOfFOV) && rb.velocity.x < 0) || (camPosX > (size.sizeX / 2) - halfOfFOV && rb.velocity.x > 0))
+            {
+                transform.position = new Vector3(checkPos.x * -1, checkPos.y, checkPos.z);
+            }
+            if ((camPosY < -((size.sizeY / 2) - halfOfFOV) && rb.velocity.y < 0) || (camPosY > (size.sizeY / 2) - halfOfFOV && rb.velocity.y > 0))
+            {
+                transform.position = new Vector3(checkPos.x, checkPos.y * -1, checkPos.z);
+            }
+        }
+        
+        if(Mathf.Abs(camPosX-checkStarPos.x) <= 6 && Mathf.Abs(camPosY - checkStarPos.y) <= 6)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, checkStarPos, 2.5f * Time.deltaTime);
+            if (Input.GetMouseButtonDown(1))
+            {
+                starSelected = !starSelected;
+                toggle(starSelected);
+                
+            }
+            
+        }
+        
+
+        
+    }
+    
+    void controlWithKeys(){
         camPosX = rb.transform.position.x;
         camPosY = rb.transform.position.y;
         checkPos = new Vector3(camPosX, camPosY, transform.position.z);
@@ -60,7 +101,8 @@ public class CameraController : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, checkStarPos, 2.5f * Time.deltaTime);
             if (Input.GetButtonDown("Jump"))
             {
-                selectStar();
+                starSelected = !starSelected;
+                toggle(starSelected);
             }
             
         }
@@ -70,7 +112,6 @@ public class CameraController : MonoBehaviour
             deselectStar();
         }
     }
-
     void FixedUpdate()
     {
         cameraControl(movement);
@@ -80,7 +121,27 @@ public class CameraController : MonoBehaviour
     {
         rb.velocity = direction * speed;
     }
-
+    void toggle(bool selected){
+        if(selected){
+            star.transform.localScale = new Vector3(4, 4, 4);
+            starName.GetComponent<Text>().text = "Alpha Centauri";
+            distText.GetComponent<Text>().text = "Distance: Far, far away";
+            posText.GetComponent<Text>().text = "Position: a weird place";
+            typeText.GetComponent<Text>().text = "Type: Big star";
+            pointer.GetComponent<Image>().enabled = true;
+            Debug.Log(selected);
+            //starSelected = true; 
+        }else{
+            star.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            starName.GetComponent<Text>().text = "";
+            distText.GetComponent<Text>().text = "";
+            posText.GetComponent<Text>().text = "";
+            typeText.GetComponent<Text>().text = "";
+            pointer.GetComponent<Image>().enabled = false;
+            Debug.Log(selected);
+            //starSelected = false;
+        }
+    }
     void deselectStar()
     {
         star.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);

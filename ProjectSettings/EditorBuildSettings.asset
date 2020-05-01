@@ -4,26 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Earth.unity
-    guid: 7d77a0ec5b97c428999ba3be9b9ed028
-  - enabled: 1
-    path: Assets/Scenes/Puzzle.unity
-    guid: 8a1ef4e4a521b334dbf56590500d0db7
-  - enabled: 1
-    path: Assets/Scenes/Station3.unity
-    guid: e5467ce355e4d844cb3cdf09870a879e
-  - enabled: 1
-    path: Assets/Scenes/Scene 4.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/IMI.unity
-    guid: b681d9dcfe18e4a218239bd64be08bb7
-  - enabled: 1
-    path: Assets/Scenes/Earth.unity
-    guid: 7d77a0ec5b97c428999ba3be9b9ed028
-  - enabled: 1
-    path: Assets/scripts/IMI/PuzzleTelescope2.unity
-    guid: 9bd257bb650054878aa9a201709a9f48
+  m_Scenes: [{enabled: 1, path: Assets/Scenes/Earth.unity, guid: 7d77a0ec5b97c428999ba3be9b9ed028},
+    {enabled: 1, path: Assets/Scenes/PuzzleTelescope2.unity, guid: e0eb829b5b8eb014c80264e77fea74b5},
+    {enabled: 1, path: Assets/Scenes/Station3.unity, guid: e5467ce355e4d844cb3cdf09870a879e},
+    {enabled: 1, path: Assets/Scenes/Scene 4.unity, guid: 9fc0d4010bbf28b4594072e72b8655ab},
+    {enabled: 1, path: Assets/Scenes/IMI.unity, guid: b681d9dcfe18e4a218239bd64be08bb7},
+    {enabled: 1, path: Assets/Scenes/AgainScene.unity, guid: 54e0c4ea861c84335a821ddc930e045d},
+    {enabled: 1, path: Assets/scripts/IMI/PuzzleTelescope2.unity, guid: 9bd257bb650054878aa9a201709a9f48}]
   m_configObjects: {}

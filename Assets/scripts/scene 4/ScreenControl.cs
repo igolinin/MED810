@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ScreenControl : MonoBehaviour
 {
 
-    private int CurrentScreen = 2;
+    private int CurrentScreen = 0;
     private int CurrentDot = 1;
     public GameObject NextPosition;
     public GameObject CurDot;
@@ -15,6 +15,7 @@ public class ScreenControl : MonoBehaviour
     public Color C1;
     public Color C2;
     public GameObject Wrong;
+    public GameObject[] icons;
    
     // Start is called before the first frame update
     void Start()
@@ -84,6 +85,11 @@ public class ScreenControl : MonoBehaviour
     {
         NextPosition = Wrong;
         OnMove = true;
+    }
+
+    public void AddIcon(int a)
+    {
+        icons[a].GetComponent<Image>().color = C1;
     }
 
 

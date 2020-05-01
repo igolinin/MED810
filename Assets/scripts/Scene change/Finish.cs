@@ -18,6 +18,6 @@ public class Finish : MonoBehaviour
     }
     public void finish()
     {
-        SceneManager.LoadScene("IMI", LoadSceneMode.Single);
+        SceneManager.LoadScene("AgainScene", LoadSceneMode.Single);
     }
 }

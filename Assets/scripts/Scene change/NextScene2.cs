@@ -19,6 +19,6 @@ public class NextScene2 : MonoBehaviour
 
     public void next()
     {
-        SceneManager.LoadScene("Scene 4", LoadSceneMode.Single);
+        SceneManager.LoadScene("AgainScene", LoadSceneMode.Single);
     }
 }
