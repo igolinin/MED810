@@ -30,7 +30,6 @@ public class GameCrl_2 : MonoBehaviour
     [SerializeField]
     public GameObject[] DeactivateObjects;
 
-    public GameObject NextButton;
     public GameObject endText1;
     public GameObject endText2;
 
