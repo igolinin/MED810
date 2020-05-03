@@ -23,7 +23,7 @@ public class GameCrl_2 : MonoBehaviour
     public Image primaryImage;
     public Image secondaryImage;
     public Image lensImage;
-
+    public GameObject NextButton;
 
 
 

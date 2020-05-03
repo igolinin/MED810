@@ -9,7 +9,7 @@ public class ClickAction : MonoBehaviour
     public GameObject UI;
     public int ZoomInVal =20;
     private SpriteRenderer activeLocationSprite;
-    Color32 brightPurple = new Color32(206, 181, 255, 255);
+    Color32 orginalColor = new Color32(255, 90, 104, 255);
 
     void Update()
     {
@@ -39,7 +39,6 @@ public class ClickAction : MonoBehaviour
                 Camera.main.transform.DORotate(new Vector3(55.275f, 162.6f, 0), 2f);
                 hit.collider.GetComponentInChildren<SpriteRenderer>().DOColor(Color.white, 1);
                 activeLocationSprite = hit.collider.GetComponentInChildren<SpriteRenderer>();
-                //hit.collider.GetComponentInChildren<Transform>().DOScale(new Vector3(5.2f, 5.2f, 5.2f),1);
                 zoomIn();
                 UI.SetActive(true);
             }
@@ -168,7 +167,7 @@ public class ClickAction : MonoBehaviour
     {
         UI.SetActive(false);
         Camera.main.DOFieldOfView(30, 2);
-        activeLocationSprite.DOColor(brightPurple, 1);
+        activeLocationSprite.DOColor(orginalColor, 1);
         Debug.Log(activeLocationSprite);
         Debug.Log("Zoom out");
 

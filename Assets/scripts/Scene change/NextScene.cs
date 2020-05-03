@@ -20,5 +20,6 @@ public class NextScene : MonoBehaviour
     public void next()
     {
         SceneManager.LoadScene("Station3", LoadSceneMode.Single);
+        Debug.Log("Next button pressed!");
     }
 }
