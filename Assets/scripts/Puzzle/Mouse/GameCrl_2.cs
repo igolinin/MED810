@@ -32,6 +32,7 @@ public class GameCrl_2 : MonoBehaviour
 
     public GameObject endText1;
     public GameObject endText2;
+    public GameObject NextButton;
 
 
     // Update is called once per frame
