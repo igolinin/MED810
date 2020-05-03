@@ -14,8 +14,8 @@ public class ScreenControl : MonoBehaviour
     private bool OnMove = false;
     public Color C1;
     public Color C2;
-    public GameObject Wrong;
     public GameObject[] icons;
+    public bool try_again = false;
    
     // Start is called before the first frame update
     void Start()
@@ -49,6 +49,11 @@ public class ScreenControl : MonoBehaviour
     public void SetTarget()
     {
         string NextScreenName = "CheckPoint" + CurrentScreen.ToString();
+        if (try_again && (CurrentScreen == 2 || CurrentScreen == 5 || CurrentScreen == 7))
+        {
+             NextScreenName = NextScreenName + "Wrong";
+        }
+        
         NextPosition = GameObject.Find(NextScreenName);
         OnMove = true;
     }
@@ -83,13 +88,19 @@ public class ScreenControl : MonoBehaviour
 
     public void wrong()
     {
-        NextPosition = Wrong;
-        OnMove = true;
+        try_again = true;
+        SetTarget();
     }
 
     public void AddIcon(int a)
     {
         icons[a].GetComponent<Image>().color = C1;
+    }
+
+    public void Try_again_button()
+    {
+        try_again = false;
+        SetTarget();
     }
 
 
