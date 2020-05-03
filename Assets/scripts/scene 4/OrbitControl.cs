@@ -20,6 +20,7 @@ public class OrbitControl : MonoBehaviour
     public GameObject start;
     public GameObject stop;
     public GameObject next_button;
+    public Button retry_button;
 
     public TextMeshProUGUI Orbit_days_exoplanet;
     public TextMeshProUGUI Orbit_days_earth;
@@ -58,6 +59,7 @@ public class OrbitControl : MonoBehaviour
             StopSatellites_Unsuccessful();
             moving = false;
         }
+
     }
 
     public void StopSatellites_Successful()
@@ -92,8 +94,9 @@ public class OrbitControl : MonoBehaviour
             //satellite.speed = 0;
             //satellite2.speed = 0;
             GameObject go = GameObject.Find("Main Camera");
-            ScreenControl other = (ScreenControl)go.GetComponent(typeof(ScreenControl));
-            other.NextButton();
+            ScreenControl sc = (ScreenControl)go.GetComponent(typeof(ScreenControl));
+            sc.wrong();
+
             start.SetActive(true);
             launch.value = 0.0f;
             stop.SetActive(false);
