@@ -264,7 +264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 87ca5186baf4350498a53f059ddc2e7f, type: 2}
+  - {fileID: 2100000, guid: 1f103535a0e9bc74ca92ebdc8c230e6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -927,9 +927,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
-  m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2332,6 +2331,8 @@ MonoBehaviour:
   CurDot: {fileID: 0}
   C1: {r: 0.80784315, g: 0.70980394, b: 1, a: 0.33333334}
   C2: {r: 1, g: 1, b: 1, a: 1}
+  Wrong: {fileID: 0}
+  icons: []
 --- !u!1 &1059644025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,9 +3717,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b806def92b443854a978531631dfc200, type: 2}
-  m_sharedMaterial: {fileID: -2151728051105325892, guid: b806def92b443854a978531631dfc200,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Globalization;
 
 public class ChoosenPlanet : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class ChoosenPlanet : MonoBehaviour
     public bool choosen;
     [TextArea(3, 3)]
     public string description;
+    public int SerialNum;
+    public bool found;
     public string Size;
     public string Water, Light, Life, Atmosphere, Gravity;
     public string Surface;
@@ -18,19 +21,26 @@ public class ChoosenPlanet : MonoBehaviour
     public TextMeshProUGUI Nx, Sx, Wx, Lgx, Lfx, Ax, Tx, Gx, Sfx;
     public GameObject cata;
     public ScreenControl Control;
+    public GameObject NotFound;
+    public bool once=true;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (found==false)
+        {
+            NotFound.SetActive(true);
+            gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (choosen)
+        if (choosen&&once)
         {
-            
+            Control.GetComponent<ScreenControl>().PlanetN = SerialNum;
+            once = false;
             N.text = Name;
             D.text = description;
             W.text = Water+ " Water";

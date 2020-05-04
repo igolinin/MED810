@@ -8,7 +8,6 @@ public class hoverbox : MonoBehaviour
 {
     SpriteRenderer rend;
     Color c;
-    public int planetNum;
     public ScreenControl Control;
     public bool Found;
     public GameObject Planet;

@@ -16,6 +16,7 @@ public class ScreenControl : MonoBehaviour
     public Color C2;
     public GameObject[] icons;
     public bool try_again = false;
+    public int PlanetN;
    
     // Start is called before the first frame update
     void Start()
