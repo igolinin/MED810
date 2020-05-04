@@ -101,8 +101,8 @@ public class ClickAction : MonoBehaviour
             else if (hit.collider.gameObject.name == "South Pole Telescope")
             {
                 UI.SetActive(true);
-                Camera.main.transform.DOMove(new Vector3(0.130209f, -2.972597f, 0.3830299f), 2);
-                Camera.main.transform.DORotate(new Vector3(-82.25001f, -161.225f, 0f), 2f);
+                Camera.main.transform.DOMove(new Vector3(0.44f, -2.972597f, 0.09f), 2);
+                Camera.main.transform.DORotate(new Vector3(-82.25001f, -61.407f, 0f), 2f);
                 zoomIn();
                 Debug.Log("You hit the South Pole Telescope");
 
