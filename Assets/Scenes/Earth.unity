@@ -830,7 +830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 414462440}
-  ZoomInVal: 10
+  ZoomInVal: 15
 --- !u!114 &517371177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
   Earth: {fileID: 1520783136}
   speed: 0.5
   sensitivity: 8
-  minFov: 10
+  minFov: 15
   maxFov: 50
   speedNear: 0.5
   speedFar: 5
@@ -4047,8 +4047,14 @@ PrefabInstance:
     - target: {fileID: 1854053575866657817, guid: 480ed7c093feefd4bbf91a89fda8cd04,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenAgain
+      value: OpenScene2
       objectReference: {fileID: 0}
+    - target: {fileID: 1854053575866657817, guid: 480ed7c093feefd4bbf91a89fda8cd04,
+        type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 76ad146b877000940a36a3f35df7b6c7,
+        type: 3}
     - target: {fileID: 1854053575866657822, guid: 480ed7c093feefd4bbf91a89fda8cd04,
         type: 3}
       propertyPath: m_LocalPosition.x

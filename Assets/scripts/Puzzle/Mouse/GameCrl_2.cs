@@ -23,17 +23,26 @@ public class GameCrl_2 : MonoBehaviour
     public Image secondaryImage;
     public Image lensImage;
     public GameObject NextButton;
+    public SpriteRenderer telescopeFinal;
 
 
 
     [SerializeField]
     public GameObject[] DeactivateObjects;
 
+    [SerializeField]
+    public SpriteRenderer[] LightBeams;
+
     public TextMeshProUGUI endText1;
     public TextMeshProUGUI endText2;
 
 
     // Update is called once per frame
+
+    private void Start()
+    {
+        DOTween.SetTweensCapacity(7812, 50);
+    }
     void Update()
     {
         //If the object is placed on the right spot
@@ -97,9 +106,13 @@ public class GameCrl_2 : MonoBehaviour
     {
         lensImage.DOFillAmount(0, 0.5f);
         lensInfo.DOFade(0, 0.2f);
+        telescopeFinal.DOFade(1, 1);
         Invoke("fadeInDelay", 0.5f);
 
-        NextButton.SetActive(true);
+        for (int i = 0; i < LightBeams.Length; i++)
+        {
+            LightBeams[i].DOFade(0, 1);
+        }
 
         for (int i = 0; i < DeactivateObjects.Length; i++)
         {
@@ -110,9 +123,8 @@ public class GameCrl_2 : MonoBehaviour
     void fadeInDelay()
     {
         NextButton.SetActive(true);
-        endText1.DOFade(1, 0.5f);
-        endText2.DOFade(1, 2);
-
+        endText1.DOFade(1, 1);
+        endText2.DOFade(1, 2f);
 
     }
 }
