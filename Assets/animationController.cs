@@ -39,4 +39,7 @@ public class animationController : MonoBehaviour
 
         Debug.Log("HELLO MR ANIMATION");
     }
+
+
+
 }

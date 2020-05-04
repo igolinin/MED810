@@ -9,7 +9,6 @@ public class GameCrl_2 : MonoBehaviour
 {
     [SerializeField]
 
-    public TextMeshPro winTextFade;
 
     public static bool info1Close;
     public static bool info2Close;
@@ -30,9 +29,8 @@ public class GameCrl_2 : MonoBehaviour
     [SerializeField]
     public GameObject[] DeactivateObjects;
 
-    public GameObject NextButton;
-    public GameObject endText1;
-    public GameObject endText2;
+    public TextMeshProUGUI endText1;
+    public TextMeshProUGUI endText2;
 
 
     // Update is called once per frame
@@ -65,18 +63,13 @@ public class GameCrl_2 : MonoBehaviour
         }
         else if (Obj1_MouseMove.locked && Obj2_MouseMove.locked && Obj3_MouseMove.locked)
         {
-            Invoke("showEndingScreen", 7);
+            Invoke("showEndingScreen", 5);
 
         }
 
     }
 
-    void fadeText()
-    {
-        winTextFade.DOFade(0, 2);
-        NextButton.SetActive(true);
 
-    }
 
     void fadePrimaryText()
     {
@@ -104,16 +97,22 @@ public class GameCrl_2 : MonoBehaviour
     {
         lensImage.DOFillAmount(0, 0.5f);
         lensInfo.DOFade(0, 0.2f);
+        Invoke("fadeInDelay", 0.5f);
 
-        endText1.SetActive(true);
-        endText2.SetActive(true);
         NextButton.SetActive(true);
 
-        Invoke("fadeText", 1);
         for (int i = 0; i < DeactivateObjects.Length; i++)
         {
             DeactivateObjects[i].SetActive(false);
 
         }
+    }
+    void fadeInDelay()
+    {
+        NextButton.SetActive(true);
+        endText1.DOFade(1, 0.5f);
+        endText2.DOFade(1, 2);
+
+
     }
 }
