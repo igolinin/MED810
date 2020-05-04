@@ -23,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AgainScene.unity
     guid: 54e0c4ea861c84335a821ddc930e045d
-  - enabled: 1
-    path: Assets/scripts/IMI/PuzzleTelescope2.unity
-    guid: 9bd257bb650054878aa9a201709a9f48
   m_configObjects: {}
