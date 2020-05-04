@@ -14,6 +14,7 @@ public class hoverbox : MonoBehaviour
 
     void Start()
     {
+        Found = Planet.GetComponent<ChoosenPlanet>().found;
         rend = GetComponent<SpriteRenderer>();
         c = rend.material.color;
         c.a = 0f;

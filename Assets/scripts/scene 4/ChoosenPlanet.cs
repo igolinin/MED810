@@ -23,10 +23,13 @@ public class ChoosenPlanet : MonoBehaviour
     public ScreenControl Control;
     public GameObject NotFound;
     public bool once=true;
+    public S3toS4 List;
 
     // Start is called before the first frame update
     void Start()
     {
+        CheckFound();
+
         if (found==false)
         {
             NotFound.SetActive(true);
@@ -72,6 +75,19 @@ public class ChoosenPlanet : MonoBehaviour
         else
         {
             Control.wrong();
+        }
+    }
+
+    public void CheckFound()
+    {
+        if (List.ListFound[(SerialNum-1)] == true)
+        {
+            found = true;
+        }
+
+        else
+        {
+            found = false;
         }
     }
 }
