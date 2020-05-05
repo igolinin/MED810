@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
+using UnityEngine.Rendering;
+using UnityEditor.SceneManagement;
 
 public class CameraController2 : MonoBehaviour
 {
     public float speed = 50f;
     public Rigidbody2D rb;
-    public GameObject starName;
-    public GameObject distText;
-    public GameObject posText;
-    public GameObject typeText;
-    public GameObject pointer;
+    public TextMeshProUGUI starName;
+    public TextMeshProUGUI distText;
+    public TextMeshProUGUI posText;
+    public TextMeshProUGUI typeText;
+    public Image pointer;
     public Vector2 movement;
     public Vector3 checkPos;
     public Vector2[] checkStarPos;
@@ -26,17 +29,17 @@ public class CameraController2 : MonoBehaviour
     public float halfOfFOV;
     private bool starSelected = false;
     private bool starZoomedIn;
+    public Image CrossHair;
+
+    //public static int[] SelectedPlanet = new int[10];
+    public static List<int> SelectedPlanet = new List<int>();
 
 
     // Start is called before the first frame update
     void Start()
     {
+        SelectedPlanet.Clear();
         rb = GetComponent<Rigidbody2D>();
-        starName = GameObject.FindGameObjectWithTag("starName");
-        distText = GameObject.FindGameObjectWithTag("distText");
-        posText = GameObject.FindGameObjectWithTag("posText");
-        typeText = GameObject.FindGameObjectWithTag("typeText");
-        pointer = GameObject.FindGameObjectWithTag("pointer");
         halfOfFOV = Camera.main.fieldOfView / 2;
         starSelected = false;
 
@@ -56,6 +59,15 @@ public class CameraController2 : MonoBehaviour
     void Update()
     {
         controlWithMouse();
+
+
+
+        if (Input.GetKeyDown("space") && Camera.main.fieldOfView == 12)
+        {
+            deselectStar();
+            Debug.Log("SpaceDown Out");
+        }
+
 
     }
     void controlWithMouse()
@@ -86,39 +98,39 @@ public class CameraController2 : MonoBehaviour
         {
 
 
-            if (Mathf.Abs(camPosX - checkStarPos[i].x) <= 6 && Mathf.Abs(camPosY - checkStarPos[i].y) <= 6 )
+            if (Mathf.Abs(camPosX - checkStarPos[i].x) <= 2 && Mathf.Abs(camPosY - checkStarPos[i].y) <= 2 && !starZoomedIn)
             {
-                
+
                 transform.position = Vector2.MoveTowards(transform.position, checkStarPos[i], 2.5f * Time.deltaTime);
 
 
                 //If the planet is centerd 
-                if(Mathf.Abs(camPosX - checkStarPos[i].x) <= 0 && Mathf.Abs(camPosY - checkStarPos[i].y) <= 0 && !starZoomedIn)
+                if (Mathf.Abs(camPosX - checkStarPos[i].x) <= 0 && Mathf.Abs(camPosY - checkStarPos[i].y) <= 0 && !starZoomedIn && Input.GetKeyDown("space"))
                 {
-                   Debug.Log(Stars[i].name);
+                    SelectedPlanet.Add(int.Parse(Stars[i].name));
+                    Debug.Log(Stars[i].name + "added to the list");
                     
+                    selected();
+
                     starZoomedIn = true;
-                    if (Input.GetButtonDown("Jump"))
+
+                    if (Input.GetMouseButtonDown(1))
                     {
                         starSelected = !starSelected;
-                        toggle(starSelected);
+                        //toggle(starSelected);
+
                     }
                 }
-                if (Input.GetMouseButtonDown(1))
-                {
-                    starSelected = !starSelected;
-                    //toggle(starSelected);
 
-                }
             }
-            
+
+
+
         }
-
-
     }
 
-  
-    void FixedUpdate()
+
+        void FixedUpdate()
     {
         cameraControl(movement);
     }
@@ -128,54 +140,42 @@ public class CameraController2 : MonoBehaviour
         rb.velocity = -direction * speed;
     }
 
-    
-    void toggle(bool selected)
+
+    void selected()
     {
-        if (selected)
-        {
-            Camera.main.DOFieldOfView(12, 2);
-            starName.GetComponent<Text>().text = "Alpha Centauri";
-            distText.GetComponent<Text>().text = "Distance: Far, far away";
-            posText.GetComponent<Text>().text = "Position: a weird place";
-            typeText.GetComponent<Text>().text = "Type: Big star";
-            pointer.GetComponent<Image>().enabled = true;
-            Debug.Log(selected);
-            //starSelected = true; 
-        }
-        else
-        {
-            //star.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            starName.GetComponent<Text>().text = "";
-            distText.GetComponent<Text>().text = "";
-            posText.GetComponent<Text>().text = "";
-            typeText.GetComponent<Text>().text = "";
-            pointer.GetComponent<Image>().enabled = false;
-            Debug.Log(selected);
-            //starSelected = false;
-        }
+        Camera.main.DOFieldOfView(12, 2);
+        CrossHair.DOFade(0, 1);
+        starName.DOFade(1, 1f);
+
+        starSelected = true;
+        starZoomedIn = false;
+        Invoke("animatePointer",2);
     }
     void deselectStar()
     {
         Camera.main.DOFieldOfView(60, 2);
-        starName.GetComponent<Text>().text = "";
-        distText.GetComponent<Text>().text = "";
-        posText.GetComponent<Text>().text = "";
-        typeText.GetComponent<Text>().text = "";
-        pointer.GetComponent<Image>().enabled = false;
+        pointer.DOFillAmount(0, 0.2f);
+        distText.DOFade(0, 0.5f);
+        posText.DOFade(0, 0.5f);
+        typeText.DOFade(0, 0.5f);
+        starName.DOFade(0, 1f);
+        CrossHair.DOFade(1, 1);
         Debug.Log(starName);
         starSelected = false;
-    }
-    void selectStar()
-    {
-       //star.transform.localScale = new Vector3(4, 4, 4);
-        starName.GetComponent<Text>().text = "Alpha Centauri";
-        distText.GetComponent<Text>().text = "Distance: Far, far away";
-        posText.GetComponent<Text>().text = "Position: a weird place";
-        typeText.GetComponent<Text>().text = "Type: Big star";
-        pointer.GetComponent<Image>().enabled = true;
-        Debug.Log(starName);
-        starSelected = true;
+        starZoomedIn = false;
     }
 
-    
+    void animatePointer()
+    {
+
+        pointer.DOFillAmount(1, 1);
+        Invoke("fadeInText", 1);
+    }
+    void fadeInText()
+    {
+        distText.DOFade(1, 0.5f);
+        posText.DOFade(1, 0.5f);
+        typeText.DOFade(1, 0.5f);
+
+    }
 }

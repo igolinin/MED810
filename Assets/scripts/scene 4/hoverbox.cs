@@ -44,7 +44,7 @@ public class hoverbox : MonoBehaviour
         if (Found)
         {
             Control.NextButton();
-            Planet.GetComponent<ChoosenPlanet>().choosen = true;
+            Planet.GetComponent<ChoosenPlanet>().choose();
         }
         
     }

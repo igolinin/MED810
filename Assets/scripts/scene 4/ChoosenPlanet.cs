@@ -22,7 +22,6 @@ public class ChoosenPlanet : MonoBehaviour
     public GameObject cata;
     public ScreenControl Control;
     public GameObject NotFound;
-    public bool once=true;
     public S3toS4 List;
 
     // Start is called before the first frame update
@@ -38,33 +37,7 @@ public class ChoosenPlanet : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (choosen&&once)
-        {
-            Control.GetComponent<ScreenControl>().PlanetN = SerialNum;
-            once = false;
-            N.text = Name;
-            D.text = description;
-            W.text = Water+ " Water";
-            Lg.text = Light+ " Light";
-            Lf.text = Life;
-            A.text = Atmosphere +" Atmosph";
-            T.text = Temprature.ToString()+ "c";
-            G.text = Gravity;
-            Sf.text = Surface;
-            Nx.text = Name;
-            Sx.text = Size;
-            Wx.text = Water;
-            Lgx.text = Light;
-            Lfx.text = Life;
-            Ax.text = Atmosphere;
-            Tx.text = Temprature.ToString() + "c";
-            Gx.text = Gravity;
-            Sfx.text = Surface;
-        }
 
-    }
 
     public void Answer()
     {
@@ -80,7 +53,7 @@ public class ChoosenPlanet : MonoBehaviour
 
     public void CheckFound()
     {
-        if (List.ListFound[(SerialNum-1)] == true)
+        if (S3toS4.ListFound[(SerialNum-1)] == true)
         {
             found = true;
         }
@@ -89,5 +62,28 @@ public class ChoosenPlanet : MonoBehaviour
         {
             found = false;
         }
+    }
+
+    public void choose()
+    {
+        Control.GetComponent<ScreenControl>().PlanetN = SerialNum;
+        N.text = Name;
+        D.text = description;
+        W.text = Water + " Water";
+        Lg.text = Light + " Light";
+        Lf.text = Life;
+        A.text = Atmosphere + " Atmosph";
+        T.text = Temprature.ToString() + "c";
+        G.text = Gravity;
+        Sf.text = Surface;
+        Nx.text = Name;
+        Sx.text = Size;
+        Wx.text = Water;
+        Lgx.text = Light;
+        Lfx.text = Life;
+        Ax.text = Atmosphere;
+        Tx.text = Temprature.ToString() + "c";
+        Gx.text = Gravity;
+        Sfx.text = Surface;
     }
 }
