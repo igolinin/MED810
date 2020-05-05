@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -790,19 +790,19 @@ MonoBehaviour:
   TelescopeInfo: {fileID: 2106662438}
   PlanetsInfo: {fileID: 1552784292}
   TeleImage:
-  - {fileID: 21300000, guid: 561f53d3f55060f4b898e15d7a751c56, type: 3}
-  - {fileID: 21300000, guid: 76bef04eeefed6b40bc680834f6fd804, type: 3}
-  - {fileID: 21300000, guid: 5e3919ae6316cc74da6f7d58bb078c2b, type: 3}
-  - {fileID: 21300000, guid: 636de85541ba3c740b4487dd96ea242d, type: 3}
-  - {fileID: 21300000, guid: 897e2de5ca7a3ba4581702bf3d76543b, type: 3}
-  - {fileID: 21300000, guid: 19aaf186d79fc37468201f060248dd6e, type: 3}
-  - {fileID: 21300000, guid: f7e1a556a8155224689f10f2a97ad82e, type: 3}
-  - {fileID: 21300000, guid: a4b42ee335acd284ab951da595249054, type: 3}
-  - {fileID: 21300000, guid: 9865b06d59c3fc94ab83c8b4b72b59fe, type: 3}
-  - {fileID: 21300000, guid: 27404802818184a4b82a0bc3431f5f2e, type: 3}
-  - {fileID: 21300000, guid: 8618f87099c10364ebadce8dd43a5e6d, type: 3}
-  - {fileID: 21300000, guid: 0d4e7b3864570524b8102d77c0b9f458, type: 3}
-  - {fileID: 21300000, guid: fb7f0ed4865bc364ca4f3bb575e0ac13, type: 3}
+  - {fileID: 21300000, guid: 32a4e9b37accab64a904ef09a6887ab5, type: 3}
+  - {fileID: 21300000, guid: 5a994847b19868b4486084091619d8d1, type: 3}
+  - {fileID: 21300000, guid: c45bf8530c1cbe04f81f09d27a32274b, type: 3}
+  - {fileID: 21300000, guid: 3946487d6a5c6bb4bad38570c2589e57, type: 3}
+  - {fileID: 21300000, guid: 98e645b5091f17e48a61351c260da453, type: 3}
+  - {fileID: 21300000, guid: 4064eb146fc62074aa884b2a2581861b, type: 3}
+  - {fileID: 21300000, guid: b977bba1f0e43bd47a4104795a8fc962, type: 3}
+  - {fileID: 21300000, guid: 2c9c21f9b3c585143ae314ce72a218ad, type: 3}
+  - {fileID: 21300000, guid: f789fc700deea5446973ade090a70e71, type: 3}
+  - {fileID: 21300000, guid: 1024744a2c9f3ec48bcb71eb77e10ad5, type: 3}
+  - {fileID: 21300000, guid: 6d32af0453512b046a224ed106736972, type: 3}
+  - {fileID: 21300000, guid: 5d453cf1e6cb2a94b85c5ffedf437fd1, type: 3}
+  - {fileID: 21300000, guid: 6d32af0453512b046a224ed106736972, type: 3}
 --- !u!4 &517371175
 Transform:
   m_ObjectHideFlags: 0
@@ -1213,7 +1213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 140}
+  m_AnchoredPosition: {x: -1, y: 149}
   m_SizeDelta: {x: 430, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &725735037
@@ -1234,7 +1234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2873fb4de6b3f81429ccf6596f4cdb49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3946487d6a5c6bb4bad38570c2589e57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5782,7 +5782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6895070183637609755}
   m_LocalRotation: {x: 0.019473506, y: -0.09276268, z: 0.9933684, w: -0.06507769}
-  m_LocalPosition: {x: 0.105, y: -0.986, z: 0.102}
+  m_LocalPosition: {x: 0.1067, y: -0.9911, z: 0.085}
   m_LocalScale: {x: 0.013705466, y: 0.013705465, z: 0.013705465}
   m_Children:
   - {fileID: 1586360317}
@@ -6098,7 +6098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6895070183637609755
 GameObject:
   m_ObjectHideFlags: 0
