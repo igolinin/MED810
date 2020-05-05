@@ -80,7 +80,7 @@ public class ChoosenPlanet : MonoBehaviour
 
     public void CheckFound()
     {
-        if (List.ListFound[(SerialNum-1)] == true)
+        if (S3toS4.ListFound[(SerialNum-1)] == true)
         {
             found = true;
         }
