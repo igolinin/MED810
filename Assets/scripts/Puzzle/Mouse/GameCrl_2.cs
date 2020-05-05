@@ -122,6 +122,7 @@ public class GameCrl_2 : MonoBehaviour
     }
     void fadeInDelay()
     {
+        Debug.Log("hello");
         NextButton.SetActive(true);
         endText1.DOFade(1, 1);
         endText2.DOFade(1, 2f);
