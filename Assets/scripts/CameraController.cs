@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,7 +22,8 @@ public class CameraController : MonoBehaviour
     public calcSize size;
     public float halfOfFOV;
     private bool starSelected=false;
-    
+
+
     
     // Start is called before the first frame update
     void Start()
@@ -59,6 +61,7 @@ public class CameraController : MonoBehaviour
             if ((camPosY < -((size.sizeY / 2) - halfOfFOV) && rb.velocity.y < 0) || (camPosY > (size.sizeY / 2) - halfOfFOV && rb.velocity.y > 0))
             {
                 transform.position = new Vector3(checkPos.x, checkPos.y * 1, -checkPos.z);
+
             }
         }
         

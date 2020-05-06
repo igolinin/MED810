@@ -83,37 +83,45 @@ public class CameraController2 : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
+            //Camera Movements  
             movement = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
             if ((camPosX < -((size.sizeX / 2) - halfOfFOV) && rb.velocity.x < 0) || (camPosX > (size.sizeX / 2) - halfOfFOV && rb.velocity.x > 0))
             {
                 transform.position = new Vector3(checkPos.x * -1, checkPos.y, checkPos.z);
+                Debug.Log("hello");
+
             }
             if ((camPosY < -((size.sizeY / 2) - halfOfFOV) && rb.velocity.y < 0) || (camPosY > (size.sizeY / 2) - halfOfFOV && rb.velocity.y > 0))
             {
-                transform.position = new Vector3(checkPos.x, checkPos.y * 1, -checkPos.z);
+                transform.position = new Vector3(checkPos.x, checkPos.y * -1, -checkPos.z);
+                Debug.Log("HellNo");
             }
 
         }
+
+
         for (int i = 0; i < Stars.Length; i++)
         {
 
-
+            //if the centerpoint of the camera is equal to one of the stars position inside of the checkStarPos array
             if (Mathf.Abs(camPosX - checkStarPos[i].x) <= 2 && Mathf.Abs(camPosY - checkStarPos[i].y) <= 2 && !starZoomedIn)
             {
-
+                //The camera moves to center the planet in the screen 
                 transform.position = Vector2.MoveTowards(transform.position, checkStarPos[i], 2.5f * Time.deltaTime);
 
 
                 //If the planet is centerd 
                 if (Mathf.Abs(camPosX - checkStarPos[i].x) <= 0 && Mathf.Abs(camPosY - checkStarPos[i].y) <= 0 && !starZoomedIn && Input.GetKeyDown("space"))
                 {
+                    //Add the planet name makes it in ot a int to be used in the S3to4 script 
                     SelectedPlanet.Add(int.Parse(Stars[i].name));
                     Debug.Log(Stars[i].name + "added to the list");
                     
                     selected();
                     counter.text = "Exoplanets found:" + SelectedPlanet.Count.ToString();
 
+                    //To make this if statement go off only one time. 
                     starZoomedIn = true;
 
                     if (Input.GetMouseButtonDown(1))
