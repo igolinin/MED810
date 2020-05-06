@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using DG.Tweening;
 using TMPro;
 using UnityEngine.Rendering;
-using UnityEditor.SceneManagement;
 
 public class CameraController2 : MonoBehaviour
 {
