@@ -31,7 +31,7 @@ public class PlantCatalog : MonoBehaviour
     public void add()
     {
         ChoosenType += 1;
-        if (ChoosenType == 5)
+        if (ChoosenType == (types.Length))
         {
             ChoosenType = 0;
         }
@@ -43,7 +43,7 @@ public class PlantCatalog : MonoBehaviour
         ChoosenType -= 1;
         if (ChoosenType < 0)
         {
-            ChoosenType = 4;
+            ChoosenType = (types.Length-1);
         }
         ChangeChoice();
     }

@@ -85,4 +85,9 @@ public class ChoosenPlanet : MonoBehaviour
         Gx.text = Gravity;
         Sfx.text = Surface;
     }
+
+    public void testing()
+    {
+        found = true;
+    }
 }
