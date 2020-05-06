@@ -58,7 +58,7 @@ public class CameraController : MonoBehaviour
             }
             if ((camPosY < -((size.sizeY / 2) - halfOfFOV) && rb.velocity.y < 0) || (camPosY > (size.sizeY / 2) - halfOfFOV && rb.velocity.y > 0))
             {
-                transform.position = new Vector3(checkPos.x, checkPos.y * -1, checkPos.z);
+                transform.position = new Vector3(checkPos.x, checkPos.y * 1, -checkPos.z);
             }
         }
         
@@ -119,7 +119,7 @@ public class CameraController : MonoBehaviour
 
     void cameraControl(Vector2 direction)
     {
-        rb.velocity = direction * speed;
+        rb.velocity = -direction * speed;
     }
     void toggle(bool selected){
         if(selected){
