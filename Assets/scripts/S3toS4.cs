@@ -5,7 +5,16 @@ using UnityEngine;
 public class S3toS4 : MonoBehaviour
 {
 
-    public static bool[] ListFound = new bool[10];
+
+   public static bool[] ListFound = new bool[10];
+   public static int counter;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        counter = CameraController2.SelectedPlanet.Count;
+        Debug.Log(counter + " What I FOUND!!!");
+    }
 
 
     // Update is called once per frame

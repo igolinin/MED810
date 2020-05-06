@@ -6,8 +6,13 @@ public class PlantCatalog : MonoBehaviour
 {
 
     public GameObject[] types;
-    public int ChoosenType = 0;
+    public int ChoosenType;
 
+    void Start()
+    {
+        ChoosenType = Random.Range(0, 10);
+        ChangeChoice();
+    }
     void ChangeChoice()
     {
         for (int i=0; i<types.Length; i++)

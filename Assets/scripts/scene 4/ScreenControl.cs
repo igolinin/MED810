@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,12 +18,15 @@ public class ScreenControl : MonoBehaviour
     public GameObject[] icons;
     public bool try_again = false;
     public int PlanetN;
+    public TextMeshProUGUI count;
+
    
     // Start is called before the first frame update
     void Start()
     {
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
+        FoundCounter();
     }
 
     // Update is called once per frame
@@ -104,6 +108,22 @@ public class ScreenControl : MonoBehaviour
         SetTarget();
     }
 
-
+    void FoundCounter()
+    {
+        int a = S3toS4.counter;
+        if (a == 1)
+        {
+            count.text = "0" + a.ToString() + " Planet";
+        }
+        else if (a==10)
+        {
+            count.text = a.ToString() + " Planets";
+        }
+        else
+        {
+            count.text = "0" + a.ToString() + " Planets";
+        }
+    }
+   
 
 }

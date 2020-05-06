@@ -30,6 +30,7 @@ public class CameraController2 : MonoBehaviour
     private bool starSelected = false;
     private bool starZoomedIn;
     public Image CrossHair;
+    public TextMeshProUGUI counter;
 
     //public static int[] SelectedPlanet = new int[10];
     public static List<int> SelectedPlanet = new List<int>();
@@ -118,6 +119,7 @@ public class CameraController2 : MonoBehaviour
                     Debug.Log(Stars[i].name + "added to the list");
                     
                     selected();
+                    counter.text = "Exoplanets found:" + SelectedPlanet.Count.ToString();
 
                     //To make this if statement go off only one time. 
                     starZoomedIn = true;
