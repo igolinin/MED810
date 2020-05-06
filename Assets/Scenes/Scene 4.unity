@@ -2013,8 +2013,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.491273, y: -3.7899976, z: 0}
   m_LocalScale: {x: 3.121284, y: 3.121284, z: 3.121284}
-  m_Children:
-  - {fileID: 1539963050}
+  m_Children: [{fileID: 1539963050}]
   m_Father: {fileID: 1392562435}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6080,8 +6079,7 @@ MonoBehaviour:
 
     Try again researcher.
 
-    The
-    whole team is behind you!'
+    The whole team is behind you!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2965992da76b0ae419606b695ac899e8, type: 2}
   m_sharedMaterial: {fileID: -5575780709995576485, guid: 2965992da76b0ae419606b695ac899e8,
@@ -6975,8 +6973,7 @@ MonoBehaviour:
 
     Try again researcher.
 
-    The
-    whole team is behind you!'
+    The whole team is behind you!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2965992da76b0ae419606b695ac899e8, type: 2}
   m_sharedMaterial: {fileID: -5575780709995576485, guid: 2965992da76b0ae419606b695ac899e8,
@@ -25464,73 +25461,73 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1683176067}
   m_OnClick:
-      m_Calls:
-      - m_Target: {fileID: 1867457371}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1112366824}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2128096685}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1867457376}
-        m_MethodName: testing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1112366829}
-        m_MethodName: testing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 2128096690}
-        m_MethodName: testing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+    m_Calls:
+    - m_Target: {fileID: 1867457371}
+      m_MethodName: SetActive
+      m_Mode: 6
+      m_Arguments:
+        m_ObjectArgument: {fileID: 0}
+        m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_IntArgument: 0
+        m_FloatArgument: 0
+        m_StringArgument: 
+        m_BoolArgument: 1
+      m_CallState: 2
+    - m_Target: {fileID: 1112366824}
+      m_MethodName: SetActive
+      m_Mode: 6
+      m_Arguments:
+        m_ObjectArgument: {fileID: 0}
+        m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_IntArgument: 0
+        m_FloatArgument: 0
+        m_StringArgument: 
+        m_BoolArgument: 1
+      m_CallState: 2
+    - m_Target: {fileID: 2128096685}
+      m_MethodName: SetActive
+      m_Mode: 6
+      m_Arguments:
+        m_ObjectArgument: {fileID: 0}
+        m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_IntArgument: 0
+        m_FloatArgument: 0
+        m_StringArgument: 
+        m_BoolArgument: 1
+      m_CallState: 2
+    - m_Target: {fileID: 1867457376}
+      m_MethodName: testing
+      m_Mode: 1
+      m_Arguments:
+        m_ObjectArgument: {fileID: 0}
+        m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_IntArgument: 0
+        m_FloatArgument: 0
+        m_StringArgument: 
+        m_BoolArgument: 1
+      m_CallState: 2
+    - m_Target: {fileID: 1112366829}
+      m_MethodName: testing
+      m_Mode: 1
+      m_Arguments:
+        m_ObjectArgument: {fileID: 0}
+        m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_IntArgument: 0
+        m_FloatArgument: 0
+        m_StringArgument: 
+        m_BoolArgument: 1
+      m_CallState: 2
+    - m_Target: {fileID: 2128096690}
+      m_MethodName: testing
+      m_Mode: 1
+      m_Arguments:
+        m_ObjectArgument: {fileID: 0}
+        m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_IntArgument: 0
+        m_FloatArgument: 0
+        m_StringArgument: 
+        m_BoolArgument: 1
+      m_CallState: 2
 --- !u!114 &1683176067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30204,6 +30201,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
+  - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
