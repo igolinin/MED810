@@ -31,7 +31,7 @@ public class PlantCatalog : MonoBehaviour
     public void add()
     {
         ChoosenType += 1;
-        if (ChoosenType == 5)
+        if (ChoosenType == 10)
         {
             ChoosenType = 0;
         }

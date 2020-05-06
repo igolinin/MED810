@@ -23,4 +23,9 @@ public class activatedata : MonoBehaviour
     {
         data.SetActive(true);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        data.SetActive(true);
+    }
 }
