@@ -14,6 +14,8 @@ TagManager:
   - counter
   - NextBtn
   - timer
+  - instructions
+  - btnTxt
   layers:
   - Default
   - TransparentFX
