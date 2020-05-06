@@ -6,11 +6,13 @@ public class S3toS4 : MonoBehaviour
 {
 
    public static bool[] ListFound = new bool[10];
+    public int counter;
 
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(CameraController2.SelectedPlanet.Count + " What I FOUND!!!");
+        counter = CameraController2.SelectedPlanet.Count;
+        Debug.Log(counter + " What I FOUND!!!");
     }
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class S3toS4 : MonoBehaviour
     {
         for (int i = 0; i < ListFound.Length; i++)
         {
-            for (int j = 0; j < CameraController2.SelectedPlanet.Count; j++)
+            for (int j = 0; j < counter; j++)
             {
                 if (CameraController2.SelectedPlanet[j] == i)
                 {

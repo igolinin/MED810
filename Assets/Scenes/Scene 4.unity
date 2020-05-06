@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2283,7 +2283,7 @@ GameObject:
   - component: {fileID: 191127746}
   - component: {fileID: 191127747}
   m_Layer: 0
-  m_Name: Skull (7)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2298,7 +2298,7 @@ Transform:
   m_GameObject: {fileID: 191127745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.57, y: -3.8, z: 0}
-  m_LocalScale: {x: 0.7682622, y: 0.7682622, z: 0.7682622}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1389782605}
   m_RootOrder: 2
@@ -2342,7 +2342,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3033,7 +3033,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  trigger: 
   Num: 0
+  IsSurface: 0
 --- !u!114 &202632607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3741,7 +3745,7 @@ GameObject:
   - component: {fileID: 277768998}
   - component: {fileID: 277768999}
   m_Layer: 0
-  m_Name: Skull (8)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3756,7 +3760,7 @@ Transform:
   m_GameObject: {fileID: 277768997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.15, y: -3.7, z: 0}
-  m_LocalScale: {x: 0.7682622, y: 0.7682622, z: 0.7682622}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 4930589}
   m_RootOrder: 2
@@ -3800,7 +3804,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5813,7 +5817,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  trigger: 
   Num: 0
+  IsSurface: 0
 --- !u!114 &401169709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8028,7 +8036,7 @@ GameObject:
   - component: {fileID: 556517376}
   - component: {fileID: 556517377}
   m_Layer: 0
-  m_Name: Skull (4)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8043,7 +8051,7 @@ Transform:
   m_GameObject: {fileID: 556517375}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.67, y: 0.81999975, z: 0}
-  m_LocalScale: {x: 0.768262, y: 0.768262, z: 0.768262}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 426184016}
   m_RootOrder: 2
@@ -8087,7 +8095,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12447,7 +12455,7 @@ GameObject:
   - component: {fileID: 865414498}
   - component: {fileID: 865414499}
   m_Layer: 0
-  m_Name: Skull
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12462,7 +12470,7 @@ Transform:
   m_GameObject: {fileID: 865414497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.52, y: 0.82, z: 0}
-  m_LocalScale: {x: 0.7682617, y: 0.7682617, z: 0.7682617}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1370612172}
   m_RootOrder: 2
@@ -12506,7 +12514,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12991,7 +12999,7 @@ GameObject:
   - component: {fileID: 881532979}
   - component: {fileID: 881532978}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: earth surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13695,7 +13703,7 @@ GameObject:
   - component: {fileID: 913910649}
   - component: {fileID: 913910650}
   m_Layer: 0
-  m_Name: Skull (9)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13710,7 +13718,7 @@ Transform:
   m_GameObject: {fileID: 913910648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.57, y: -3.7, z: 0}
-  m_LocalScale: {x: 0.7682622, y: 0.7682622, z: 0.7682622}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1943029341}
   m_RootOrder: 2
@@ -13754,7 +13762,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14197,6 +14205,8 @@ MonoBehaviour:
   - {fileID: 188953120}
   try_again: 0
   PlanetN: 0
+  PlanetsCount: {fileID: 1456492508}
+  count: {fileID: 110604503}
 --- !u!1 &964657752
 GameObject:
   m_ObjectHideFlags: 0
@@ -14555,7 +14565,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  trigger: 
   Num: 0
+  IsSurface: 0
 --- !u!1 &1009288393
 GameObject:
   m_ObjectHideFlags: 0
@@ -17818,7 +17832,7 @@ GameObject:
   - component: {fileID: 1155104751}
   - component: {fileID: 1155104752}
   m_Layer: 0
-  m_Name: Skull (2)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17833,7 +17847,7 @@ Transform:
   m_GameObject: {fileID: 1155104750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.57, y: 0.81999975, z: 0}
-  m_LocalScale: {x: 0.76826185, y: 0.76826185, z: 0.76826185}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1244919190}
   m_RootOrder: 2
@@ -17877,7 +17891,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20212,6 +20226,7 @@ GameObject:
   - component: {fileID: 1311628635}
   - component: {fileID: 1311628637}
   - component: {fileID: 1311628636}
+  - component: {fileID: 1311628638}
   m_Layer: 5
   m_Name: Handle
   m_TagString: Untagged
@@ -20274,6 +20289,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311628634}
   m_CullTransparentMesh: 0
+--- !u!114 &1311628638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311628634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3e3afc23be54b64a9a6a4a5f1043230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 731213176}
+  minClamp: 0
+  maxClamp: 1
 --- !u!1 &1316432587
 GameObject:
   m_ObjectHideFlags: 0
@@ -22182,7 +22212,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  trigger: 
   Num: 0
+  IsSurface: 0
 --- !u!1 &1443393948
 GameObject:
   m_ObjectHideFlags: 0
@@ -22336,6 +22370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505933e95c2d922468ccc5e19cf46feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  counter: 0
 --- !u!1 &1460412311
 GameObject:
   m_ObjectHideFlags: 0
@@ -23471,7 +23506,7 @@ GameObject:
   - component: {fileID: 1501753702}
   - component: {fileID: 1501753703}
   m_Layer: 0
-  m_Name: Skull (3)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23486,7 +23521,7 @@ Transform:
   m_GameObject: {fileID: 1501753701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.15, y: 0.81999975, z: 0}
-  m_LocalScale: {x: 0.76826197, y: 0.76826197, z: 0.76826197}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1460412312}
   m_RootOrder: 2
@@ -23530,7 +23565,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -24429,8 +24464,9 @@ GameObject:
   - component: {fileID: 1571894687}
   - component: {fileID: 1571894686}
   - component: {fileID: 1571894689}
+  - component: {fileID: 1571894690}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: your surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24523,6 +24559,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 447062055}
+--- !u!114 &1571894690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571894684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c243bbe0f036d9840819842aaa6c2610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Materials: []
+  Control: {fileID: 963194225}
+  physicmatierals:
+  - {fileID: 13400000, guid: 256698e2ebb8fa747912c48d84d61617, type: 2}
+  - {fileID: 13400000, guid: e1eec68bafadc2d4e9c95b4e5d920e54, type: 2}
+  - {fileID: 13400000, guid: 602c1d8cebb5c464eb62ebaeb4a0d713, type: 2}
+  - {fileID: 13400000, guid: a14042fbb5de1e240bf076e8b6121fc1, type: 2}
+  - {fileID: 13400000, guid: 999d53593fd82a741be07e61bcd2f1b6, type: 2}
+  SurMaterials:
+  - {fileID: 2100000, guid: 707f684114f59e941aa42068dd0d52d8, type: 2}
+  - {fileID: 2100000, guid: 04a85bf3402047a4ba50b3ad3dec4a3b, type: 2}
+  - {fileID: 2100000, guid: 4b916d88d19cc62478a9516240c1ff42, type: 2}
+  - {fileID: 2100000, guid: 7c2b2d9d2a75a234d8b2ded8cb689fad, type: 2}
+  - {fileID: 2100000, guid: f74d37f5e21a4f24c85f3cac3b2a092b, type: 2}
+  trigger: 0100010100
+  Num: 0
+  IsSurface: 1
 --- !u!1 &1596644776
 GameObject:
   m_ObjectHideFlags: 0
@@ -25332,7 +25397,7 @@ GameObject:
   - component: {fileID: 1709479503}
   - component: {fileID: 1709479502}
   m_Layer: 0
-  m_Name: Skull (1)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25377,7 +25442,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -25397,7 +25462,7 @@ Transform:
   m_GameObject: {fileID: 1709479501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4, y: 0.81999975, z: 0}
-  m_LocalScale: {x: 0.7682618, y: 0.7682618, z: 0.7682618}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1973253249}
   m_RootOrder: 2
@@ -25990,7 +26055,7 @@ GameObject:
   - component: {fileID: 1726957535}
   - component: {fileID: 1726957536}
   m_Layer: 0
-  m_Name: Skull (5)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26005,7 +26070,7 @@ Transform:
   m_GameObject: {fileID: 1726957534}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.520017, y: -3.9, z: 0}
-  m_LocalScale: {x: 0.76826215, y: 0.76826215, z: 0.76826215}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 1392562435}
   m_RootOrder: 3
@@ -26049,7 +26114,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -27440,7 +27505,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  trigger: 
   Num: 0
+  IsSurface: 0
 --- !u!114 &1831212613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29337,7 +29406,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  trigger: 
   Num: 0
+  IsSurface: 0
 --- !u!114 &1950245186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30071,7 +30144,7 @@ GameObject:
   - component: {fileID: 2006700683}
   - component: {fileID: 2006700684}
   m_Layer: 0
-  m_Name: Skull (6)
+  m_Name: Not found
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30086,7 +30159,7 @@ Transform:
   m_GameObject: {fileID: 2006700682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.95, y: -3.8, z: 0}
-  m_LocalScale: {x: 0.7682622, y: 0.7682622, z: 0.7682622}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 956045216}
   m_RootOrder: 2
@@ -30130,7 +30203,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 90787cddc75cd1d4d95b29ef0ed1616e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8eafe74c89a6244eb24fcd7cbe437bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -30479,7 +30552,11 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  trigger: 
   Num: 0
+  IsSurface: 0
 --- !u!1 &2045507732
 GameObject:
   m_ObjectHideFlags: 0
