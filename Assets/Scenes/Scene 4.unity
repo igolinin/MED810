@@ -1413,7 +1413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '01 PLANET '
+  m_text: '00 Planets '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 625712b49b86b6149a3cb510aedf351a, type: 2}
   m_sharedMaterial: {fileID: 787978107699984728, guid: 625712b49b86b6149a3cb510aedf351a,
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 110604503}
-    characterCount: 10
+    characterCount: 11
     spriteCount: 0
     spaceCount: 2
     wordCount: 2
@@ -14561,7 +14561,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ea415698a740bf24da82d63b2ed5fc83, type: 2}
   - {fileID: 2100000, guid: b6d0234af17ab3e4c9335f9dc656d7bc, type: 2}
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
-  - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
+  - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
   physicmatierals: []
   SurMaterials: []
@@ -30205,7 +30205,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
