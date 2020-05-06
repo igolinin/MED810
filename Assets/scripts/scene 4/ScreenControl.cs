@@ -19,6 +19,7 @@ public class ScreenControl : MonoBehaviour
     public bool try_again = false;
     public int PlanetN;
     public TextMeshProUGUI count;
+    private int FoundCount;
 
    
     // Start is called before the first frame update
@@ -26,13 +27,17 @@ public class ScreenControl : MonoBehaviour
     {
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
-        FoundCounter();
     }
 
     // Update is called once per frame
     void Update()
     {
-       if (OnMove)
+        if (FoundCount!= S3toS4.counter)
+        {
+            FoundCounter();
+        }
+
+        if (OnMove)
         {
             MoveCamera();
         }
@@ -110,18 +115,18 @@ public class ScreenControl : MonoBehaviour
 
     void FoundCounter()
     {
-        int a = S3toS4.counter;
-        if (a == 1)
+        FoundCount = S3toS4.counter;
+        if (FoundCount == 1)
         {
-            count.text = "0" + a.ToString() + " Planet";
+            count.text = "0" + FoundCount.ToString() + " Planet";
         }
-        else if (a==10)
+        else if (FoundCount>9)
         {
-            count.text = a.ToString() + " Planets";
+            count.text = FoundCount.ToString() + " Planets";
         }
         else
         {
-            count.text = "0" + a.ToString() + " Planets";
+            count.text = "0" + FoundCount.ToString() + " Planets";
         }
     }
    

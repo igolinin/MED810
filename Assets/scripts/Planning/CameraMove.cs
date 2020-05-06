@@ -24,10 +24,11 @@ public class CameraMove : MonoBehaviour
     void Update()
     {
 
-  
 
-        //Rotation
-        if (Input.GetMouseButton(0))
+        if (!UI.activeSelf)
+        {
+            //Rotation
+            if (Input.GetMouseButton(0))
         {
 
 
@@ -45,7 +46,7 @@ public class CameraMove : MonoBehaviour
         }
 
         //You can't zoom when UI popup is active
-        if (!UI.activeSelf) { 
+        
             //ZOOM
             float fov = Camera.main.fieldOfView;
             fov += Input.GetAxis("Mouse ScrollWheel") * -sensitivity;
