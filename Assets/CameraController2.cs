@@ -19,6 +19,8 @@ public class CameraController2 : MonoBehaviour
     public Vector2 movement;
     public Vector3 checkPos;
     public Vector2[] checkStarPos;
+    public GameObject nextBtn;
+    public GameObject btnTxt;
 
     [SerializeField]
     public GameObject[] Stars;
@@ -31,6 +33,7 @@ public class CameraController2 : MonoBehaviour
     private bool starZoomedIn;
     public Image CrossHair;
     public TextMeshProUGUI counter;
+    public GameObject[] instr;
 
     //public static int[] SelectedPlanet = new int[10];
     public static List<int> SelectedPlanet = new List<int>();
@@ -43,6 +46,10 @@ public class CameraController2 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         halfOfFOV = Camera.main.fieldOfView / 2;
         starSelected = false;
+        counter = GameObject.FindGameObjectWithTag("counter").GetComponent<TextMeshProUGUI>();
+        instr = GameObject.FindGameObjectsWithTag("instructions");
+        nextBtn = GameObject.FindGameObjectWithTag("NextBtn");
+        btnTxt = GameObject.FindGameObjectWithTag("btnTxt");
 
 
         //Create an array for the positions of the stars and populate it with the for look 
@@ -60,7 +67,11 @@ public class CameraController2 : MonoBehaviour
     void Update()
     {
         controlWithMouse();
-
+        if(SelectedPlanet.Count > 0)
+        {
+            btnTxt.GetComponent<TextMeshProUGUI>().enabled = true;
+            nextBtn.GetComponent<Image>().enabled = true;
+        }
 
 
         if (Input.GetKeyDown("space") && Camera.main.fieldOfView == 12)
@@ -120,6 +131,8 @@ public class CameraController2 : MonoBehaviour
                     
                     selected();
                     counter.text = "Exoplanets found:" + SelectedPlanet.Count.ToString();
+                    instr[0].GetComponent<TextMeshProUGUI>().enabled = false;
+                    instr[1].GetComponent<TextMeshProUGUI>().enabled = false;
 
                     //To make this if statement go off only one time. 
                     starZoomedIn = true;

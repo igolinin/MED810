@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Star
+  - bg
+  - starName
+  - pointer
+  - posText
+  - distText
+  - typeText
+  - counter
+  - NextBtn
+  - timer
   layers:
   - Default
   - TransparentFX
