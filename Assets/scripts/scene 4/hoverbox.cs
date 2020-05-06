@@ -14,7 +14,7 @@ public class hoverbox : MonoBehaviour
 
     void Start()
     {
-        Found = Planet.GetComponent<ChoosenPlanet>().found;
+        
         rend = GetComponent<SpriteRenderer>();
         c = rend.material.color;
         c.a = 0f;
@@ -23,6 +23,7 @@ public class hoverbox : MonoBehaviour
     }
     void OnMouseEnter()
     {
+        Found = Planet.GetComponent<ChoosenPlanet>().found;
         if (Found)
         {
             StartCoroutine("FadeIn");
