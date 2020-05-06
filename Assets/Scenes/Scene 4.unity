@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2124,7 +2124,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1726957534}
-  List: {fileID: 1456492508}
 --- !u!1 &186683641
 GameObject:
   m_ObjectHideFlags: 0
@@ -3242,7 +3241,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1501753701}
-  List: {fileID: 1456492508}
 --- !u!135 &209363409
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7429,7 +7427,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 191127745}
-  List: {fileID: 1456492508}
 --- !u!1 &506443914
 GameObject:
   m_ObjectHideFlags: 0
@@ -14205,7 +14202,6 @@ MonoBehaviour:
   - {fileID: 188953120}
   try_again: 0
   PlanetN: 0
-  PlanetsCount: {fileID: 1456492508}
   count: {fileID: 110604503}
 --- !u!1 &964657752
 GameObject:
@@ -16082,7 +16078,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 277768997}
-  List: {fileID: 1456492508}
 --- !u!135 &1083867009
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16520,7 +16515,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1155104750}
-  List: {fileID: 1456492508}
 --- !u!1 &1113366222
 GameObject:
   m_ObjectHideFlags: 0
@@ -19756,7 +19750,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 556517375}
-  List: {fileID: 1456492508}
 --- !u!135 &1279229455
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20767,7 +20760,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1709479501}
-  List: {fileID: 1456492508}
 --- !u!1 &1343993785
 GameObject:
   m_ObjectHideFlags: 0
@@ -22370,7 +22362,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505933e95c2d922468ccc5e19cf46feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counter: 0
 --- !u!1 &1460412311
 GameObject:
   m_ObjectHideFlags: 0
@@ -28364,7 +28355,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 865414497}
-  List: {fileID: 1456492508}
 --- !u!1 &1868293027
 GameObject:
   m_ObjectHideFlags: 0
@@ -29922,7 +29912,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 913910648}
-  List: {fileID: 1456492508}
 --- !u!135 &1980036709
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29954,7 +29943,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d59a1f606598f8a42932eb3752292b29, type: 2}
+  - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31633,7 +31622,6 @@ MonoBehaviour:
   cata: {fileID: 2037021555}
   Control: {fileID: 963194230}
   NotFound: {fileID: 2006700682}
-  List: {fileID: 1456492508}
 --- !u!1 &2132184234
 GameObject:
   m_ObjectHideFlags: 0
