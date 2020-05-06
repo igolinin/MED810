@@ -18,7 +18,6 @@ public class ScreenControl : MonoBehaviour
     public GameObject[] icons;
     public bool try_again = false;
     public int PlanetN;
-    public S3toS4 PlanetsCount;
     public TextMeshProUGUI count;
 
    
@@ -111,7 +110,7 @@ public class ScreenControl : MonoBehaviour
 
     void FoundCounter()
     {
-        int a = PlanetsCount.counter;
+        int a = S3toS4.counter;
         if (a == 1)
         {
             count.text = "0" + a.ToString() + " Planet";

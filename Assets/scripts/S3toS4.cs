@@ -6,7 +6,7 @@ public class S3toS4 : MonoBehaviour
 {
 
    public static bool[] ListFound = new bool[10];
-    public int counter;
+   public static int counter;
 
     // Start is called before the first frame update
     void Start()

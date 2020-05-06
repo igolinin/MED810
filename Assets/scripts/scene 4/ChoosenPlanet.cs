@@ -22,7 +22,6 @@ public class ChoosenPlanet : MonoBehaviour
     public GameObject cata;
     public ScreenControl Control;
     public GameObject NotFound;
-    public S3toS4 List;
 
     // Start is called before the first frame update
     void Start()
