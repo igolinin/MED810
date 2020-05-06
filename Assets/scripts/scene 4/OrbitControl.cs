@@ -21,6 +21,8 @@ public class OrbitControl : MonoBehaviour
     public GameObject stop;
     public GameObject next_button;
     public Button retry_button;
+    public GameObject pointer_exoplanet;
+    public GameObject pointer_earth;
 
     public TextMeshProUGUI Orbit_days_exoplanet;
     public TextMeshProUGUI Orbit_days_earth;
@@ -68,7 +70,8 @@ public class OrbitControl : MonoBehaviour
         satellite2.speed = 0;
         stop.SetActive(false);
         next_button.SetActive(true);
-
+        //pointer_exoplanet.SetActive(true);
+        //pointer_earth.SetActive(true);
         
         int days = (int)Mathf.Floor(365f / velocity);
         Orbit_days_exoplanet.text = days.ToString() + " days";
