@@ -11,6 +11,7 @@ public class PlanetType : MonoBehaviour
     public string Water, Light, Life, Atmosphere, Temprature, Gravity;
     public string Surface;
     public TextMeshProUGUI N, Sz, W, Lg, Lf, A, T, G, Sf;
+    public int TypeNum;
 
     // Start is called before the first frame update
     void Start()
