@@ -2973,7 +2973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Earth-Like
   Size: temp
   Water: temp
   Light: temp
@@ -5747,7 +5747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Very Hot Neptune
   Size: temp
   Water: temp
   Light: temp
@@ -28646,7 +28646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Water Planet
   Size: temp
   Water: temp
   Light: temp
@@ -31018,7 +31018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Hot jupiter
   Size: temp
   Water: temp
   Light: temp
@@ -32758,7 +32758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Ice Giant
   Size: temp
   Water: temp
   Light: temp
@@ -33509,7 +33509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Ice World
   Size: temp
   Water: temp
   Light: temp
@@ -35393,7 +35393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Very Hot Jupiter
   Size: temp
   Water: temp
   Light: temp
@@ -36568,7 +36568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Cold Gas GIant
   Size: temp
   Water: temp
   Light: temp
@@ -38793,7 +38793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Super Earth
   Size: temp
   Water: temp
   Light: temp
@@ -48466,7 +48466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932f6408344cdad44922a6b8f206192c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TypeName: temp
+  TypeName: Lava Planet
   Size: temp
   Water: temp
   Light: temp
