@@ -26,7 +26,7 @@ public class CameraMove : MonoBehaviour
 
 
         if (!UI.activeSelf)
-        {
+        {   
             //Rotation
             if (Input.GetMouseButton(0))
         {
