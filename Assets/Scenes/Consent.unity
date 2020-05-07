@@ -2754,7 +2754,7 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 1
@@ -2763,17 +2763,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 2
   m_Text: "You are being invited to participate in a research study directed by MED8
-    students. heresearch aims to understand the effect of playing an educational
+    students. This research aims to understand the effect of playing an educational
     video game. If you agree to take part in this study, you will be asked to complete
-    an online questionnaire now and later onyou will be asked to play a video game,
-    which will be followed by a final questionnaire. Thequestions will not \u201Ctest\u201D
-    you or your abilities. The entire experiment will take youapproximately 5 minutes
+    an online questionnaire now and later on you will be asked to play a video game,
+    which will be followed by a final questionnaire. The questions will not \u201Ctest\u201D
+    you or your abilities. The entire experiment will take you approximately 5 minutes
     to complete. There are no risks or benefits of any kind involved in this study.
     Your participation in thisstudy is completely voluntary and you can withdraw
     at any time.  Before you begin, please note that the data you provide is anonymous
-    and will NOT be usedfor commercial use or any other use beyond the research data
-    analysis.If you have questions about this project or if you have a research-related
-    problem, you maycontact any of the researchers. By clicking \u201CI agree\u201D
+    and will NOT be used for commercial use or any other use beyond the research
+    data analysis. If you have questions about this project or if you have a research-related
+    problem, you may contact any of the researchers. By clicking \u201CI agree\u201D
     below you are indicating that you are at least the age of consent, haveread and
     understood this consent form and agree to participate in this research study."
 --- !u!222 &1601307514
