@@ -19,7 +19,6 @@ public class ChoosenPlanet : MonoBehaviour
     public int type;
     public TextMeshProUGUI N,D, W, Lg, Lf, A, T, G, Sf;
     public TextMeshProUGUI Nx, Sx, Wx, Lgx, Lfx, Ax, Tx, Gx, Sfx;
-    public GameObject cata;
     public ScreenControl Control;
     public GameObject NotFound;
 
@@ -37,18 +36,6 @@ public class ChoosenPlanet : MonoBehaviour
 
     // Update is called once per frame
 
-
-    public void Answer()
-    {
-        if (type == cata.GetComponent<PlantCatalog>().ChoosenType)
-        {
-            Control.NextButton();
-        }
-        else
-        {
-            Control.wrong();
-        }
-    }
 
     public void CheckFound()
     {
