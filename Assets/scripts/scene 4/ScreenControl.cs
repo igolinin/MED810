@@ -20,6 +20,7 @@ public class ScreenControl : MonoBehaviour
     public int PlanetN;
     public TextMeshProUGUI count;
     private int FoundCount;
+    public GameObject Catalog;
 
    
     // Start is called before the first frame update
@@ -127,6 +128,19 @@ public class ScreenControl : MonoBehaviour
         else
         {
             count.text = "0" + FoundCount.ToString() + " Planets";
+        }
+    }
+
+    public void Answer()
+    {
+        int a = Catalog.GetComponent<ScrollControl>().AnswerNum+1;
+        if (a==PlanetN)
+        {
+            NextButton();
+        }
+        else
+        {
+            wrong();
         }
     }
    
