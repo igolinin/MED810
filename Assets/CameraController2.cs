@@ -129,7 +129,7 @@ public class CameraController2 : MonoBehaviour
                     Debug.Log(Stars[i].name + "added to the list");
                     
                     selected();
-                    counter.text = "Exoplanets found:" + SelectedPlanet.Count.ToString();
+                    counter.text = "Exoplanets found:" + SelectedPlanet.Count.ToString() + "/10";
                     instr[0].GetComponent<TextMeshProUGUI>().enabled = false;
                     instr[1].GetComponent<TextMeshProUGUI>().enabled = false;
 
