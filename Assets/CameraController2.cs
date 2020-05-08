@@ -20,6 +20,7 @@ public class CameraController2 : MonoBehaviour
     public Vector2[] checkStarPos;
     public GameObject nextBtn;
     public GameObject btnTxt;
+    public GameObject PlanetIconUI;
 
     [SerializeField]
     public GameObject[] Stars;
@@ -30,12 +31,15 @@ public class CameraController2 : MonoBehaviour
     public float halfOfFOV;
     private bool starSelected = false;
     private bool starZoomedIn;
+    private bool zoomDone;
+
     public Image CrossHair;
     public TextMeshProUGUI counter;
     public GameObject[] instr;
 
     //public static int[] SelectedPlanet = new int[10];
     public static List<int> SelectedPlanet = new List<int>();
+    private int[] planetsFound = new int[10];
 
 
     // Start is called before the first frame update
@@ -70,10 +74,11 @@ public class CameraController2 : MonoBehaviour
         {
             btnTxt.GetComponent<TextMeshProUGUI>().enabled = true;
             nextBtn.GetComponent<Image>().enabled = true;
+            PlanetIconUI.SetActive(true);
         }
 
 
-        if (Input.GetKeyDown("space") && Camera.main.fieldOfView == 12)
+        if (Input.GetKeyDown("space") && zoomDone)
         {
             deselectStar();
             Debug.Log("SpaceDown Out");
@@ -99,13 +104,11 @@ public class CameraController2 : MonoBehaviour
             if ((camPosX < -((size.sizeX / 2) - halfOfFOV) && rb.velocity.x < 0) || (camPosX > (size.sizeX / 2) - halfOfFOV && rb.velocity.x > 0))
             {
                 transform.position = new Vector3(checkPos.x * -1, checkPos.y, checkPos.z);
-                Debug.Log("hello");
 
             }
             if ((camPosY < -((size.sizeY / 2) - halfOfFOV) && rb.velocity.y < 0) || (camPosY > (size.sizeY / 2) - halfOfFOV && rb.velocity.y > 0))
             {
                 transform.position = new Vector3(checkPos.x, checkPos.y * -1, -checkPos.z);
-                Debug.Log("HellNo");
             }
 
         }
@@ -126,8 +129,8 @@ public class CameraController2 : MonoBehaviour
                 {
                     //Add the planet name makes it in ot a int to be used in the S3to4 script 
                     SelectedPlanet.Add(int.Parse(Stars[i].name));
-                    Debug.Log(Stars[i].name + "added to the list");
-                    
+
+
                     selected();
                     counter.text = "Exoplanets found:" + SelectedPlanet.Count.ToString() + "/10";
                     instr[0].GetComponent<TextMeshProUGUI>().enabled = false;
@@ -135,13 +138,9 @@ public class CameraController2 : MonoBehaviour
 
                     //To make this if statement go off only one time. 
                     starZoomedIn = true;
+                    planetsFound[i] = int.Parse(Stars[i].name);
+                    Debug.Log(planetsFound[i] + " // " + planetsFound.Length);
 
-                    if (Input.GetMouseButtonDown(1))
-                    {
-                        starSelected = !starSelected;
-                        //toggle(starSelected);
-
-                    }
                 }
 
             }
@@ -159,7 +158,12 @@ public class CameraController2 : MonoBehaviour
 
     void cameraControl(Vector2 direction)
     {
-        rb.velocity = -direction * speed;
+        if (!starZoomedIn)
+        {
+            rb.velocity = -direction * speed;
+
+
+        }
     }
 
 
@@ -169,9 +173,9 @@ public class CameraController2 : MonoBehaviour
         CrossHair.DOFade(0, 1);
         starName.DOFade(1, 1f);
 
-        starSelected = true;
-        starZoomedIn = false;
         Invoke("animatePointer",2);
+        Invoke("zoomInDone", 3);
+
     }
     void deselectStar()
     {
@@ -182,9 +186,8 @@ public class CameraController2 : MonoBehaviour
         typeText.DOFade(0, 0.5f);
         starName.DOFade(0, 1f);
         CrossHair.DOFade(1, 1);
-        Debug.Log(starName);
-        starSelected = false;
-        starZoomedIn = false;
+        Invoke("zoomOutDone", 1.5f);
+        
     }
 
     void animatePointer()
@@ -198,6 +201,19 @@ public class CameraController2 : MonoBehaviour
         distText.DOFade(1, 0.5f);
         posText.DOFade(1, 0.5f);
         typeText.DOFade(1, 0.5f);
+
+    }
+
+
+    void zoomOutDone() 
+    {
+        starZoomedIn = false;
+        zoomDone = false;
+    }
+
+    void zoomInDone()
+    {
+        zoomDone = true;
 
     }
 }
