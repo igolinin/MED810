@@ -6,6 +6,8 @@ public class Filters : MonoBehaviour
 {
     public bool[] activated;
     public GameObject Next_Button;
+    public Color[] filters;
+    public Renderer Planet;
     
     // Start is called before the first frame update
     void Start()
@@ -37,4 +39,14 @@ public class Filters : MonoBehaviour
             activated[number - 1] = true;
         }
     }
+
+    public void ChangeFilter (int a)
+    {
+        Debug.Log(a);
+        Debug.Log(Planet.material.GetColor("_BaseColor"));
+        Planet.material.SetColor("_BaseColor", filters[a]);
+        Debug.Log(Planet.material.GetColor("_BaseColor"));
+    }
+
+
 }
