@@ -17,11 +17,11 @@ public class ChoosenPlanet : MonoBehaviour
     public string Surface;
     public int Temprature;
     public int type;
-    public TextMeshProUGUI N,D, W, Lg, Lf, A, T, G, Sf;
+    public TextMeshProUGUI N,D, W, Lg, Lf, A, G, Sf;
     public TextMeshProUGUI Nx, Sx, Wx, Lgx, Lfx, Ax, Tx, Gx, Sfx;
     public ScreenControl Control;
     public GameObject NotFound;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -58,8 +58,7 @@ public class ChoosenPlanet : MonoBehaviour
         W.text = Water + " Water";
         Lg.text = Light + " Light";
         Lf.text = Life;
-        A.text = Atmosphere + " Atmosph";
-        T.text = Temprature.ToString() + "c";
+        A.text = Atmosphere;
         G.text = Gravity;
         Sf.text = Surface;
         Nx.text = Name;

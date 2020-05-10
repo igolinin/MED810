@@ -21,6 +21,10 @@ public class ScreenControl : MonoBehaviour
     public TextMeshProUGUI count;
     private int FoundCount;
     public GameObject Catalog;
+    public TextMeshProUGUI Title;
+    public TextMeshProUGUI info;
+    public string[] titles;
+    public string[] explenations;
 
    
     // Start is called before the first frame update
@@ -42,6 +46,9 @@ public class ScreenControl : MonoBehaviour
         {
             MoveCamera();
         }
+
+        Instruction();
+        
     }
 
     public void NextButton()
@@ -53,6 +60,10 @@ public class ScreenControl : MonoBehaviour
 
     public void BackButton()
     {
+        if (CurrentScreen == 1)
+        {
+            PlanetN = 0;
+        }
         CurrentScreen -= 1;
         SetTarget();
     }
@@ -81,20 +92,20 @@ public class ScreenControl : MonoBehaviour
 
     public void ChangeDot()
     {
-        CurDot.GetComponent<Image>().color = C1;
+        CurDot.GetComponent<Image>().color = C2;
         CurrentDot += 1;
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
-        CurDot.GetComponent<Image>().color = C2;
+        CurDot.GetComponent<Image>().color = C1;
     }
 
     public void BackDot()
     {
-        CurDot.GetComponent<Image>().color = C2;
+        CurDot.GetComponent<Image>().color = C1;
         CurrentDot -= 1;
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
-        CurDot.GetComponent<Image>().color = C1;
+        CurDot.GetComponent<Image>().color = C2;
     }
 
     public void wrong()
@@ -141,6 +152,31 @@ public class ScreenControl : MonoBehaviour
         else
         {
             wrong();
+        }
+    }
+
+    void Instruction()
+    {
+        if (CurrentScreen <2||CurrentScreen ==3||CurrentScreen >6||try_again||OnMove)
+        {
+            Title.text = "";
+            info.text = "";
+        }
+        else if(CurrentScreen ==2)
+        {
+
+        }
+        else if(CurrentScreen == 4)
+        {
+
+        }
+        else if (CurrentScreen == 5)
+        {
+
+        }
+        else if (CurrentScreen == 6)
+        {
+
         }
     }
    

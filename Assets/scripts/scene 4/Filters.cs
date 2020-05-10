@@ -6,6 +6,7 @@ public class Filters : MonoBehaviour
 {
     public bool[] activated;
     public GameObject Next_Button;
+
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class Filters : MonoBehaviour
         {
             Next_Button.SetActive(true);
         }
+
     }
 
     public void filter_selected(int number)
@@ -37,4 +39,7 @@ public class Filters : MonoBehaviour
             activated[number - 1] = true;
         }
     }
+
+
+
 }
