@@ -21,6 +21,7 @@ public class ChoosenPlanet : MonoBehaviour
     public TextMeshProUGUI Nx, Sx, Wx, Lgx, Lfx, Ax, Tx, Gx, Sfx;
     public ScreenControl Control;
     public GameObject NotFound;
+    public GameObject ClothesSlider;
     
     // Start is called before the first frame update
     void Start()

@@ -775,12 +775,21 @@ MonoBehaviour:
   Current: 0
   slider: {fileID: 731213176}
   max: 5
-  planet: {fileID: 1342005236}
   correct: 0
-  temp: 0
   Nextscreen: {fileID: 963194230}
   TempGroup: 0
   Slider2: {fileID: 1206256312}
+  Planets:
+  - {fileID: 1867457371}
+  - {fileID: 1342005236}
+  - {fileID: 1112366824}
+  - {fileID: 209363405}
+  - {fileID: 1279229452}
+  - {fileID: 176503029}
+  - {fileID: 2128096685}
+  - {fileID: 496871126}
+  - {fileID: 1083867006}
+  - {fileID: 1980036706}
 --- !u!1 &45092031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3353,19 +3362,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: Corot 7b
   choosen: 0
-  description: this is the best planet in the world
+  description: This planet revolves around its host star at a distance of 2.6 million
+    km, 22 times closer than Mercury orbits the sun, as a result of its close proximity
+    it takes only 20.5 hours to make one complete orbit.
   SerialNum: 6
   found: 0
-  Size: big
-  Water: 0%
-  Light: 90%
-  Life: None
-  Atmosphere: 40%
-  Gravity: Strong
+  Size: 1.5x Earth
+  Water: None
+  Light: 98%
+  Life: Non-habitable
+  Atmosphere: Thin
+  Gravity: Weak
   Surface: Lava
-  Temprature: 65
+  Temprature: 2500
   type: 5
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -3386,6 +3397,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1726957534}
+  ClothesSlider: {fileID: 0}
 --- !u!1 &177132933
 GameObject:
   m_ObjectHideFlags: 0
@@ -4709,19 +4721,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: Gliese 667 Cc
   choosen: 0
   description: this is the best planet in the world
   SerialNum: 4
   found: 0
-  Size: big
-  Water: 0%
+  Size: 1.6x Earth
+  Water: Liquid
   Light: 90%
-  Life: None
-  Atmosphere: 40%
+  Life: Habitable
+  Atmosphere: Very thin
   Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Surface: Rocky
+  Temprature: 30
   type: 6
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -4742,6 +4754,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1501753701}
+  ClothesSlider: {fileID: 0}
 --- !u!135 &209363409
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11711,19 +11724,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: Gliese 436 b
   choosen: 0
-  description: this is the best planet in the world
+  description: 'One orbit around the star takes only about two days and 15.5 hours.
+
+'
   SerialNum: 8
   found: 0
-  Size: big
-  Water: 0%
+  Size: 3.9x Earth
+  Water: None
   Light: 90%
-  Life: None
-  Atmosphere: 40%
-  Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Life: Non-habitable
+  Atmosphere: very dense
+  Gravity: thin
+  Surface: Gas
+  Temprature: 400
   type: 8
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -11744,6 +11759,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 191127745}
+  ClothesSlider: {fileID: 0}
 --- !u!1 &497378505
 GameObject:
   m_ObjectHideFlags: 0
@@ -26671,19 +26687,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: OGLE-2016-BLG-1195Lb
   choosen: 0
-  description: this is the best planet in the world
+  description: This planet is at approximately 13,000 light years away from the earth,
+    orbiting a star that is believed to be very small, making it difficult to recognize
+    it as a real star.
   SerialNum: 4
   found: 0
-  Size: big
-  Water: 0%
-  Light: 90%
-  Life: None
-  Atmosphere: 40%
-  Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Size: Earth size
+  Water: ice
+  Light: 10%
+  Life: Non-habitable
+  Atmosphere: thin
+  Gravity: Weak
+  Surface: Ice
+  Temprature: -240
   type: 2
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -26704,6 +26722,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 277768997}
+  ClothesSlider: {fileID: 0}
 --- !u!135 &1083867009
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27258,19 +27277,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: OGLE-2005
   choosen: 0
-  description: this is the best planet in the world
+  description: This planet orbits its star every 3,500 days, about 10 years.
   SerialNum: 3
   found: 1
-  Size: big
-  Water: 0%
-  Light: 90%
-  Life: None
-  Atmosphere: 40%
+  Size: 3.9x Earth
+  Water: Ice
+  Light: 15%
+  Life: Non-habitable
+  Atmosphere: thin
   Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Surface: Icy
+  Temprature: -220
   type: 2
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -27291,6 +27310,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1155104750}
+  ClothesSlider: {fileID: 0}
 --- !u!1 &1113366222
 GameObject:
   m_ObjectHideFlags: 0
@@ -32999,19 +33019,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: 51 Pegasi b
   choosen: 0
-  description: this is the best planet in the world
+  description: This planet takes 4.2 days to complete one orbit of its star. It was
+    discovered in the Haute-Provence Observatory
   SerialNum: 5
   found: 0
-  Size: big
-  Water: 0%
-  Light: 90%
-  Life: None
-  Atmosphere: 40%
+  Size: 5.5x Earth
+  Water: Gas
+  Light: 92%
+  Life: Non-habitable
+  Atmosphere: Dense
   Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Surface: Gas
+  Temprature: 1000
   type: 3
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -33032,6 +33053,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 556517375}
+  ClothesSlider: {fileID: 0}
 --- !u!135 &1279229455
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35085,19 +35107,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: WASP-12b
   choosen: 0
-  description: this is the best planet in the world
+  description: This planet orbits so close to its parent star, it's being torn apart.
+    It takes only 1.1 days to completely circle its sun. In 10 million years, this
+    world could be completely consumed.
   SerialNum: 2
   found: 0
-  Size: big
-  Water: 0%
-  Light: 90%
-  Life: None
-  Atmosphere: 40%
-  Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Size: 22x Earth
+  Water: None
+  Light: 94%
+  Life: Non-habitable
+  Atmosphere: dense
+  Gravity: Very Strong
+  Surface: Gas
+  Temprature: 2200
   type: 7
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -35118,6 +35142,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 1709479501}
+  ClothesSlider: {fileID: 0}
 --- !u!1 &1343993785
 GameObject:
   m_ObjectHideFlags: 0
@@ -47121,19 +47146,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: 'Proxima b '
   choosen: 0
-  description: this is the best planet in the world
+  description: Proxima b is the closest potentially habitable planet to Earth, being
+    only 4.2 light years away. A year in this planet lasts 11.2 days!
   SerialNum: 1
   found: 0
-  Size: big
-  Water: 0%
-  Light: 90%
-  Life: None
-  Atmosphere: 40%
+  Size: 1.1x Earth
+  Water: Liquid
+  Light: 70%
+  Life: Habitable
+  Atmosphere: Dense
   Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Surface: rocky
+  Temprature: -39
   type: 0
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -47154,6 +47180,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 865414497}
+  ClothesSlider: {fileID: 0}
 --- !u!1 &1868293027
 GameObject:
   m_ObjectHideFlags: 0
@@ -49420,19 +49447,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: Gliese 1214b
   choosen: 0
-  description: this is the best planet in the world
+  description: This planet revolves around its host star at a distance of only 2
+    million km and takes just one and a half days to make one complete orbit.
   SerialNum: 10
   found: 0
-  Size: big
-  Water: 0%
+  Size: 2.7x Earth
+  Water: Liquid
   Light: 90%
-  Life: None
-  Atmosphere: 40%
-  Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Life: Nonhabitable
+  Atmosphere: Dense
+  Gravity: Weak
+  Surface: Water
+  Temprature: 200
   type: 9
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -49453,6 +49481,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 913910648}
+  ClothesSlider: {fileID: 0}
 --- !u!135 &1980036709
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52492,19 +52521,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: My planet
+  Name: Kepler 16b
   choosen: 0
-  description: this is the best planet in the world
+  description: Kepler 16b is the first planet known to orbit around two stars. It
+    takes 229 days to make one complete orbit.
   SerialNum: 7
   found: 0
-  Size: big
-  Water: 0%
-  Light: 90%
-  Life: None
-  Atmosphere: 40%
+  Size: 8.5x Earth
+  Water: None
+  Light: 30%
+  Life: Non-habitable
+  Atmosphere: Dense
   Gravity: Strong
-  Surface: Lava
-  Temprature: 65
+  Surface: Gas
+  Temprature: -100
   type: 2
   N: {fileID: 352759038}
   D: {fileID: 687130622}
@@ -52525,6 +52555,7 @@ MonoBehaviour:
   Sfx: {fileID: 1851094076}
   Control: {fileID: 963194230}
   NotFound: {fileID: 2006700682}
+  ClothesSlider: {fileID: 0}
 --- !u!1 &2132184234
 GameObject:
   m_ObjectHideFlags: 0
