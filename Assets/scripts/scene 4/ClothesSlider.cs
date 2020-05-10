@@ -12,7 +12,11 @@ public class ClothesSlider : MonoBehaviour
     public GameObject planet;
     public bool correct;
     public int temp;
-    public GameObject next;
+    public ScreenControl Nextscreen;
+    public float TempGroup;
+    public Slider Slider2;
+    float Diff;
+
 
     // Start is called before the first frame update
 
@@ -31,25 +35,55 @@ public class ClothesSlider : MonoBehaviour
                 Characters[i].SetActive(false);
             }
         }
+        ChangeValue();
     }
 
     private void Start()
     {
         temp = planet.GetComponent<ChoosenPlanet>().Temprature;
-        
-    }
-    private void Update()
-    {
-        if (temp>60)
+        if (temp > 1000)
         {
-            if (Current==4)
-            {
-                next.SetActive(true);
-            }
-            else
-            {
-                next.SetActive(false);
-            }
+            TempGroup = 4;
+        }
+        else if (temp >150)
+        {
+            TempGroup = 3;
+        }
+        else if (temp > 15)
+        {
+            TempGroup = 2;
+        }
+        else if ( temp> (-100))
+        {
+            TempGroup = 1;
+        }
+        else
+        {
+            TempGroup = 0;
+        }
+        ChangeValue();
+    }
+
+
+    void ChangeValue()
+    {
+        Diff = Current - TempGroup;
+        Slider2.value = 0.44f + (Diff * 0.11f);
+    }
+
+    public void CheckAnswer()
+    {
+        if (Diff == 0)
+        {
+            Nextscreen.NextButton();
+            Nextscreen.ChangeDot();
+            Nextscreen.AddIcon(5);
+
+        }
+
+        else
+        {
+            Nextscreen.wrong();
         }
     }
 
