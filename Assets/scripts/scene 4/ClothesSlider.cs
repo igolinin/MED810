@@ -74,7 +74,13 @@ public class ClothesSlider : MonoBehaviour
         if (oneTime==false)
         {
             slider.value = Random.Range(0, 5);
-            oneTime = true;
+            Current = slider.value;
+            if (Current != TempGroup)
+            {
+                oneTime = true;
+            }
+            
+            
         }
         if (Slider2.value != NewValue)
         {

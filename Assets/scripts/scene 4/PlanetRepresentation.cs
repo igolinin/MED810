@@ -23,7 +23,7 @@ public class PlanetRepresentation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Num+1) != Control.GetComponent<ScreenControl>().PlanetN)
+        if ((Num+1) != Control.GetComponent<ScreenControl>().PlanetN && Control.GetComponent<ScreenControl>().PlanetN!=0)
         {
             if (IsSurface)
             {
