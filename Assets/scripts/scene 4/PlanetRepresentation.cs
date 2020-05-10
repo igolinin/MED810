@@ -12,6 +12,7 @@ public class PlanetRepresentation : MonoBehaviour
     public int Num=0;
     int i;
     public bool IsSurface;
+    public Color[] colors;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class PlanetRepresentation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Num != Control.GetComponent<ScreenControl>().PlanetN)
+        if ((Num+1) != Control.GetComponent<ScreenControl>().PlanetN)
         {
             if (IsSurface)
             {
@@ -75,5 +76,10 @@ public class PlanetRepresentation : MonoBehaviour
         a.material = physicmatierals[i];
         a.isTrigger = trigger[i];
         gameObject.GetComponent<MeshRenderer>().material = SurMaterials[i];
+    }
+
+    public void Fil(int a)
+    {
+        gameObject.GetComponent<Renderer>().material.color = colors[a];
     }
 }
