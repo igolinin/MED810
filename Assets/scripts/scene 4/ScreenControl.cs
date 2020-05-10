@@ -81,20 +81,20 @@ public class ScreenControl : MonoBehaviour
 
     public void ChangeDot()
     {
-        CurDot.GetComponent<Image>().color = C1;
+        CurDot.GetComponent<Image>().color = C2;
         CurrentDot += 1;
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
-        CurDot.GetComponent<Image>().color = C2;
+        CurDot.GetComponent<Image>().color = C1;
     }
 
     public void BackDot()
     {
-        CurDot.GetComponent<Image>().color = C2;
+        CurDot.GetComponent<Image>().color = C1;
         CurrentDot -= 1;
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
-        CurDot.GetComponent<Image>().color = C1;
+        CurDot.GetComponent<Image>().color = C2;
     }
 
     public void wrong()
