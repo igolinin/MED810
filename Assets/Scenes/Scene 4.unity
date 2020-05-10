@@ -3358,7 +3358,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 6
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -3747,12 +3747,26 @@ MonoBehaviour:
   launch: {fileID: 511745669}
   satellite: {fileID: 336665775}
   satellite2: {fileID: 818823985}
+  satellite_obj: {fileID: 489369934}
+  satellite2_obj: {fileID: 1400619905}
+  Control: {fileID: 963194225}
+  PlanetSize:
+  - 1.16
+  - 1.03
+  - 1.16
+  - 1.39
+  - 2.04
+  - 1.77
+  - 1.57
+  - 1
+  - 1.57
+  - 2.81
   start: {fileID: 511745668}
   stop: {fileID: 1948382981}
   next_button: {fileID: 434593165}
   retry_button: {fileID: 0}
-  pointer_exoplanet: {fileID: 0}
-  pointer_earth: {fileID: 0}
+  pointer_exoplanet: {fileID: 1138614777}
+  pointer_earth: {fileID: 1070562583}
   Orbit_days_exoplanet: {fileID: 1993422001}
   Orbit_days_earth: {fileID: 868661856}
   comparison: {fileID: 256317575}
@@ -4447,6 +4461,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
   colors: []
 --- !u!114 &202632607
@@ -4711,7 +4731,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 4
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -7256,8 +7276,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336665773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 1.4, z: 0}
-  m_LocalScale: {x: 3.5338125, y: 3.5338125, z: 3.5338125}
+  m_LocalPosition: {x: -4, y: 3.22, z: 0.61}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 141347602}
   - {fileID: 912660169}
@@ -9279,6 +9299,13 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
+
   Num: 0
   colors: []
 --- !u!114 &401169709
@@ -11568,6 +11595,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488862404}
   m_CullTransparentMesh: 0
+--- !u!1 &489369934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 95e79782422043348aba616cbc9be611,
+    type: 3}
+  m_PrefabInstance: {fileID: 1332187110}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &493730537
 GameObject:
   m_ObjectHideFlags: 0
@@ -11710,7 +11743,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 8
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -19233,6 +19266,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
   colors: []
 --- !u!1 &813466813
@@ -19334,7 +19373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818823983}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.85, y: 1.25, z: 0}
+  m_LocalPosition: {x: 6.85, y: 3.07, z: 0.61}
   m_LocalScale: {x: 3.5338125, y: 3.5338125, z: 3.5338125}
   m_Children:
   - {fileID: 1834949227}
@@ -20790,8 +20829,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0825f28a591eea24cb0dd9c94b8afea0, type: 2}
+  m_sharedMaterial: {fileID: -895058717055154418, guid: 0825f28a591eea24cb0dd9c94b8afea0,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20899,7 +20939,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 741.9, y: -200}
+  m_AnchoredPosition: {x: 741.9, y: -114.99985}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &868995894
@@ -24220,6 +24260,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
   colors: []
 --- !u!1 &974353867
@@ -26409,7 +26455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1070562582
 Animator:
   serializedVersion: 3
@@ -26418,7 +26464,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070562581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 77af51e4ccb899f4b86cb93e99c14702, type: 2}
   m_CullingMode: 0
@@ -26452,7 +26498,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -26481,7 +26527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 422, y: 52}
+  m_AnchoredPosition: {x: 422, y: 137.00015}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1071271656 stripped
@@ -26652,7 +26698,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 4
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -27239,7 +27285,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 3
   found: 1
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -27879,6 +27925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 95e79782422043348aba616cbc9be611,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2207121744686933888, guid: 95e79782422043348aba616cbc9be611,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -28331,7 +28382,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1138614775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28348,7 +28399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86, y: 52}
+  m_AnchoredPosition: {x: -86, y: 137.00015}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1138614776
@@ -28359,7 +28410,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138614774}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 77af51e4ccb899f4b86cb93e99c14702, type: 2}
   m_CullingMode: 0
@@ -28393,7 +28444,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -32980,7 +33031,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 5
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -34664,6 +34715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Satellite
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 95e79782422043348aba616cbc9be611,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2207121744686933888, guid: 95e79782422043348aba616cbc9be611,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -35066,7 +35122,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 2
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -36368,6 +36424,12 @@ Transform:
   m_Father: {fileID: 650794543}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1400619905 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 95e79782422043348aba616cbc9be611,
+    type: 3}
+  m_PrefabInstance: {fileID: 1119831680}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1404993632
 GameObject:
   m_ObjectHideFlags: 0
@@ -37084,6 +37146,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
   colors: []
 --- !u!1 &1443393948
@@ -40638,6 +40706,101 @@ CanvasRenderer:
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1571894687
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571894684}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6ec8f35921fe0404392d2a378255b942, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1571894688
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571894684}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1571894689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571894684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6c4eb7c039ae94992dd5257e114def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 447062055}
+--- !u!114 &1571894690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571894684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c243bbe0f036d9840819842aaa6c2610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Materials: []
+  Control: {fileID: 963194225}
+  physicmatierals:
+  - {fileID: 13400000, guid: 256698e2ebb8fa747912c48d84d61617, type: 2}
+  - {fileID: 13400000, guid: e1eec68bafadc2d4e9c95b4e5d920e54, type: 2}
+  - {fileID: 13400000, guid: 602c1d8cebb5c464eb62ebaeb4a0d713, type: 2}
+  - {fileID: 13400000, guid: a14042fbb5de1e240bf076e8b6121fc1, type: 2}
+  - {fileID: 13400000, guid: 999d53593fd82a741be07e61bcd2f1b6, type: 2}
+  SurMaterials:
+  - {fileID: 2100000, guid: 707f684114f59e941aa42068dd0d52d8, type: 2}
+  - {fileID: 2100000, guid: 04a85bf3402047a4ba50b3ad3dec4a3b, type: 2}
+  - {fileID: 2100000, guid: 4b916d88d19cc62478a9516240c1ff42, type: 2}
+  - {fileID: 2100000, guid: 7c2b2d9d2a75a234d8b2ded8cb689fad, type: 2}
+  - {fileID: 2100000, guid: f74d37f5e21a4f24c85f3cac3b2a092b, type: 2}
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 0100010100
+  Num: 0
+  IsSurface: 1
+=======
   m_Modification:
     m_TransformParent: {fileID: 336882176}
     m_Modifications:
@@ -46258,6 +46421,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
   colors: []
 --- !u!114 &1831212613
@@ -47138,7 +47307,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 1
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -48612,8 +48781,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1138614774}
-        m_MethodName: SetActive
-        m_Mode: 6
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -48794,6 +48963,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
   colors: []
 --- !u!114 &1950245186
@@ -48835,8 +49010,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955992678}
   m_LocalRotation: {x: -0.17120457, y: 0.26222354, z: -0.000014230607, w: 0.94969887}
-  m_LocalPosition: {x: 6.8500237, y: 1.2500037, z: 0.0000013113022}
-  m_LocalScale: {x: 2.2914782, y: 2.2914782, z: 2.2914782}
+  m_LocalPosition: {x: 6.8500237, y: 3.07, z: 0.61}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_Children: []
   m_Father: {fileID: 890960071}
   m_RootOrder: 2
@@ -49424,7 +49599,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 10
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
@@ -49624,8 +49799,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0825f28a591eea24cb0dd9c94b8afea0, type: 2}
+  m_sharedMaterial: {fileID: -895058717055154418, guid: 0825f28a591eea24cb0dd9c94b8afea0,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -49733,7 +49909,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 230, y: -200}
+  m_AnchoredPosition: {x: 230, y: -114.99985}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1994366185
@@ -50455,6 +50631,12 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
   colors:
   - {r: 1, g: 1, b: 1, a: 0}
@@ -50715,8 +50897,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046669426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 1.4, z: 0}
-  m_LocalScale: {x: 3.5338125, y: 3.5338125, z: 3.5338125}
+  m_LocalPosition: {x: -4, y: 3.22, z: 0.61}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_Children: []
   m_Father: {fileID: 890960071}
   m_RootOrder: 0
@@ -50805,6 +50987,22 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 2046669426}
+  DifferentSize: 1
+  PlanetSize:
+  - 1.16
+  - 1.03
+  - 1.16
+  - 1.39
+  - 2.04
+  - 1.77
+  - 1.57
+  - 1
+  - 1.57
+  - 2.81
+  trigger: 
   Num: 0
   colors: []
 --- !u!1 &2049505516
@@ -52490,7 +52688,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 7
   found: 0
-  Size: big
+  Size: 0
   Water: 0%
   Light: 90%
   Life: None
