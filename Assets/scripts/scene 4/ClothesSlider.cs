@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class ClothesSlider : MonoBehaviour
 {
@@ -16,9 +18,38 @@ public class ClothesSlider : MonoBehaviour
     public float TempGroup;
     public Slider Slider2;
     float Diff;
+    float NewValue;
+    bool oneTime = false;
 
 
     // Start is called before the first frame update
+    void Start()
+    {
+        temp = planet.GetComponent<ChoosenPlanet>().Temprature;
+        Debug.Log(slider.value);
+        if (temp > 1000)
+        {
+            TempGroup = 4;
+        }
+        else if (temp > 150)
+        {
+            TempGroup = 3;
+        }
+        else if (temp > 15)
+        {
+            TempGroup = 2;
+        }
+        else if (temp > (-100))
+        {
+            TempGroup = 1;
+        }
+        else
+        {
+            TempGroup = 0;
+        }
+        chracterSwitch();
+    }
+
 
 
     public void chracterSwitch()
@@ -38,37 +69,25 @@ public class ClothesSlider : MonoBehaviour
         ChangeValue();
     }
 
-    private void Start()
+    private void Update()
     {
-        temp = planet.GetComponent<ChoosenPlanet>().Temprature;
-        if (temp > 1000)
+        if (oneTime==false)
         {
-            TempGroup = 4;
+            slider.value = Random.Range(0, 5);
+            oneTime = true;
         }
-        else if (temp >150)
+        if (Slider2.value != NewValue)
         {
-            TempGroup = 3;
+            Slider2.value = Mathf.Lerp(Slider2.value, NewValue, Time.deltaTime * 5f);
         }
-        else if (temp > 15)
-        {
-            TempGroup = 2;
-        }
-        else if ( temp> (-100))
-        {
-            TempGroup = 1;
-        }
-        else
-        {
-            TempGroup = 0;
-        }
-        ChangeValue();
+
     }
 
 
     void ChangeValue()
     {
-        Diff = Current - TempGroup;
-        Slider2.value = 0.44f + (Diff * 0.11f);
+        Diff = TempGroup-Current;
+        NewValue = 0.44f + (Diff * 0.11f);
     }
 
     public void CheckAnswer()
