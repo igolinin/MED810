@@ -6,12 +6,6 @@ public class PlanetRepresentation : MonoBehaviour
 {
     public Material[] Materials;
     public GameObject Control;
-    public PhysicMaterial[] physicmatierals;
-    public Material[] SurMaterials;
-    public GameObject Planet;
-    public bool DifferentSize;
-    public float[] PlanetSize;
-    public bool[] trigger;
     public int Num=0;
     int i;
     public Color[] colors;
@@ -29,12 +23,6 @@ public class PlanetRepresentation : MonoBehaviour
         {
                 ChangeSpheres();
 
-            Num = Control.GetComponent<ScreenControl>().PlanetN;
-            if (DifferentSize)
-            {
-                ChangeSize();
-            }
-            
         }
         
 
@@ -50,11 +38,5 @@ public class PlanetRepresentation : MonoBehaviour
     public void Fil(int a)
     {
         gameObject.GetComponent<Renderer>().material.color = colors[a];
-    }
-
-    void ChangeSize()
-    {
-        float scale = PlanetSize[Num - 1];
-        Planet.transform.localScale = new Vector3(1.7f * scale, 1.7f * scale, 1.7f * scale);
     }
 }
