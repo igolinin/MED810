@@ -12,7 +12,7 @@ public class ChoosenPlanet : MonoBehaviour
     public string description;
     public int SerialNum;
     public bool found;
-    public float Size;
+    public string Size;
     public string Water, Light, Life, Atmosphere, Gravity;
     public string Surface;
     public int Temprature;
@@ -62,7 +62,7 @@ public class ChoosenPlanet : MonoBehaviour
         G.text = Gravity;
         Sf.text = Surface;
         Nx.text = Name;
-        Sx.text = Size.ToString();
+        Sx.text = Size;
         Wx.text = Water;
         Lgx.text = Light;
         Lfx.text = Life;
