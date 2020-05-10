@@ -1814,7 +1814,7 @@ RectTransform:
   - {fileID: 648384929}
   - {fileID: 1392039481}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3036,14 +3036,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Earth-Like
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 0.9-1.1x Earth
+  Water: Liquid
+  Light: 60-75%
+  Life: Habitable
+  Atmosphere: Dense
+  Temprature: -50c - 50c
+  Gravity: Like Earth
+  Surface: Rocky
   N: {fileID: 183021307}
   Sz: {fileID: 1610574506}
   W: {fileID: 1238217127}
@@ -5104,7 +5104,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &238540299
 GameObject:
@@ -5837,14 +5837,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Very Hot Neptune
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 3-5x Earth
+  Water: None
+  Light: 90%
+  Life: Non-habitable
+  Atmosphere: Very Dense
+  Temprature: 400c-600c
+  Gravity: Strong
+  Surface: Gas
   N: {fileID: 1690881647}
   Sz: {fileID: 429942654}
   W: {fileID: 1388986465}
@@ -6938,7 +6938,7 @@ RectTransform:
   - {fileID: 97849755}
   - {fileID: 800752031}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7948,7 +7948,7 @@ Transform:
   - {fileID: 1629030823}
   - {fileID: 215164284}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &358560884
 GameObject:
@@ -11615,7 +11615,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496871126
 GameObject:
@@ -11735,8 +11735,8 @@ MonoBehaviour:
   Water: None
   Light: 90%
   Life: Non-habitable
-  Atmosphere: very dense
-  Gravity: thin
+  Atmosphere: Very dense
+  Gravity: Strong
   Surface: Gas
   Temprature: 400
   type: 8
@@ -19051,7 +19051,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &800597566 stripped
 Transform:
@@ -19567,7 +19567,7 @@ RectTransform:
   - {fileID: 1345297672}
   - {fileID: 120926263}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20315,7 +20315,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &857376022
 GameObject:
@@ -22054,7 +22054,7 @@ RectTransform:
   - {fileID: 470347856}
   - {fileID: 1557015873}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23387,7 +23387,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &956045215
 GameObject:
@@ -23421,37 +23421,6 @@ Transform:
   - {fileID: 2006700683}
   m_Father: {fileID: 650794543}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &956983704
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 956983705}
-  m_Layer: 0
-  m_Name: Background
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &956983705
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956983704}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -783.8, y: -93.1, z: 22}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1206002751}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962289581
 GameObject:
@@ -23610,6 +23579,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 705507995}
+  - {fileID: 1206002751}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24000,7 +23970,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &972088100
 GameObject:
@@ -26560,7 +26530,7 @@ RectTransform:
   - {fileID: 1847988778}
   - {fileID: 1866042810}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -26833,7 +26803,7 @@ PrefabInstance:
     - target: {fileID: 6870360531182619581, guid: 90aec82abd1614a8daa791344433d11c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6870360531182619581, guid: 90aec82abd1614a8daa791344433d11c,
         type: 3}
@@ -27288,7 +27258,7 @@ MonoBehaviour:
   Life: Non-habitable
   Atmosphere: thin
   Gravity: Strong
-  Surface: Icy
+  Surface: Ice
   Temprature: -220
   type: 2
   N: {fileID: 352759038}
@@ -28142,7 +28112,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1130780706
 GameObject:
@@ -28172,7 +28142,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1131329999
 GameObject:
@@ -28204,7 +28174,7 @@ Transform:
   - {fileID: 1360280216}
   - {fileID: 270026934}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1137718963
 GameObject:
@@ -29239,7 +29209,7 @@ Transform:
   - {fileID: 1527530001}
   - {fileID: 1388179984}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1192606064
 GameObject:
@@ -29443,14 +29413,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Water Planet
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 2-4x Earth
+  Water: Liquid
+  Light: 90%
+  Life: Non-habitable
+  Atmosphere: Dense
+  Temprature: 200c
+  Gravity: Weak
+  Surface: Water
   N: {fileID: 1212331383}
   Sz: {fileID: 2020604394}
   W: {fileID: 1587852287}
@@ -30303,11 +30273,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206002750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalPosition: {x: -0, y: 0.8, z: 32}
+  m_LocalScale: {x: 2.8889642, y: 2.8889642, z: 0.9629882}
   m_Children: []
-  m_Father: {fileID: 956983705}
-  m_RootOrder: 0
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1206002752
 MonoBehaviour:
@@ -31865,14 +31835,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Hot jupiter
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 5-6x Earth
+  Water: Gas
+  Light: 90-95%
+  Life: Non-habitable
+  Atmosphere: Dense
+  Temprature: 1000c
+  Gravity: Strong
+  Surface: Gas
   N: {fileID: 968674540}
   Sz: {fileID: 169684470}
   W: {fileID: 1693919856}
@@ -33637,14 +33607,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Ice Giant
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 3-5x Earth
+  Water: Ice
+  Light: 10-20%
+  Life: Non-habitable
+  Atmosphere: Thin
+  Temprature: -300c - -100c
+  Gravity: Strong
+  Surface: Ice
   N: {fileID: 1926659717}
   Sz: {fileID: 675077024}
   W: {fileID: 2088519672}
@@ -34262,7 +34232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1323851166
 GameObject:
@@ -34389,14 +34359,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Ice World
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 1x Earth
+  Water: Ice
+  Light: 0-15%
+  Life: Non-habitable
+  Atmosphere: Thin
+  Temprature: -250c
+  Gravity: Weak
+  Surface: Ice
   N: {fileID: 697392466}
   Sz: {fileID: 827881148}
   W: {fileID: 240658588}
@@ -36541,14 +36511,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Very Hot Jupiter
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 20-25x Earth
+  Water: None
+  Light: 90-95%
+  Life: Non-habitable
+  Atmosphere: Dense
+  Temprature: '>2000c'
+  Gravity: Very strong
+  Surface: Gas
   N: {fileID: 1531655195}
   Sz: {fileID: 99072354}
   W: {fileID: 863854807}
@@ -36713,7 +36683,7 @@ Transform:
   - {fileID: 9570253}
   - {fileID: 1963164153}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1421595223
 GameObject:
@@ -37166,7 +37136,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446272048
 GameObject:
@@ -37271,7 +37241,7 @@ Transform:
   - {fileID: 79230636}
   - {fileID: 2038472067}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1456112978
 GameObject:
@@ -37930,14 +37900,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Cold Gas GIant
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 8-10x Earth
+  Water: None
+  Light: 30%
+  Life: Non-habitable
+  Atmosphere: Dense
+  Temprature: -100c
+  Gravity: Strong
+  Surface: Gas
   N: {fileID: 1943225589}
   Sz: {fileID: 1202410182}
   W: {fileID: 488862406}
@@ -39295,7 +39265,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1514359843
 GameObject:
@@ -40155,14 +40125,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Super Earth
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 1-2x Earth
+  Water: Liquid
+  Light: 90%
+  Life: Habitable
+  Atmosphere: Thin
+  Temprature: 20c-40c
+  Gravity: Strong
+  Surface: Rocky
   N: {fileID: 177132935}
   Sz: {fileID: 1264460002}
   W: {fileID: 1065357566}
@@ -47581,7 +47551,7 @@ Transform:
   - {fileID: 2084859388}
   - {fileID: 1009288397}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895252097
 GameObject:
@@ -48158,7 +48128,7 @@ Transform:
   - {fileID: 1266927044}
   - {fileID: 1886742784}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1936410291
 GameObject:
@@ -48190,7 +48160,7 @@ RectTransform:
   - {fileID: 1059802551}
   - {fileID: 1794456008}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -50049,14 +50019,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TypeName: Lava Planet
-  Size: temp
-  Water: temp
-  Light: temp
-  Life: temp
-  Atmosphere: temp
-  Temprature: temp
-  Gravity: temp
-  Surface: temp
+  Size: 1-2x Earth
+  Water: None
+  Light: 98%
+  Life: Non-habitable
+  Atmosphere: Thin
+  Temprature: '>2000c'
+  Gravity: Weak
+  Surface: Lava
   N: {fileID: 1177465139}
   Sz: {fileID: 1751646412}
   W: {fileID: 1638446033}
@@ -51250,7 +51220,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2066305487
 GameObject:

@@ -20,7 +20,8 @@ public class CameraController2 : MonoBehaviour
     public Vector2[] checkStarPos;
     public GameObject nextBtn;
     public GameObject btnTxt;
-    public GameObject PlanetIconUI;
+    public GameObject Instruction;
+    public GameObject Instruction2;
 
     [SerializeField]
     public GameObject[] Stars;
@@ -32,6 +33,7 @@ public class CameraController2 : MonoBehaviour
     private bool starSelected = false;
     private bool starZoomedIn;
     private bool zoomDone;
+    private bool FirstTime = false;
 
     public Image CrossHair;
     public TextMeshProUGUI counter;
@@ -74,7 +76,6 @@ public class CameraController2 : MonoBehaviour
         {
             btnTxt.GetComponent<TextMeshProUGUI>().enabled = true;
             nextBtn.GetComponent<Image>().enabled = true;
-            PlanetIconUI.SetActive(true);
         }
 
 
@@ -122,6 +123,12 @@ public class CameraController2 : MonoBehaviour
             {
                 //The camera moves to center the planet in the screen 
                 transform.position = Vector2.MoveTowards(transform.position, checkStarPos[i], 2.5f * Time.deltaTime);
+                if (FirstTime == false)
+                {
+                    Instruction.SetActive(false);
+                    Instruction2.SetActive(true);
+                    FirstTime = true;
+                }
 
 
                 //If the planet is centerd 
@@ -138,6 +145,7 @@ public class CameraController2 : MonoBehaviour
 
                     //To make this if statement go off only one time. 
                     starZoomedIn = true;
+                    Instruction2.SetActive(false);
                     planetsFound[i] = int.Parse(Stars[i].name);
                     Debug.Log(planetsFound[i] + " // " + planetsFound.Length);
 

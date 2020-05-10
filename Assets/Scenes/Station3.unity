@@ -3556,7 +3556,8 @@ MonoBehaviour:
   checkStarPos: []
   nextBtn: {fileID: 0}
   btnTxt: {fileID: 0}
-  PlanetIconUI: {fileID: 0}
+  Instruction: {fileID: 1019787128}
+  Instruction2: {fileID: 727477338}
   Stars:
   - {fileID: 1680925986}
   - {fileID: 362614078}

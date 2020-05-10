@@ -26,9 +26,9 @@ public class ThrowBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Num != sc.PlanetN&& sc.PlanetN!=0)
+        if ((Num+1) != sc.PlanetN&& sc.PlanetN!=0)
         {
-            Num = sc.PlanetN;
+            Num = sc.PlanetN-1;
             ChangeSurface();
         }
     }
@@ -36,12 +36,12 @@ public class ThrowBall : MonoBehaviour
     void ChangeSurface()
     {
         int j = i;
-        if (Num == 2 || Num == 3 || Num == 7 || Num == 8)
+        if (Num == 1 || Num == 3 || Num == 7 || Num == 8)
         {
             //Gas planets
             i = 0;
         }
-        else if (Num == 1 || Num == 4)
+        else if (Num == 2 || Num == 4)
         {
             //Ice planets
             i = 1;
