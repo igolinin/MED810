@@ -53,6 +53,7 @@ public class ChoosenPlanet : MonoBehaviour
     public void choose()
     {
         Control.GetComponent<ScreenControl>().PlanetN = SerialNum;
+        Control.GetComponent<ScreenControl>().PlanetName = Name;
         N.text = Name;
         D.text = description;
         W.text = Water + " Water";

@@ -35,6 +35,7 @@ public class ThrowBall : MonoBehaviour
 
     void ChangeSurface()
     {
+        int j = i;
         if (Num == 2 || Num == 3 || Num == 7 || Num == 8)
         {
             //Gas planets
@@ -58,6 +59,10 @@ public class ThrowBall : MonoBehaviour
         else
         { //earth
             i = 4;
+        }
+        if (i!=j)
+        {
+            Surfaces[j].SetActive(false);
         }
         Surfaces[i].SetActive(true);
         ball.GetComponent<Rigidbody>().mass = Grav[i];
