@@ -3358,7 +3358,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 6
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -3747,12 +3747,26 @@ MonoBehaviour:
   launch: {fileID: 511745669}
   satellite: {fileID: 336665775}
   satellite2: {fileID: 818823985}
+  satellite_obj: {fileID: 336665773}
+  satellite2_obj: {fileID: 818823983}
+  Control: {fileID: 963194225}
+  PlanetSize:
+  - 1.16
+  - 1.03
+  - 1.16
+  - 1.39
+  - 2.04
+  - 1.77
+  - 1.57
+  - 1
+  - 1.57
+  - 2.81
   start: {fileID: 511745668}
   stop: {fileID: 1948382981}
   next_button: {fileID: 434593165}
   retry_button: {fileID: 0}
-  pointer_exoplanet: {fileID: 0}
-  pointer_earth: {fileID: 0}
+  pointer_exoplanet: {fileID: 1138614777}
+  pointer_earth: {fileID: 1070562583}
   Orbit_days_exoplanet: {fileID: 1993422001}
   Orbit_days_earth: {fileID: 868661856}
   comparison: {fileID: 256317575}
@@ -4447,7 +4461,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!114 &202632607
 MonoBehaviour:
@@ -4711,7 +4732,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 4
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -7247,7 +7268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &336665774
 Transform:
   m_ObjectHideFlags: 0
@@ -9279,7 +9300,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!114 &401169709
 MonoBehaviour:
@@ -11710,7 +11738,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 8
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -19233,7 +19261,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!1 &813466813
 GameObject:
@@ -19325,7 +19360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &818823984
 Transform:
   m_ObjectHideFlags: 0
@@ -24220,7 +24255,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!1 &974353867
 GameObject:
@@ -26402,33 +26444,13 @@ GameObject:
   - component: {fileID: 1070562585}
   - component: {fileID: 1070562584}
   - component: {fileID: 1070562583}
-  - component: {fileID: 1070562582}
   m_Layer: 5
   m_Name: Pointer Earth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!95 &1070562582
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070562581}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 77af51e4ccb899f4b86cb93e99c14702, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_IsActive: 1
 --- !u!114 &1070562583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26452,7 +26474,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -26652,7 +26674,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 4
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -27239,7 +27261,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 3
   found: 1
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -28324,14 +28346,13 @@ GameObject:
   - component: {fileID: 1138614775}
   - component: {fileID: 1138614778}
   - component: {fileID: 1138614777}
-  - component: {fileID: 1138614776}
   m_Layer: 5
   m_Name: Pointer Exoplanet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1138614775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28351,25 +28372,6 @@ RectTransform:
   m_AnchoredPosition: {x: -86, y: 52}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1138614776
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138614774}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 77af51e4ccb899f4b86cb93e99c14702, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1138614777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28393,7 +28395,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -32980,7 +32982,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 5
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -35066,7 +35068,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 2
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -37084,7 +37086,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!1 &1443393948
 GameObject:
@@ -46258,7 +46267,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!114 &1831212613
 MonoBehaviour:
@@ -47138,7 +47154,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 1
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -48794,7 +48810,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!114 &1950245186
 MonoBehaviour:
@@ -49424,7 +49447,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 10
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None
@@ -50455,7 +50478,14 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 0}
+  DifferentSize: 0
+  PlanetSize: []
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors:
   - {r: 1, g: 1, b: 1, a: 0}
   - {r: 0, g: 0.9266882, b: 1, a: 0.54901963}
@@ -50805,7 +50835,24 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 276e0453e7a10b64aadf7eac5b9b6534, type: 2}
   - {fileID: 2100000, guid: 21b88b52e35f6a44ca7ea032215b0ffe, type: 2}
   Control: {fileID: 963194225}
+  physicmatierals: []
+  SurMaterials: []
+  Planet: {fileID: 2046669426}
+  DifferentSize: 1
+  PlanetSize:
+  - 1.16
+  - 1.03
+  - 1.16
+  - 1.39
+  - 2.04
+  - 1.77
+  - 1.57
+  - 1
+  - 1.57
+  - 2.81
+  trigger: 
   Num: 0
+  IsSurface: 0
   colors: []
 --- !u!1 &2049505516
 GameObject:
@@ -52490,7 +52537,7 @@ MonoBehaviour:
   description: this is the best planet in the world
   SerialNum: 7
   found: 0
-  Size: big
+  Size: NaN
   Water: 0%
   Light: 90%
   Life: None

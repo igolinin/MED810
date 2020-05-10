@@ -2,27 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using TMPro;
+using DG.Tweening;
+
 
 public class OrbitControl : MonoBehaviour
 {
     public Slider launch;
     public Animator satellite;
     public Animator satellite2;
+    public GameObject satellite_obj;
+    public GameObject satellite2_obj;
+    public GameObject Control;
     private bool flag = false;
     private bool moving = false;
     private bool success = false;
     private float velocity;
     private float duration;
     private float animStartTime;
+    private bool stop_button = false;
     private int loops = 0;
+    public float[] PlanetSize;
 
     public GameObject start;
     public GameObject stop;
     public GameObject next_button;
     public Button retry_button;
-    public GameObject pointer_exoplanet;
-    public GameObject pointer_earth;
+    public Image pointer_exoplanet;
+    public Image pointer_earth;
 
     public TextMeshProUGUI Orbit_days_exoplanet;
     public TextMeshProUGUI Orbit_days_earth;
@@ -30,10 +38,8 @@ public class OrbitControl : MonoBehaviour
 
     private void Start()
     {
-        velocity = satellite.GetFloat("relative_speed");
-        duration = satellite.GetCurrentAnimatorStateInfo(0).length / velocity;
-        satellite.transform.position = new Vector3(-3.52f, -2.65f, 0f);
-        satellite2.transform.position = new Vector3(-3.36f, -2.65f, 0f);
+        //satellite.transform.position = new Vector3(-3.52f, -2.65f, 0f);
+        //satellite2.transform.position = new Vector3(-3.36f, -2.65f, 0f);
     }
 
     // Update is called once per frame
@@ -41,13 +47,30 @@ public class OrbitControl : MonoBehaviour
     {
         if (launch.value == 1.0 && flag == false)
         {
+            int Num = Control.GetComponent<ScreenControl>().PlanetN;
+
+            satellite_obj.SetActive(true);
             satellite.SetTrigger("Launch");
+            velocity = 1.0f / PlanetSize[Num-1];
+            duration = satellite.GetCurrentAnimatorStateInfo(0).length / velocity;
+            satellite.SetFloat("relative_speed", velocity);
+            satellite.transform.localScale = new Vector3(2* PlanetSize[Num - 1], 2*PlanetSize[Num - 1], 2*PlanetSize[Num - 1]);
+            //satellite_obj.transform.localScale = new Vector3(0.28298f, 0.28928f, 0.28928f);
+
+            satellite2_obj.SetActive(true);
             satellite2.SetTrigger("Launch");
             animStartTime = Time.time;
             moving = true;
             start.SetActive(false);
-            stop.SetActive(true);
+            stop_button = true;
+            //stop.SetActive(true);
             flag = true;
+        }
+
+        if (Time.time > animStartTime + 1 && stop_button == true)
+        {
+            stop.SetActive(true);
+            stop_button = false;
         }
 
         if (Time.time > animStartTime + duration && moving == true)
@@ -72,11 +95,19 @@ public class OrbitControl : MonoBehaviour
         next_button.SetActive(true);
         //pointer_exoplanet.SetActive(true);
         //pointer_earth.SetActive(true);
-        
+
+
         int days = (int)Mathf.Floor(365f / velocity);
         Orbit_days_exoplanet.text = days.ToString() + " days";
         Orbit_days_earth.text = "365 days";
 
+        pointer_exoplanet.DOFillAmount(1, 1);
+        Orbit_days_exoplanet.DOFade(1, 1);
+
+        StartCoroutine(waiter());
+
+        pointer_earth.DOFillAmount(1, 1);
+        Orbit_days_earth.DOFade(1, 1);
 
         if (velocity > 1)
         {
@@ -94,8 +125,6 @@ public class OrbitControl : MonoBehaviour
     {
         if (!success)
         {
-            //satellite.speed = 0;
-            //satellite2.speed = 0;
             GameObject go = GameObject.Find("Main Camera");
             ScreenControl sc = (ScreenControl)go.GetComponent(typeof(ScreenControl));
             sc.wrong();
@@ -111,5 +140,10 @@ public class OrbitControl : MonoBehaviour
             flag = false;
             loops = 0;
         }
+    }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSecondsRealtime(4);
     }
 }
