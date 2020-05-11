@@ -19,6 +19,7 @@ public class ThrowBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Num = 20;
         ballPosition = ball.transform.position;
         ball1Position = ball1.transform.position;
     }
@@ -36,12 +37,12 @@ public class ThrowBall : MonoBehaviour
     void ChangeSurface()
     {
         int j = i;
-        if (Num == 1 || Num == 3 || Num == 7 || Num == 8)
+        if (Num == 1 || Num == 4 || Num == 6|| Num==7)
         {
             //Gas planets
             i = 0;
         }
-        else if (Num == 2 || Num == 4)
+        else if (Num == 2 || Num == 8)
         {
             //Ice planets
             i = 1;

@@ -19,12 +19,13 @@ public class ClothesSlider : MonoBehaviour
     float NewValue;
     bool oneTime = false;
     public GameObject[] Planets;
-    int i;
+    int Num;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        Num = 20;
     }
 
     public void GetTemp(int temp)
@@ -73,17 +74,6 @@ public class ClothesSlider : MonoBehaviour
 
     private void Update()
     {
-        if (oneTime==false)
-        {
-            slider.value = Random.Range(0, 5);
-            Current = slider.value;
-            if (Current != TempGroup)
-            {
-                oneTime = true;
-            }
-            
-            
-        }
 
 
         if (Slider2.value != NewValue)
@@ -93,11 +83,22 @@ public class ClothesSlider : MonoBehaviour
 
         if (Nextscreen.PlanetN !=0)
         {
-            if (i+1!=Nextscreen.PlanetN)
+            if (Num+1!=Nextscreen.PlanetN)
             {
-                i = (Nextscreen.PlanetN-1);
-                int a = Planets[i].GetComponent<ChoosenPlanet>().Temprature;
+                Num = (Nextscreen.PlanetN-1);
+                int a = Planets[Num].GetComponent<ChoosenPlanet>().Temprature;
                 GetTemp(a);
+            }
+            if (oneTime == false)
+            {
+                slider.value = Random.Range(0, 5);
+                Current = slider.value;
+                if (Current != TempGroup)
+                {
+                    oneTime = true;
+                }
+
+
             }
         }
 
