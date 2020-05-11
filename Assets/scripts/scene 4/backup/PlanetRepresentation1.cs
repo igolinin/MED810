@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PlanetRepresentation : MonoBehaviour
+public class PlanetRepresentationBU : MonoBehaviour
 {
     public Material[] Materials;
     public GameObject Control;
-    public int Num;
+    public int Num=0;
+    int i;
     public Color[] colors;
     public string[] Types;
     public bool isLast;
@@ -19,40 +20,40 @@ public class PlanetRepresentation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Num = 20;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((Num + 1) != Control.GetComponent<ScreenControl>().PlanetN && Control.GetComponent<ScreenControl>().PlanetN != 0)
+        if ((Num+1) != Control.GetComponent<ScreenControl>().PlanetN && Control.GetComponent<ScreenControl>().PlanetN!=0)
         {
-            ChangeSpheres();
-            if (DifferentSize)
-            {
-                ChangeSize();
-            }
+                ChangeSpheres();
 
         }
 
+        if (DifferentSize)
+        {
+            ChangeSize();
+        }
 
 
     }
 
     void ChangeSpheres()
     {
-        Num = Control.GetComponent<ScreenControl>().PlanetN - 1;
+        Num = Control.GetComponent<ScreenControl>().PlanetN-1;
         gameObject.GetComponent<Renderer>().material = Materials[Num];
         if (isLast)
         {
-            theType.text = "A new " + Types[Num] + " Planet";
+            theType.text = "A new " + Types[Num]+ " Planet";
         }
 
     }
 
     void ChangeSize()
     {
-        float scale = PlanetSize[Num];
+        float scale = PlanetSize[Num - 1];
         Planet.transform.localScale = new Vector3(1.7f * scale, 1.7f * scale, 1.7f * scale);
     }
 

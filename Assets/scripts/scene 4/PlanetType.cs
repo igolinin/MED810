@@ -24,11 +24,11 @@ public class PlanetType : MonoBehaviour
     {
         N.text = TypeName;
         Sz.text = Size;
-        W.text = Water + "%";
-        Lg.text = Light + "%";
+        W.text = Water;
+        Lg.text = Light;
         Lf.text = Life;
-        A.text = Atmosphere + "%";
-        T.text = Temprature + "c";
+        A.text = Atmosphere;
+        T.text = Temprature;
         G.text = Gravity;
         Sf.text = Surface;
     }

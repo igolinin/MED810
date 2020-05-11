@@ -19,6 +19,7 @@ public class ThrowBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Num = 20;
         ballPosition = ball.transform.position;
         ball1Position = ball1.transform.position;
     }
@@ -26,21 +27,22 @@ public class ThrowBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Num != sc.PlanetN&& sc.PlanetN!=0)
+        if ((Num+1) != sc.PlanetN&& sc.PlanetN!=0)
         {
-            Num = sc.PlanetN;
+            Num = sc.PlanetN-1;
             ChangeSurface();
         }
     }
 
     void ChangeSurface()
     {
-        if (Num == 2 || Num == 3 || Num == 7 || Num == 8)
+        int j = i;
+        if (Num == 1 || Num == 4 || Num == 6|| Num==7)
         {
             //Gas planets
             i = 0;
         }
-        else if (Num == 1 || Num == 4)
+        else if (Num == 2 || Num == 8)
         {
             //Ice planets
             i = 1;
@@ -58,6 +60,10 @@ public class ThrowBall : MonoBehaviour
         else
         { //earth
             i = 4;
+        }
+        if (i!=j)
+        {
+            Surfaces[j].SetActive(false);
         }
         Surfaces[i].SetActive(true);
         ball.GetComponent<Rigidbody>().mass = Grav[i];

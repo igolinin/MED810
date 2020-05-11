@@ -55,7 +55,7 @@ public class OrbitControl : MonoBehaviour
             duration = satellite.GetCurrentAnimatorStateInfo(0).length / velocity;
             satellite.SetFloat("relative_speed", velocity);
             satellite.transform.localScale = new Vector3(2* PlanetSize[Num - 1], 2*PlanetSize[Num - 1], 2*PlanetSize[Num - 1]);
-            //satellite_obj.transform.localScale = new Vector3(0.28298f, 0.28928f, 0.28928f);
+            satellite_obj.transform.localScale = new Vector3(0.28298f, 0.28928f, 0.28928f);
 
             satellite2_obj.SetActive(true);
             satellite2.SetTrigger("Launch");
@@ -125,6 +125,8 @@ public class OrbitControl : MonoBehaviour
     {
         if (!success)
         {
+            //satellite.speed = 0;
+            //satellite2.speed = 0;
             GameObject go = GameObject.Find("Main Camera");
             ScreenControl sc = (ScreenControl)go.GetComponent(typeof(ScreenControl));
             sc.wrong();

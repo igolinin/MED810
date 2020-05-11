@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using TMPro;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ScreenControl : MonoBehaviour
 {
 
-    private int CurrentScreen = 0;
+    public int CurrentScreen = 0;
     private int CurrentDot = 1;
     public GameObject NextPosition;
     public GameObject CurDot;
-    private bool OnMove = false;
+    public bool OnMove = false;
     public Color C1;
     public Color C2;
     public GameObject[] icons;
@@ -21,19 +22,27 @@ public class ScreenControl : MonoBehaviour
     public TextMeshProUGUI count;
     private int FoundCount;
     public GameObject Catalog;
+    public TextMeshProUGUI Title;
+    public TextMeshProUGUI info;
+    public string[] explenations;
+    public int i = 0;
+    public string PlanetName;
 
-   
+
     // Start is called before the first frame update
     void Start()
     {
         string DotName = "Dot" + CurrentDot.ToString();
         CurDot = GameObject.Find(DotName);
+        Title.text = "";
+        info.text = "";
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (FoundCount!= S3toS4.counter)
+        if (FoundCount != S3toS4.counter)
         {
             FoundCounter();
         }
@@ -42,6 +51,9 @@ public class ScreenControl : MonoBehaviour
         {
             MoveCamera();
         }
+
+        Instruction();
+
     }
 
     public void NextButton()
@@ -53,6 +65,10 @@ public class ScreenControl : MonoBehaviour
 
     public void BackButton()
     {
+        if (CurrentScreen == 1)
+        {
+            PlanetN = 0;
+        }
         CurrentScreen -= 1;
         SetTarget();
     }
@@ -62,9 +78,9 @@ public class ScreenControl : MonoBehaviour
         string NextScreenName = "CheckPoint" + CurrentScreen.ToString();
         if (try_again && (CurrentScreen == 2 || CurrentScreen == 5 || CurrentScreen == 7))
         {
-             NextScreenName = NextScreenName + "Wrong";
+            NextScreenName = NextScreenName + "Wrong";
         }
-        
+
         NextPosition = GameObject.Find(NextScreenName);
         OnMove = true;
     }
@@ -73,10 +89,13 @@ public class ScreenControl : MonoBehaviour
     {
         Vector3 SmoothedPosition = Vector3.Lerp(transform.position, NextPosition.transform.position, 0.1f);
         transform.position = SmoothedPosition;
-        if (transform.position==NextPosition.transform.position)
+        float distancex = Mathf.Abs(transform.position.x - NextPosition.transform.position.x);
+        float distancey = Mathf.Abs(transform.position.y - NextPosition.transform.position.y);
+        if (distancex < 1 && distancey < 1)
         {
             OnMove = false;
         }
+
     }
 
     public void ChangeDot()
@@ -121,7 +140,7 @@ public class ScreenControl : MonoBehaviour
         {
             count.text = "0" + FoundCount.ToString() + " Planet";
         }
-        else if (FoundCount>9)
+        else if (FoundCount > 9)
         {
             count.text = FoundCount.ToString() + " Planets";
         }
@@ -133,8 +152,8 @@ public class ScreenControl : MonoBehaviour
 
     public void Answer()
     {
-        int a = Catalog.GetComponent<ScrollControl>().AnswerNum+1;
-        if (a==PlanetN)
+        int a = Catalog.GetComponent<ScrollControl>().AnswerNum + 1;
+        if (a == PlanetN)
         {
             NextButton();
         }
@@ -143,6 +162,49 @@ public class ScreenControl : MonoBehaviour
             wrong();
         }
     }
-   
+
+    void Instruction()
+    {
+        Debug.Log("first");
+        int j = i;
+        if (CurrentScreen < 2 || CurrentScreen == 3 || CurrentScreen > 6 || try_again || OnMove == true)
+        {
+            i = 0;
+        }
+        else if (CurrentScreen == 2)
+        {
+            Debug.Log("second");
+            i = 1;
+        }
+        else if (CurrentScreen == 4)
+        {
+            i = 2;
+        }
+        else if (CurrentScreen == 5)
+        {
+            i = 3;
+        }
+        else if (CurrentScreen == 6)
+        {
+            i = 4;
+        }
+        if (j != i)
+        {
+            Debug.Log("third");
+            if (i > 0)
+            {
+                Title.text = "Comparison of " + PlanetName + " and EARTH";
+                Debug.Log("four");
+            }
+            else
+            {
+                Debug.Log("five");
+                Title.text = "";
+            }
+            info.text = explenations[i];
+        }
+
+    }
+
 
 }
