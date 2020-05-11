@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Globalization;
 
-public class ChoosenPlanet : MonoBehaviour
+public class ChoosenPlanetbu : MonoBehaviour
 {
     public string Name;
     public bool choosen;
@@ -12,7 +12,7 @@ public class ChoosenPlanet : MonoBehaviour
     public string description;
     public int SerialNum;
     public bool found;
-    public float Size;
+    public string Size;
     public string Water, Light, Life, Atmosphere, Gravity;
     public string Surface;
     public int Temprature;
@@ -21,7 +21,7 @@ public class ChoosenPlanet : MonoBehaviour
     public TextMeshProUGUI Nx, Sx, Wx, Lgx, Lfx, Ax, Tx, Gx, Sfx;
     public ScreenControl Control;
     public GameObject NotFound;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -63,7 +63,7 @@ public class ChoosenPlanet : MonoBehaviour
         G.text = Gravity;
         Sf.text = Surface;
         Nx.text = Name;
-        Sx.text = Size.ToString() + "x Earth";
+        Sx.text = Size+ "x Earth";
         Wx.text = Water;
         Lgx.text = Light;
         Lfx.text = Life;
@@ -73,8 +73,5 @@ public class ChoosenPlanet : MonoBehaviour
         Sfx.text = Surface;
     }
 
-    public void testing()
-    {
-        found = true;
-    }
+
 }

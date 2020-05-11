@@ -25,7 +25,7 @@ public class ScreenControl : MonoBehaviour
     public TextMeshProUGUI Title;
     public TextMeshProUGUI info;
     public string[] explenations;
-    public int i=0;
+    public int i = 0;
     public string PlanetName;
 
 
@@ -42,7 +42,7 @@ public class ScreenControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (FoundCount!= S3toS4.counter)
+        if (FoundCount != S3toS4.counter)
         {
             FoundCounter();
         }
@@ -53,7 +53,7 @@ public class ScreenControl : MonoBehaviour
         }
 
         Instruction();
-        
+
     }
 
     public void NextButton()
@@ -78,9 +78,9 @@ public class ScreenControl : MonoBehaviour
         string NextScreenName = "CheckPoint" + CurrentScreen.ToString();
         if (try_again && (CurrentScreen == 2 || CurrentScreen == 5 || CurrentScreen == 7))
         {
-             NextScreenName = NextScreenName + "Wrong";
+            NextScreenName = NextScreenName + "Wrong";
         }
-        
+
         NextPosition = GameObject.Find(NextScreenName);
         OnMove = true;
     }
@@ -91,7 +91,7 @@ public class ScreenControl : MonoBehaviour
         transform.position = SmoothedPosition;
         float distancex = Mathf.Abs(transform.position.x - NextPosition.transform.position.x);
         float distancey = Mathf.Abs(transform.position.y - NextPosition.transform.position.y);
-        if (distancex<1&&distancey<1)
+        if (distancex < 1 && distancey < 1)
         {
             OnMove = false;
         }
@@ -140,7 +140,7 @@ public class ScreenControl : MonoBehaviour
         {
             count.text = "0" + FoundCount.ToString() + " Planet";
         }
-        else if (FoundCount>9)
+        else if (FoundCount > 9)
         {
             count.text = FoundCount.ToString() + " Planets";
         }
@@ -152,8 +152,8 @@ public class ScreenControl : MonoBehaviour
 
     public void Answer()
     {
-        int a = Catalog.GetComponent<ScrollControl>().AnswerNum+1;
-        if (a==PlanetN)
+        int a = Catalog.GetComponent<ScrollControl>().AnswerNum + 1;
+        if (a == PlanetN)
         {
             NextButton();
         }
@@ -167,16 +167,16 @@ public class ScreenControl : MonoBehaviour
     {
         Debug.Log("first");
         int j = i;
-        if (CurrentScreen <2||CurrentScreen ==3||CurrentScreen >6||try_again||OnMove==true)
+        if (CurrentScreen < 2 || CurrentScreen == 3 || CurrentScreen > 6 || try_again || OnMove == true)
         {
             i = 0;
         }
-        else if(CurrentScreen ==2)
+        else if (CurrentScreen == 2)
         {
             Debug.Log("second");
             i = 1;
         }
-        else if(CurrentScreen == 4)
+        else if (CurrentScreen == 4)
         {
             i = 2;
         }
@@ -191,9 +191,9 @@ public class ScreenControl : MonoBehaviour
         if (j != i)
         {
             Debug.Log("third");
-            if (i>0)
+            if (i > 0)
             {
-                Title.text = "Comparison of "+PlanetName+ " and EARTH";
+                Title.text = "Comparison of " + PlanetName + " and EARTH";
                 Debug.Log("four");
             }
             else
@@ -205,6 +205,6 @@ public class ScreenControl : MonoBehaviour
         }
 
     }
-   
+
 
 }
