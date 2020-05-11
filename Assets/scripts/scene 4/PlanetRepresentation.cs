@@ -7,7 +7,7 @@ public class PlanetRepresentation : MonoBehaviour
 {
     public Material[] Materials;
     public GameObject Control;
-    public int Num = 12;
+    public int Num;
     public Color[] colors;
     public string[] Types;
     public bool isLast;
