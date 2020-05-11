@@ -4754,7 +4754,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Gliese 667 Cc
   choosen: 0
-  description: this is the best planet in the world
+  description: This planet has three suns in its sky, a red dwarf and two orange
+    dwarfs. A year in Gliese 667 Cc lasts 28 days!
   SerialNum: 4
   found: 0
   Size: 1.6
@@ -9106,12 +9107,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24994425
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.33826953
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
@@ -9161,7 +9162,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 13.05
+      value: 20.716875
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
@@ -26771,12 +26772,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: OGLE-2016-BLG-1195Lb
+  Name: OGLE-2016
   choosen: 0
   description: This planet is at approximately 13,000 light years away from the earth,
     orbiting a star that is believed to be very small, making it difficult to recognize
     it as a real star.
-  SerialNum: 4
+  SerialNum: 9
   found: 0
   Size: NaN
   Water: ice
@@ -30774,7 +30775,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 528766934}
   m_FillRect: {fileID: 2125274696}
   m_HandleRect: {fileID: 528766933}
@@ -37808,7 +37809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 296, y: 323}
+  m_AnchoredPosition: {x: 60, y: 134}
   m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1463171479
@@ -40740,17 +40741,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.300018
+      value: -8.9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.23
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.04
+      value: 8.98
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
@@ -40800,7 +40801,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 13.275001
+      value: 29.37094
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}

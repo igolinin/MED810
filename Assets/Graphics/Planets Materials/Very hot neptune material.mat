@@ -90,7 +90,7 @@ Material:
     - _AtmosphereMultiply: 1.5
     - _AtmospherePow: 2
     - _Blend: 0
-    - _BumpScale: 0.35
+    - _BumpScale: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
