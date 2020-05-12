@@ -2867,7 +2867,7 @@ GameObject:
   - component: {fileID: 887570388}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: planetIcon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
