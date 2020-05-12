@@ -35,6 +35,7 @@ public class OrbitControl : MonoBehaviour
     public TextMeshProUGUI Orbit_days_exoplanet;
     public TextMeshProUGUI Orbit_days_earth;
     public TextMeshProUGUI comparison;
+    public TextMeshProUGUI info_text;
 
     private void Start()
     {
