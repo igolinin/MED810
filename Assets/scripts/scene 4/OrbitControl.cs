@@ -69,11 +69,11 @@ public class OrbitControl : MonoBehaviour
 
             if (PlanetSize[Num - 1] > 1.0)
             {
-                comparison.text = PlanetSize[Num - 1].ToString() + "X Bigger";
+                comparison.text = PlanetSize[Num - 1].ToString() + " times bigger";
             }
             else
             {
-                comparison.text = "The same size as the Earth";
+                comparison.text = "Earth-sized";
             }
             info_text.text = Orbit_text[Num - 1];
         }
