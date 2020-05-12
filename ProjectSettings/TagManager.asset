@@ -16,6 +16,7 @@ TagManager:
   - timer
   - instructions
   - btnTxt
+  - planetIcon
   layers:
   - Default
   - TransparentFX

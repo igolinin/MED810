@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using TMPro;
+//using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -164,13 +165,15 @@ public class ScreenControl : MonoBehaviour
 
     void Instruction()
     {
+        Debug.Log("first");
         int j = i;
-        if (CurrentScreen < 2 || CurrentScreen == 3 || CurrentScreen > 7 || try_again || OnMove == true)
+        if (CurrentScreen < 2 || CurrentScreen == 3 || CurrentScreen > 6 || try_again || OnMove == true)
         {
             i = 0;
         }
         else if (CurrentScreen == 2)
         {
+            Debug.Log("second");
             i = 1;
         }
         else if (CurrentScreen == 4)
@@ -185,26 +188,17 @@ public class ScreenControl : MonoBehaviour
         {
             i = 4;
         }
-        else if (CurrentScreen == 7)
-        {
-            i = 5;
-        }
         if (j != i)
         {
+            Debug.Log("third");
             if (i > 0)
             {
-
-                if (i==5)
-                {
-                    Title.text = "Categorization of " + PlanetName;
-                }
-                else
-                {
-                    Title.text = "Comparison of " + PlanetName + " and EARTH";
-                }
+                Title.text = "Comparison of " + PlanetName + " and EARTH";
+                Debug.Log("four");
             }
             else
             {
+                Debug.Log("five");
                 Title.text = "";
             }
             info.text = explenations[i];

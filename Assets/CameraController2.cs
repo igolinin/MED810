@@ -22,6 +22,9 @@ public class CameraController2 : MonoBehaviour
     public GameObject btnTxt;
     public GameObject Instruction;
     public GameObject Instruction2;
+    public PlanetInfo pI;
+    public int currentRow;
+    
 
     [SerializeField]
     public GameObject[] Stars;
@@ -36,6 +39,7 @@ public class CameraController2 : MonoBehaviour
     private bool FirstTime = false;
 
     public Image CrossHair;
+    public Image planetIcon;
     public TextMeshProUGUI counter;
     public GameObject[] instr;
 
@@ -55,6 +59,7 @@ public class CameraController2 : MonoBehaviour
         instr = GameObject.FindGameObjectsWithTag("instructions");
         nextBtn = GameObject.FindGameObjectWithTag("NextBtn");
         btnTxt = GameObject.FindGameObjectWithTag("btnTxt");
+        planetIcon.DOFade(0, 0);
 
 
         //Create an array for the positions of the stars and populate it with the for look 
@@ -135,13 +140,25 @@ public class CameraController2 : MonoBehaviour
                 if (Mathf.Abs(camPosX - checkStarPos[i].x) <= 0 && Mathf.Abs(camPosY - checkStarPos[i].y) <= 0 && !starZoomedIn && Input.GetKeyDown("space"))
                 {
                     //Add the planet name makes it in ot a int to be used in the S3to4 script 
-                    SelectedPlanet.Add(int.Parse(Stars[i].name));
-
+                    currentRow = int.Parse(Stars[i].name);
+                    if (pI.info[int.Parse(Stars[i].name), 1].Equals("0"))
+                    {
+                        SelectedPlanet.Add(int.Parse(Stars[i].name));
+                        pI.info[int.Parse(Stars[i].name), 1] = "1";
+                    }
+                    
+                    Debug.Log("this is the selected planet" + currentRow);
+                    starName.SetText(pI.info[currentRow, 2]);
+                    distText.SetText(pI.info[currentRow, 3]);
+                    posText.SetText(pI.info[currentRow, 4]);
+                    typeText.SetText(pI.info[currentRow, 5]);
 
                     selected();
                     counter.text = "Exoplanets found:" + SelectedPlanet.Count.ToString() + "/10";
+                    
                     instr[0].GetComponent<TextMeshProUGUI>().enabled = false;
                     instr[1].GetComponent<TextMeshProUGUI>().enabled = false;
+                    planetIcon.DOFade(1, 1f);
 
                     //To make this if statement go off only one time. 
                     starZoomedIn = true;
