@@ -1132,7 +1132,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 20, y: -61}
-  m_SizeDelta: {x: 711.7, y: 88}
+  m_SizeDelta: {x: 1013.3728, y: 88}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &56469863
 MonoBehaviour:
@@ -2436,7 +2436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1177, y: 259}
+  m_AnchoredPosition: {x: 1155, y: 112}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &114506058
@@ -2488,8 +2488,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2717,7 +2717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 861, y: 173}
+  m_AnchoredPosition: {x: 829, y: 90}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &143003196
@@ -3380,12 +3380,11 @@ MonoBehaviour:
   Name: Corot 7b
   choosen: 0
   description: This planet revolves around its host star at a distance of 2.6 million
-    km, 22 times closer than Mercury orbits the sun, as a result of its close proximity
-    it takes only 20.5 hours to make one complete orbit.
+    km, 22 times closer than Mercury orbits the sun.
   SerialNum: 6
   found: 0
   Size: 1.5
-  Water: None
+  Water: No
   Light: 98%
   Life: Non-habitable
   Atmosphere: Thin
@@ -4217,7 +4216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 749, y: 148}
+  m_AnchoredPosition: {x: 845.8, y: 62}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &199329236
@@ -4310,7 +4309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 639, y: 152}
+  m_AnchoredPosition: {x: 814, y: 67.9}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &200432837
@@ -4572,7 +4571,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1278e2446189b8f4d9864847b94b8530, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4754,7 +4753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Gliese 667 Cc
   choosen: 0
-  description: this is the best planet in the world
+  description: 'This planet has three suns in its sky, a red dwarf and two orange
+    dwarfs. '
   SerialNum: 4
   found: 0
   Size: 1.6
@@ -8594,7 +8594,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 677, y: 258}
+  m_AnchoredPosition: {x: 1015, y: 145}
   m_SizeDelta: {x: 37, y: 47}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &372866516
@@ -9106,12 +9106,12 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.24994425
+      value: -0.36
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.33826953
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
@@ -9161,7 +9161,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 13.05
+      value: 20.716875
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
@@ -11714,8 +11714,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 493730537}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -456.2, y: -93.2, z: -10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -456.1, y: -92.2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -11830,13 +11830,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Gliese 436 b
   choosen: 0
-  description: 'One orbit around the star takes only about two days and 15.5 hours.
-
-'
+  description: "Astronomers think this planet hosts a large concentration of an exotic
+    form of water-ice known as \u201CIce-x\u201D on top of a rocky core.\n"
   SerialNum: 8
   found: 0
   Size: 3.9
-  Water: None
+  Water: No
   Light: 90%
   Life: Non-habitable
   Atmosphere: Very dense
@@ -13617,7 +13616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 909.0007, y: 272.99994}
+  m_AnchoredPosition: {x: 1027, y: 167}
   m_SizeDelta: {x: 42, y: 42}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &577192831
@@ -15334,7 +15333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1114, y: 212}
+  m_AnchoredPosition: {x: 1153.8, y: 108.4}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &656491896
@@ -15386,8 +15385,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18937,7 +18936,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Comparison of GLIESE 581C and EARTH '
+  m_text: 'Comparison of GLIESE 581C and Earth '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2965992da76b0ae419606b695ac899e8, type: 2}
   m_sharedMaterial: {fileID: -5575780709995576485, guid: 2965992da76b0ae419606b695ac899e8,
@@ -20768,7 +20767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -358, y: 1}
+  m_AnchoredPosition: {x: -243.9999, y: -29.1}
   m_SizeDelta: {x: 30, y: 40}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &865039756
@@ -20926,8 +20925,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8c2cd93b2099ffc4180ea054d19b40e5, type: 2}
+  m_sharedMaterial: {fileID: 5504472495156156191, guid: 8c2cd93b2099ffc4180ea054d19b40e5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20954,8 +20954,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -21035,7 +21035,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 741.9, y: -200}
+  m_AnchoredPosition: {x: 741.9, y: -220.03}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &868995894
@@ -23763,7 +23763,8 @@ MonoBehaviour:
   - Launch a sattelite to orbit the planets
   - Use the filters to learn more about your planet
   - Choose the right type of clothes to reach good body heat
-  - Throw the ball and observe to learn more about the planet surface
+  - Throw the ball to learn about your planet Surface and Gravity
+  - Choose the must suitable category of Exoplanet to your planet
   i: 0
   PlanetName: 
 --- !u!1 &963272822
@@ -26771,15 +26772,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c54e6ccf9c87ce41a009cb9a60732d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: OGLE-2016-BLG-1195Lb
+  Name: OGLE-2016
   choosen: 0
-  description: This planet is at approximately 13,000 light years away from the earth,
-    orbiting a star that is believed to be very small, making it difficult to recognize
-    it as a real star.
-  SerialNum: 4
+  description: "This planet orbits a star that is believed to be very small, making
+    it difficult to recognize it as a real star.\r"
+  SerialNum: 9
   found: 0
   Size: NaN
-  Water: ice
+  Water: Ice
   Light: 10%
   Life: Non-habitable
   Atmosphere: thin
@@ -27044,7 +27044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 836.0014, y: 194.7847}
+  m_AnchoredPosition: {x: 841, y: 69}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1089667801
@@ -27498,14 +27498,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: OGLE-2005
   choosen: 0
-  description: This planet orbits its star every 3,500 days, about 10 years.
+  description: "This planet was discovered using a network of telescopes around the
+    world, including the Danish 1.54m telescope at La Silla Observatory in Chile.\r"
   SerialNum: 3
   found: 1
   Size: 3.9
   Water: Ice
   Light: 15%
   Life: Non-habitable
-  Atmosphere: thin
+  Atmosphere: Thin
   Gravity: Strong
   Surface: Ice
   Temprature: -220
@@ -28636,7 +28637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1233, y: 241}
+  m_AnchoredPosition: {x: 1137.27, y: 133}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1151173470
@@ -28688,8 +28689,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -30774,7 +30775,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 528766934}
   m_FillRect: {fileID: 2125274696}
   m_HandleRect: {fileID: 528766933}
@@ -32139,7 +32140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -43.10013, y: -63.799896}
+  m_AnchoredPosition: {x: -124.6999, y: -109.1}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1250885900
@@ -32162,7 +32163,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gravity
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8c2cd93b2099ffc4180ea054d19b40e5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -32190,8 +32191,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32244,7 +32245,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1250885901
@@ -32363,7 +32364,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 258, y: -69.79968}
+  m_AnchoredPosition: {x: 233.79, y: -106}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1253871884
@@ -32386,7 +32387,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Surface '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8c2cd93b2099ffc4180ea054d19b40e5, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -32414,8 +32415,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -32468,7 +32469,7 @@ MonoBehaviour:
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1253871885
@@ -33193,8 +33194,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 51 Pegasi b
   choosen: 0
-  description: This planet takes 4.2 days to complete one orbit of its star. It was
-    discovered in the Haute-Provence Observatory
+  description: 'This is the first planet confirmed around a sun-like star. It was
+    discovered in the Haute-Provence Observatory.
+
+'
   SerialNum: 5
   found: 0
   Size: 5.5
@@ -33594,7 +33597,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -54, y: -1}
+  m_AnchoredPosition: {x: 118, y: -26}
   m_SizeDelta: {x: 50, y: 40}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1288013531
@@ -35141,16 +35144,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: WASP-12b
   choosen: 0
-  description: This planet orbits so close to its parent star, it's being torn apart.
-    It takes only 1.1 days to completely circle its sun. In 10 million years, this
-    world could be completely consumed.
+  description: 'This planet orbits so close to its parent star, it''s being torn
+    apart. The star''s heat is slowly stripping away and devouring the planet''s
+    atmosphere. '
   SerialNum: 2
   found: 0
   Size: 22
-  Water: None
+  Water: No
   Light: 94%
   Life: Non-habitable
-  Atmosphere: dense
+  Atmosphere: Dense
   Gravity: Very Strong
   Surface: Gas
   Temprature: 2200
@@ -35208,7 +35211,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 862.9999, y: 295.99985}
+  m_AnchoredPosition: {x: 1089, y: 151.5698}
   m_SizeDelta: {x: 40, y: 40}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1343993787
@@ -37808,7 +37811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 296, y: 323}
+  m_AnchoredPosition: {x: 60, y: 134}
   m_SizeDelta: {x: 180, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1463171479
@@ -40740,17 +40743,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.300018
+      value: -8.9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.23
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.04
+      value: 8.98
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
@@ -40800,7 +40803,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 13.275001
+      value: 29.37094
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f792ebe3078327a4eae4b21084d52607,
         type: 3}
@@ -44178,7 +44181,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 1000, y: 220}
+  m_AnchoredPosition: {x: 1121.73, y: 108.9303}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1752426823
@@ -44230,8 +44233,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -44696,7 +44699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -356.00012, y: -133}
+  m_AnchoredPosition: {x: -440, y: -133}
   m_SizeDelta: {x: 310, y: 124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1775006480
@@ -46924,8 +46927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 'Proxima b '
   choosen: 0
-  description: Proxima b is the closest potentially habitable planet to Earth, being
-    only 4.2 light years away. A year in this planet lasts 11.2 days!
+  description: 'Proxima b is the closest potentially habitable planet to Earth, being
+    only 4.2 light years away. '
   SerialNum: 1
   found: 0
   Size: 1.1
@@ -46934,7 +46937,7 @@ MonoBehaviour:
   Life: Habitable
   Atmosphere: Dense
   Gravity: Strong
-  Surface: rocky
+  Surface: Rocky
   Temprature: -39
   type: 0
   N: {fileID: 352759038}
@@ -48881,7 +48884,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 1278e2446189b8f4d9864847b94b8530, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48960,7 +48963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 792, y: 245}
+  m_AnchoredPosition: {x: 1043.4, y: 148.2}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1960461533
@@ -49337,7 +49340,7 @@ MonoBehaviour:
   Name: Gliese 1214b
   choosen: 0
   description: This planet revolves around its host star at a distance of only 2
-    million km and takes just one and a half days to make one complete orbit.
+    million km and was discovered in December 2009.
   SerialNum: 10
   found: 0
   Size: 2.7
@@ -49540,8 +49543,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8c2cd93b2099ffc4180ea054d19b40e5, type: 2}
+  m_sharedMaterial: {fileID: 5504472495156156191, guid: 8c2cd93b2099ffc4180ea054d19b40e5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -49568,8 +49572,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -49649,7 +49653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 230, y: -200}
+  m_AnchoredPosition: {x: 230, y: -220.03}
   m_SizeDelta: {x: 711.7, y: 103.7}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1994366185
@@ -52295,12 +52299,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Kepler 16b
   choosen: 0
-  description: Kepler 16b is the first planet known to orbit around two stars. It
-    takes 229 days to make one complete orbit.
+  description: 'Kepler 16b is the first planet known to orbit around two stars and
+    was discovered using the space observatory aboard NASA''s Kepler spacecraft.
+
+'
   SerialNum: 7
   found: 0
   Size: 8.5
-  Water: None
+  Water: No
   Light: 30%
   Life: Non-habitable
   Atmosphere: Dense
