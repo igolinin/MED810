@@ -21,6 +21,7 @@ public class ChoosenPlanet : MonoBehaviour
     public TextMeshProUGUI Nx, Sx, Wx, Lgx, Lfx, Ax, Tx, Gx, Sfx;
     public ScreenControl Control;
     public GameObject NotFound;
+    public TextMeshProUGUI Name1;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +57,7 @@ public class ChoosenPlanet : MonoBehaviour
         Control.GetComponent<ScreenControl>().PlanetName = Name;
         N.text = Name;
         D.text = description;
-        W.text = Water + " Water";
+        W.text = "Form:"+Water;
         Lg.text = Light + " Light";
         Lf.text = Life;
         A.text = Atmosphere;
@@ -71,6 +72,7 @@ public class ChoosenPlanet : MonoBehaviour
         Tx.text = Temprature.ToString() + "c";
         Gx.text = Gravity;
         Sfx.text = Surface;
+        Name1.text = Name;
     }
 
     public void testing()

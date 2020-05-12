@@ -91,7 +91,7 @@ public class ScreenControl : MonoBehaviour
         transform.position = SmoothedPosition;
         float distancex = Mathf.Abs(transform.position.x - NextPosition.transform.position.x);
         float distancey = Mathf.Abs(transform.position.y - NextPosition.transform.position.y);
-        if (distancex < 1 && distancey < 1)
+        if (distancex < 0.2f && distancey < 0.2f)
         {
             OnMove = false;
         }
@@ -167,27 +167,15 @@ public class ScreenControl : MonoBehaviour
     {
         Debug.Log("first");
         int j = i;
-        if (CurrentScreen < 2 || CurrentScreen == 3 || CurrentScreen > 6 || try_again || OnMove == true)
+        if (CurrentScreen < 2 || CurrentScreen == 3 || CurrentScreen > 7 || try_again || OnMove == true)
         {
             i = 0;
         }
-        else if (CurrentScreen == 2)
+        else if (CurrentScreen >1 && CurrentScreen <8)
         {
-            Debug.Log("second");
-            i = 1;
+            i = CurrentScreen - 2;
         }
-        else if (CurrentScreen == 4)
-        {
-            i = 2;
-        }
-        else if (CurrentScreen == 5)
-        {
-            i = 3;
-        }
-        else if (CurrentScreen == 6)
-        {
-            i = 4;
-        }
+
         if (j != i)
         {
             Debug.Log("third");
