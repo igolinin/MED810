@@ -1350,7 +1350,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f86bbbdf88d2ba3409457acc01327748, type: 2}
+  - {fileID: 2100000, guid: 7e5efe8d229479e46a83ce3bbb9aeab1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3216,7 +3216,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8aa6598f801a30f41b04441f122379cf, type: 2}
+  - {fileID: 2100000, guid: eec817906d8eb0c49b08590b8ce8dfaa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4343,8 +4343,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Alpha Centauri
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b2821a67ee46c494e8815451a902deac, type: 2}
-  m_sharedMaterial: {fileID: 8762397086232435843, guid: b2821a67ee46c494e8815451a902deac,
+  m_fontAsset: {fileID: 11400000, guid: 24ba5ad8b73695a43a8a4b933cb2aefb, type: 2}
+  m_sharedMaterial: {fileID: -3861769245184181209, guid: 24ba5ad8b73695a43a8a4b933cb2aefb,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
