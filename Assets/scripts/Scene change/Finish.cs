@@ -20,4 +20,9 @@ public class Finish : MonoBehaviour
     {
         SceneManager.LoadScene("AgainScene", LoadSceneMode.Single);
     }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("Station3", LoadSceneMode.Single);
+    }
 }
