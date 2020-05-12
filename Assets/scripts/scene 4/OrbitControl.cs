@@ -50,7 +50,6 @@ public class OrbitControl : MonoBehaviour
         if (launch.value == 1.0 && flag == false)
         {
             int Num = Control.GetComponent<ScreenControl>().PlanetN;
-
             satellite_obj.SetActive(true);
             satellite.SetTrigger("Launch");
             velocity = 1.0f / PlanetRadius[Num-1];

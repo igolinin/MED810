@@ -27,6 +27,8 @@ public class ScreenControl : MonoBehaviour
     public string[] explenations;
     public int i = 0;
     public string PlanetName;
+    public Slider OrbitSlider;
+    bool textCheck = false;
 
 
     // Start is called before the first frame update
@@ -91,7 +93,7 @@ public class ScreenControl : MonoBehaviour
         transform.position = SmoothedPosition;
         float distancex = Mathf.Abs(transform.position.x - NextPosition.transform.position.x);
         float distancey = Mathf.Abs(transform.position.y - NextPosition.transform.position.y);
-        if (distancex < 0.2f && distancey < 0.2f)
+        if (distancex < 0.5f && distancey < 0.5f)
         {
             OnMove = false;
         }
@@ -171,28 +173,58 @@ public class ScreenControl : MonoBehaviour
         {
             i = 0;
         }
-        else if (CurrentScreen >1 && CurrentScreen <8)
+        else if (CurrentScreen >3 && CurrentScreen <8)
         {
             i = CurrentScreen - 2;
+        }
+        else if (CurrentScreen == 2)
+        {
+            i = 1;
         }
 
         if (j != i)
         {
-            Debug.Log("third");
-            if (i > 0)
+            if (i == 0)
             {
-                Title.text = "Comparison of " + PlanetName + " and EARTH";
-                Debug.Log("four");
-            }
-            else
-            {
-                Debug.Log("five");
                 Title.text = "";
             }
+            else if (i==1)
+            {
+                Title.text = "Comparison of "+ PlanetName+" and Earth";
+            }
+            else if(i==2)
+            {
+                Title.text = "Exploring "+PlanetName;
+            }
+            else if(i==3)
+            {
+                Title.text = "Find out what’s "+ PlanetName + " temperature";
+            }
+            else if (i==4)
+            {
+                Title.text = "Find out what’s "+PlanetName+"’s Gravity and Surface type";
+            }
+            else if(i==5)
+            {
+                Title.text = "What kind of planet did you find?";
+            }
+
             info.text = explenations[i];
         }
 
+        if (textCheck == false)
+        {
+            if (OrbitSlider.value == 1.00f)
+            {
+                info.text = "Stop the satellite when it completes one orbit of " + PlanetName;
+                textCheck = true;
+            }
+        }
+
+
     }
+
+
 
 
 }
